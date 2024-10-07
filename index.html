@@ -5,40 +5,712 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>No Replica</title>
 
-	<meta name="author" content="Gabriel Drozdov">
-	<meta name="keywords" content="Web Design, Web Development, Branding, Generative Art, Creative Coding">
-	<meta name="description" content="No Replica makes one-of-a-kind websites.">
+	<meta name="author" content="No Replica">
+	<meta name="keywords" content="Graphic Design, Web Design, Web Development, Creative Coding, Branding, Visual Identity, Studio, Agency">
+	<meta name="description" content="A new digital design studio using code to create websites, visual identities, and custom tools.">
 	<meta property="og:url" content="https://noreplica.com/">
 	<meta name="og:title" property="og:title" content="No Replica">
-	<meta property="og:description" content="No Replica makes one-of-a-kind websites.">
-	<meta property="og:image" content="./assets/meta/opengraph.jpg">
-	<link rel="icon" type="png" href="assets/meta/favicon.png">
+	<meta property="og:description" content="A new digital design studio using code to create websites, visual identities, and custom tools.">
+	<meta property="og:image" content="/assets/meta/opengraph.png">
+	<link rel="icon" type="png" href="/assets/meta/favicon.png"></link>
 
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>No Replica makes one-of-a-kind websites.</h1>
-	<a href="https://gabrieldrozdov.com" target="_blank">Our studio is led by Gabriel Drozdov.</a>
-	<h2>This site is still in-progress, but here are some finished ones:</h2>
-	<ul>
-		<li><a href="https://toomuchtype.com/" target="_blank">Too Much Type</a></li>
-		<li><a href="https://commondimensions.com/" target="_blank">Common Dimensions</a></li>
-		<li><a href="https://notesoncraft.org/" target="_blank">Notes on Craft</a></li>
-		<li><a href="https://www.thetalenthouse.net/" target="_blank">The Talent House</a></li>
-		<li><a href="https://twenty.designobserver.com/awards/" target="_blank">The Design Observer Twenty</a></li>
-		<li><a href="https://mfabiennial2023.risd.gd/" target="_blank">GD MFA Biennial 2023</a></li>
-		<li><a href="https://fontbox.barcoloudly.com/" target="_blank">Fontbox</a></li>
-		<li><a href="https://earworm.barcoloudly.com/" target="_blank">Earworm</a></li>
-		<li><a href="https://pixelweaver.noreplica.com/" target="_blank">Pixel Weaver 2.0</a></li>
-		<li><a href="https://compendium.noreplica.com/" target="_blank">A Thesis Compendium</a></li>
-		<li><a href="https://smilethroughit.noreplica.com/" target="_blank">Smile Through It</a></li>
-		<li><a href="https://smallsites.gdwithgd.com/" target="_blank">Small Sites; Big Stories</a></li>
-		<li><a href="https://notes.noreplica.com/" target="_blank">Notes from Neither Here nor There</a></li>
-		<li><a href="https://gabrieldrozdov.github.io/vfw23/" target="_blank">Variable Fonts Workshop</a></li>
-		<li><a href="https://spore-site.com/" target="_blank">Spore Site</a></li>
-		<li><a href="https://colorsofextinction.com/" target="_blank">Colors of Extinction</a></li>
-	</ul>
+	<h1 class="logo">No Replica</h1>
+
+	<header class="home-header">
+		<div class="home-header-intro">
+			<p class="home-header-desc">
+				No Replica is a new design and development studio with a mission to craft really, really special visual identities, websites, and custom tools. We do that by bridging the gaps between multiple disciplines. We write our own code (and teach it to others).<sup>1</sup> We design our own fonts.<sup>2</sup> We compose our own music.<sup>3</sup> But most of all, we love what we do, we have fun doing it, and we try not to take ourselves too seriously.
+			</p>
+			<div class="home-header-links">
+				<!-- <a href="/about/" class="home-header-cta home-header-cta-alt">
+					<div class="home-header-cta-bubble"></div>
+					<span class="home-header-cta-text">About the studio</span>
+				</a> -->
+				<a href="mailto:gabriel@noreplica.com" class="home-header-cta">
+					<div class="home-header-cta-bubble"></div>
+					<span class="home-header-cta-text">Get in touch</span>
+				</a>
+			</div>
+		</div>
+		<div class="home-header-references">
+			<div class="home-header-reference">
+				<div class="home-header-reference-number">1</div>
+				<p class="home-header-reference-text">
+					<strong>GD with GD</strong> is our teaching hub, hosting playful tools and resources for teaching and learning design and code.<br>
+					<a href="https://gdwithgd.com/" target="_blank">Learn how to design!</a>
+				</p>
+			</div>
+			<div class="home-header-reference">
+				<div class="home-header-reference-number">2</div>
+				<p class="home-header-reference-text">
+					<strong>Too Much Type</strong> is our experimental open-source type foundry, prototyping new font technologies through digital type specimens.<br>
+					<a href="https://toomuchtype.com/" target="_blank">Test out some fonts!</a>
+				</p>
+			</div>
+			<div class="home-header-reference">
+				<div class="home-header-reference-number">3</div>
+				<p class="home-header-reference-text">
+					<strong>Barco Loudly</strong> is our musical alias, releasing custom instruments and original songs.<br>
+					<a href="https://barcoloudly.com/" target="_blank">Play some music!</a>
+				</p>
+			</div>
+		</div>
+	</header>
+
+	<main class="work">
+		<div class="work-nav" data-active="0">
+			<!-- <div class="work-nav-filters">
+				<div class="work-nav-toggle" data-active="1" data-filter="All">
+					<div class="work-nav-toggle-bubble"></div>
+					<div class="work-nav-toggle-text">All</div>
+				</div>
+				<div class="work-nav-toggle" data-filter="Branding">
+					<div class="work-nav-toggle-bubble"></div>
+					<div class="work-nav-toggle-text">Branding</div>
+				</div>
+				<div class="work-nav-toggle" data-filter="Web">
+					<div class="work-nav-toggle-bubble"></div>
+					<div class="work-nav-toggle-text">Web</div>
+				</div>
+				<div class="work-nav-toggle" data-filter="Generative">
+					<div class="work-nav-toggle-bubble"></div>
+					<div class="work-nav-toggle-text">Generative</div>
+				</div>
+				<div class="work-nav-toggle" data-filter="Interactive">
+					<div class="work-nav-toggle-bubble"></div>
+					<div class="work-nav-toggle-text">Interactive</div>
+				</div>
+				<div class="work-nav-toggle" data-filter="Motion">
+					<div class="work-nav-toggle-bubble"></div>
+					<div class="work-nav-toggle-text">Motion</div>
+				</div>
+				<div class="work-nav-toggle" data-filter="Type">
+					<div class="work-nav-toggle-bubble"></div>
+					<div class="work-nav-toggle-text">Type</div>
+				</div>
+				<div class="work-nav-toggle" data-filter="Sound">
+					<div class="work-nav-toggle-bubble"></div>
+					<div class="work-nav-toggle-text">Sound</div>
+				</div>
+				<div class="work-nav-toggle" data-filter="Data">
+					<div class="work-nav-toggle-bubble"></div>
+					<div class="work-nav-toggle-text">Data</div>
+				</div>
+				<div class="work-nav-toggle" data-filter="Education">
+					<div class="work-nav-toggle-bubble"></div>
+					<div class="work-nav-toggle-text">Education</div>
+				</div>
+			</div> -->
+			<div></div>
+
+			<a href="mailto:gabriel@noreplica.com" class="work-nav-cta">
+				<div class="work-nav-cta-bubble"></div>
+				<span class="work-nav-cta-text">Questions? Reach out!</span>
+			</a>
+		</div>
+
+		<div class="work-items">
+			<a href="https://www.soundsgoodtoronto.com/" class="work-item" target="_blank" data-project="sounds-good">
+				<div class="work-item-media">
+					<video autoplay muted loop playsinline disableRemotePlayback>
+						<source data-src="https://thisisforyou.gabrieldrozdov.com/assets/projects/sounds-good.mp4">
+					</video>
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Sounds Good
+					</h2>
+					<p>
+						Generative eye candy and website for the new Toronto listening bar
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://commondimensions.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<video autoplay muted loop playsinline disableRemotePlayback>
+						<source data-src="https://thisisforyou.gabrieldrozdov.com/assets/projects/common-dimensions.mp4">
+					</video>
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Common Dimensions
+					</h2>
+					<p>
+						Research platform collecting, documenting, and discussing chairs
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://www.thetalenthouse.net/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<video autoplay muted loop playsinline disableRemotePlayback>
+						<source data-src="https://thisisforyou.gabrieldrozdov.com/assets/projects/talent-house.mp4">
+					</video>
+				</div>
+				<div class="work-item-info">
+					<h2>
+						The Talent House
+					</h2>
+					<p>
+						A website with a musical twist
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://publications.risdmuseum.org/grad-show-2024" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<video autoplay muted loop playsinline disableRemotePlayback>
+						<source data-src="https://thisisforyou.gabrieldrozdov.com/assets/projects/risd-grad-show-2024.mp4">
+					</video>
+				</div>
+				<div class="work-item-info">
+					<h2>
+						RISD Grad Show 2024
+					</h2>
+					<p>
+						Identity and website highlighting spectrums of color used in student work
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://neighborhood.centralsynagogue.org/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<video autoplay muted loop playsinline disableRemotePlayback>
+						<source data-src="https://gabrieldrozdov.com/work/the-neighborhood/cs-neighborhood.mp4">
+					</video>
+				</div>
+				<div class="work-item-info">
+					<h2>
+						The Neighborhood @ Central Synagogue
+					</h2>
+					<p>
+						Digital home for an online community
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://toomuchtype.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<video autoplay muted loop playsinline disableRemotePlayback>
+						<source data-src="https://thisisforyou.gabrieldrozdov.com/assets/projects/too-much-type.mp4">
+					</video>
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Too Much Type
+					</h2>
+					<p>
+						Type foundry pioneering experimental techniques and technologies
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://mfabiennial2023.risd.gd/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<img src="https://thisisforyou.gabrieldrozdov.com/assets/projects/mfa-biennial.jpg">
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Highlights from the Impermanent Collection
+					</h2>
+					<p>
+						Digital exhibition in on the form of a video game
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://thisisforyou.gabrieldrozdov.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<img src="https://thisisforyou.gabrieldrozdov.com/assets/projects/this-is-for-you.jpg">
+				</div>
+				<div class="work-item-info">
+					<h2>
+						This Is For You
+					</h2>
+					<p>
+						A handbook for design students
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://twenty.designobserver.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<img src="https://thisisforyou.gabrieldrozdov.com/assets/projects/design-observer-twenty.jpg">
+				</div>
+				<div class="work-item-info">
+					<h2>
+						The Design Observer Twenty
+					</h2>
+					<p>
+						Fellowship and awards program celebrating twenty years of service
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://fontbox.barcoloudly.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<video autoplay muted loop playsinline disableRemotePlayback>
+						<source data-src="https://thisisforyou.gabrieldrozdov.com/assets/projects/fontbox.mp4">
+					</video>
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Fontbox
+					</h2>
+					<p>
+						Typographic musical sequencer
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://gabrieldrozdov.com/work/24-hour-plays/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<video autoplay muted loop playsinline disableRemotePlayback>
+						<source data-src="https://gabrieldrozdov.com/work/24-hour-plays/24-hour-plays-logo.mp4">
+					</video>
+				</div>
+				<div class="work-item-info">
+					<h2>
+						The 24 Hour Plays
+					</h2>
+					<p>
+						Loud and bold identity for a loud and bold theater company
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://gabrieldrozdov.com/work/williamstown-theatre-festival-2020/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<video autoplay muted loop playsinline disableRemotePlayback>
+						<source data-src="https://gabrieldrozdov.com/work/williamstown-theatre-festival-2020/wtf2020-thumbnail.mp4">
+					</video>
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Williamstown Theatre Festival 2020 Season
+					</h2>
+					<p>
+						Visual identity bringing together color, typography, motion, and sound
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://gabrieldrozdov.com/work/williamstown-theatre-festival-2021/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<video autoplay muted loop playsinline disableRemotePlayback>
+						<source data-src="https://gabrieldrozdov.com/work/williamstown-theatre-festival-2021/wtf2021-thumbnail.mp4">
+					</video>
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Williamstown Theatre Festival 2021 Season
+					</h2>
+					<p>
+						Identity for the Festival’s first season back onstage
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://ttg.noreplica.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<video autoplay muted loop playsinline disableRemotePlayback>
+						<source data-src="https://gabrieldrozdov.com/work/tag-team-calligraphers/ttg-thumbnail.mp4">
+					</video>
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Tag Team Calligraphers
+					</h2>
+					<p>
+						Collaborative drawing between a human and robot
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://gabrieldrozdov.com/work/5781-high-holy-days/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<video autoplay muted loop playsinline disableRemotePlayback>
+						<source data-src="https://gabrieldrozdov.com/work/5781-high-holy-days/cs-hhd.mp4">
+					</video>
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Central Synagogue 5781 High Holy Days
+					</h2>
+					<p>
+						Identity for the synagogue’s first-ever virtual services
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://gabrieldrozdov.com/work/cleverlyco/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<video autoplay muted loop playsinline disableRemotePlayback>
+						<source data-src="https://gabrieldrozdov.com/work/cleverlyco/cleverly-thumbnail.mp4">
+					</video>
+				</div>
+				<div class="work-item-info">
+					<h2>
+						CleverlyCo.
+					</h2>
+					<p>
+						Stop motion-inspired identify for the playful polymer clay jewelry brand
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://earworm.barcoloudly.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<video autoplay muted loop playsinline disableRemotePlayback>
+						<source data-src="https://thisisforyou.gabrieldrozdov.com/assets/projects/earworm.mp4">
+					</video>
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Earworm
+					</h2>
+					<p>
+						Worm-like typographic musical toy
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://pixelweaver.noreplica.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<video autoplay muted loop playsinline disableRemotePlayback>
+						<source data-src="https://thisisforyou.gabrieldrozdov.com/assets/projects/pixel-weaver-2.mp4">
+					</video>
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Pixel Weaver 2.0
+					</h2>
+					<p>
+						Dynamic compositions generated from source images
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://geocities.noreplica.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<img src="https://thisisforyou.gabrieldrozdov.com/assets/projects/geocities.jpg">
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Geocities: Paradise Lost
+					</h2>
+					<p>
+						Data visualizations and article on the rise and fall of GeoCities
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://compendium.noreplica.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<img src="https://thisisforyou.gabrieldrozdov.com/assets/projects/a-thesis-compendium.jpg">
+				</div>
+				<div class="work-item-info">
+					<h2>
+						A Thesis Compendium
+					</h2>
+					<p>
+						Interactive essay masquerading as an online questionnaire
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://smallsites.gdwithgd.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<video autoplay muted loop playsinline disableRemotePlayback>
+						<source data-src="https://thisisforyou.gabrieldrozdov.com/assets/projects/small-sites-big-stories.mp4">
+					</video>
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Small Sites; Big Stories
+					</h2>
+					<p>
+						Interactive narratives collected in a catalog of microsites written using as little code as possible
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://variablefonts.gdwithgd.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<video autoplay muted loop playsinline disableRemotePlayback>
+						<source data-src="https://thisisforyou.gabrieldrozdov.com/assets/projects/variable-fonts-workshop.mp4">
+					</video>
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Variable Fonts Workshop
+					</h2>
+					<p>
+						Variable font testing tool and student work showcase
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://notesoncraft.org/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<img src="https://thisisforyou.gabrieldrozdov.com/assets/projects/notes-on-craft.jpg">
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Notes on Craft
+					</h2>
+					<p>
+						Conversations, exercises, and readings on craft
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://smilethroughit.noreplica.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<img src="https://thisisforyou.gabrieldrozdov.com/assets/projects/smile-through-it.jpg">
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Smile Through It
+					</h2>
+					<p>
+						Triptych of arcade games played by smiling
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://notes.noreplica.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<video autoplay muted loop playsinline disableRemotePlayback>
+						<source data-src="https://thisisforyou.gabrieldrozdov.com/assets/projects/notes-from-neither-here-nor-there.mp4">
+					</video>
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Notes from Neither Here nor There
+					</h2>
+					<p>
+						Poetic microsites exploring space, place, and experience
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://welcome.noreplica.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<img src="https://thisisforyou.gabrieldrozdov.com/assets/projects/welcome.jpg">
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Welcome
+					</h2>
+					<p>
+						An introduction to the internet
+					</p>
+				</div>
+			</a>
+			
+			<a href="http://otfttf.noreplica.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<video autoplay muted loop playsinline disableRemotePlayback>
+						<source data-src="https://thisisforyou.gabrieldrozdov.com/assets/projects/otf-ttf.mp4">
+					</video>
+				</div>
+				<div class="work-item-info">
+					<h2>
+						.otf, .ttf
+					</h2>
+					<p>
+						Technical article on the most common font file formats
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://aurora.barcoloudly.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<img src="https://thisisforyou.gabrieldrozdov.com/assets/projects/aurora.jpg">
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Aurora
+					</h2>
+					<p>
+						Real-time soundtrack for everyday life
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://spore-site.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<img src="https://thisisforyou.gabrieldrozdov.com/assets/projects/spore-site.jpg">
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Spore Site
+					</h2>
+					<p>
+						Rhizomatic network of responses to a common question
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://zooooooom.noreplica.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<img src="https://thisisforyou.gabrieldrozdov.com/assets/projects/zooooooom.jpg">
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Zoooooooom
+					</h2>
+					<p>
+						Time-based game testing your ability to count
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://onomatopoeia.noreplica.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<video autoplay muted loop playsinline disableRemotePlayback>
+						<source data-src="https://thisisforyou.gabrieldrozdov.com/assets/projects/onomatopoeia.mp4">
+					</video>
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Onomatopoeia
+					</h2>
+					<p>
+						Sonically-powered dynamic poster generator
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://doesnotexist.noreplica.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<img src="https://thisisforyou.gabrieldrozdov.com/assets/projects/does-not-exist.jpg">
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Does Not Exist
+					</h2>
+					<p>
+						Survey of what does and does not exist on the Internet
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://toomuchtype.com/fonts/mini-mochi/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<img src="https://thisisforyou.gabrieldrozdov.com/assets/projects/mini-mochi.jpg">
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Mini Mochi
+					</h2>
+					<p>
+						Variable font and specimen inspired by squishy shape of mochi
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://colorsofextinction.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<img src="https://thisisforyou.gabrieldrozdov.com/assets/projects/colors-of-extinction.jpg">
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Colors of Extinction
+					</h2>
+					<p>
+						Archive of the color palettes of extinct animals
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://ghost.noreplica.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<video autoplay muted loop playsinline disableRemotePlayback>
+						<source data-src="https://thisisforyou.gabrieldrozdov.com/assets/projects/ghost.mp4">
+					</video>
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Ghost
+					</h2>
+					<p>
+						Face-tracking mirror
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://landscape.noreplica.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<img src="https://thisisforyou.gabrieldrozdov.com/assets/projects/untitled-digital-landscape.jpg">
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Untitled (Digital Landscape)
+					</h2>
+					<p>
+						Abstract interactive composition made from birds-eye satellite imagery
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://kaasdaheen.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<video autoplay muted loop playsinline disableRemotePlayback>
+						<source data-src="https://thisisforyou.gabrieldrozdov.com/assets/projects/live-stream.mp4">
+					</video>
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Live Stream
+					</h2>
+					<p>
+						Stream of streams
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://picketfence.noreplica.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<video autoplay muted loop playsinline disableRemotePlayback>
+						<source data-src="https://thisisforyou.gabrieldrozdov.com/assets/projects/picket-fence.mp4">
+					</video>
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Picket Fence
+					</h2>
+					<p>
+						Tool for visualizing picket fence optical illusions
+					</p>
+				</div>
+			</a>
+			
+			<a href="https://nauticalmaps.noreplica.com/" class="work-item" target="_blank">
+				<div class="work-item-media">
+					<img src="https://thisisforyou.gabrieldrozdov.com/assets/projects/nautical-maps.jpg">
+				</div>
+				<div class="work-item-info">
+					<h2>
+						Nautical Maps
+					</h2>
+					<p>
+						Digital recreation of a folded document
+					</p>
+				</div>
+			</a>
+		</div>
+	</main>
+
+	<div class="project" data-state="0">
+	</div>
 
 	<script src="script.js"></script>
+	<script src="lazy.js"></script>
 </body>
 </html>
