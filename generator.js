@@ -195,7 +195,7 @@ function generatePages() {
 			<header class="home-header">
 				<div class="home-header-intro">
 					<p class="home-header-desc">
-						No Replica is a new design and development studio with a mission to craft really, really special visual identities, websites, and custom tools. We do that by bridging the gaps between multiple disciplines. We write our own code (and teach it to others).<sup>1</sup> We design our own fonts.<sup>2</sup> We compose our own music.<sup>3</sup> But most of all, we love what we do, we have fun doing it, and we try not to take ourselves too seriously.
+						No Replica is a new design and development studio crafting visual identities, websites, and custom tools. We do that by bridging the gaps between multiple disciplines. We write our own code (and teach it to others).<sup>1</sup> We design our own fonts.<sup>2</sup> We compose our own music.<sup>3</sup> But most of all, we consider every possibility to find the right solution for each project.
 					</p>
 					<div class="home-header-links">
 						<a href="/about/" class="home-header-cta home-header-cta-alt">
@@ -446,7 +446,7 @@ function generatePagesAlt() {
 						</div>
 					</div>
 		
-					<a href="" class="work-nav-cta">
+					<a href="mailto:gabriel@noreplica.com" class="work-nav-cta">
 						<div class="work-nav-cta-bubble"></div>
 						<span class="work-nav-cta-text">Questions? Reach out!</span>
 					</a>
