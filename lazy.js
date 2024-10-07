@@ -20,4 +20,9 @@ const lazyObserver = new IntersectionObserver((entries, lazyObserver) => {
 // Add observer for lazy load
 for (let lazyItem of document.querySelectorAll('video')) {
 	lazyObserver.observe(lazyItem);
+
+	// Fade in video when loaded
+	lazyItem.addEventListener('loadeddata', () => {
+		lazyItem.dataset.loaded = 1;
+	})
 }

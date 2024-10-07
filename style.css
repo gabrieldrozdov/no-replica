@@ -447,6 +447,30 @@ body {
 	background-color: rgba(0,0,0,.1);
 	box-shadow: 0 3px 10px rgba(0,0,0,.08);
 	transition: box-shadow .2s, transform .2s;
+	animation: work-item-media-buffer .5s infinite ease-in-out alternate;
+}
+@keyframes work-item-media-buffer {
+	from {
+		background-color: rgba(0,0,0,.01);
+	}
+	to {
+		background-color: rgba(0,0,0,.1);
+	}
+}
+.work-item-media video {
+	animation: .5s forwards;
+	opacity: 0;
+}
+.work-item-media video[data-loaded="1"] {
+	animation-name: work-item-media-video;
+}
+@keyframes work-item-media-video {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 .work-item:hover .work-item-media {
 	box-shadow: 0 5px 20px rgba(0,0,0,.08);
