@@ -10,47 +10,42 @@
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "sounds-good-thumbnail.jpg",
+			"video": "sounds-good-thumbnail.mp4"
 		},
 		"media": [
 			{
-				"desc": "The site’s homepage features a generative animation of infinitely expanding and contracting shapes.",
-				"image": "",
+				"desc": "",
+				"image": "sounds-good-thumbnail.jpg",
+				"video": "sounds-good-thumbnail.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "sounds-good-about.jpg",
 				"video": "",
 				"embed": ""
 			},
 			{
-				"desc": "Homepage on mobile devices.",
-				"image": "",
+				"desc": "",
+				"image": "sounds-good-menu.jpg",
 				"video": "",
 				"embed": ""
 			},
 			{
-				"desc": "Subpages use a split layout between imagery and text content.",
-				"image": "",
-				"video": "",
-				"embed": ""
-			},
-			{
-				"desc": "Like the rest of the site’s content, the menu uses a minimalistic design system featuring a single typeface set in one weight and size.",
-				"image": "",
-				"video": "",
-				"embed": ""
-			},
-			{
-				"desc": "Subpages switch to a single-column layout on mobile devices.",
-				"image": "",
+				"desc": "",
+				"image": "sounds-good-programming.jpg",
 				"video": "",
 				"embed": ""
 			}
 		],
 		"tags": [
 			"Web",
-			"Generative",
+			"Computational art",
 			"Motion"
 		],
-		"active": true
+		"active": true,
+		"direct-url": ""
 	},
 	"common-dimensions": {
 		"name": "Common Dimensions",
@@ -63,21 +58,40 @@
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "common-dimensions-thumbnail.jpg",
+			"video": "common-dimensions-thumbnail.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
-				"video": "",
+				"image": "common-dimensions-thumbnail.jpg",
+				"video": "common-dimensions-thumbnail.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "common-dimensions-library.jpg",
+				"video": "common-dimensions-library.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "common-dimensions-interview.jpg",
+				"video": "common-dimensions-interview.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "common-dimensions-reader.jpg",
+				"video": "common-dimensions-reader.mp4",
 				"embed": ""
 			}
 		],
 		"tags": [
 			"Web"
 		],
-		"active": true
+		"active": true,
+		"direct-url": ""
 	},
 	"the-talent-house": {
 		"name": "The Talent House",
@@ -90,19 +104,44 @@
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "the-talent-house-thumbnail.jpg",
+			"video": "the-talent-house-thumbnail.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
+				"image": "the-talent-house-thumbnail.jpg",
+				"video": "the-talent-house-thumbnail.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "the-talent-house-keyboard.jpg",
+				"video": "the-talent-house-keyboard.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "the-talent-house-about.jpg",
+				"video": "the-talent-house-about.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "the-talent-house-team.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "the-talent-house-blog.jpg",
 				"video": "",
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Interactive", "Sound"],
-		"active": true
+		"tags": ["Web", "Computational art", "Sound"],
+		"active": true,
+		"direct-url": ""
 	},
 	"risd-grad-show-2024": {
 		"name": "RISD Grad Show 2024",
@@ -112,47 +151,81 @@
 			[
 				"Visit site",
 				"https://publications.risdmuseum.org/grad-show-2024"
-			]
-		],
-		"thumbnail": {
-			"image": "",
-			"video": ""
-		},
-		"media": [
-			{
-				"desc": "",
-				"image": "",
-				"video": "",
-				"embed": ""
-			}
-		],
-		"tags": ["Branding", "Web", "Generative", "Interactive", "Motion", "Type"],
-		"active": true
-	},
-	"the-neighborhood-at-central-synagogue": {
-		"name": "The Neighborhood @ Central Synagogue",
-		"caption": "Digital home for an online community",
-		"desc": "<p>The Neighborhood is Central Synagogue’s digital initiative focusing on congregant-centered worship. No Replica created an identity and website using animated hand drawn elements to convey the community’s friendly, neighborhood-ly aura.</p>",
-		"links": [
+			],
 			[
-				"Visit site",
-				"https://neighborhood.centralsynagogue.org/"
+				"Poster generator",
+				"https://risdgradshow2024.noreplica.com/"
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "risd-grad-show-2024-logo.jpg",
+			"video": "risd-grad-show-2024-logo.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
-				"video": "",
+				"image": "risd-grad-show-2024-home.jpg",
+				"video": "risd-grad-show-2024-home.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "risd-grad-show-2024-toc.jpg",
+				"video": "risd-grad-show-2024-toc.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "risd-grad-show-2024-interactive.jpg",
+				"video": "risd-grad-show-2024-interactive.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "risd-grad-show-2024-regenerate.jpg",
+				"video": "risd-grad-show-2024-regenerate.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "risd-grad-show-2024-department.jpg",
+				"video": "risd-grad-show-2024-department.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "risd-grad-show-2024-generator.jpg",
+				"video": "risd-grad-show-2024-generator.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "risd-grad-show-2024-presets.jpg",
+				"video": "risd-grad-show-2024-presets.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "risd-grad-show-2024-scrubbing.jpg",
+				"video": "risd-grad-show-2024-scrubbing.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "risd-grad-show-2024-texture.jpg",
+				"video": "risd-grad-show-2024-texture.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "risd-grad-show-2024-logo.jpg",
+				"video": "risd-grad-show-2024-logo.mp4",
 				"embed": ""
 			}
 		],
-		"tags": ["Branding", "Web", "Motion"],
-		"active": true
+		"tags": ["Web", "Branding", "Computational art", "Motion", "Type"],
+		"active": true,
+		"direct-url": ""
 	},
 	"too-much-type": {
 		"name": "Too Much Type",
@@ -165,19 +238,74 @@
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "too-much-type-thumbnail.jpg",
+			"video": "too-much-type-thumbnail.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
-				"video": "",
+				"image": "too-much-type-thumbnail.jpg",
+				"video": "too-much-type-thumbnail.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "too-much-type-fonts.jpg",
+				"video": "too-much-type-fonts.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "too-much-type-tester.jpg",
+				"video": "too-much-type-tester.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "too-much-type-desktop.jpg",
+				"video": "too-much-type-desktop.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "too-much-type-specimens.jpg",
+				"video": "too-much-type-specimens.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "too-much-type-windows.jpg",
+				"video": "too-much-type-windows.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "too-much-type-sylvania.jpg",
+				"video": "too-much-type-sylvania.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "too-much-type-mealkit.jpg",
+				"video": "too-much-type-mealkit.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "too-much-type-musicbox.jpg",
+				"video": "too-much-type-musicbox.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "too-much-type-funfont.jpg",
+				"video": "too-much-type-funfont.mp4",
 				"embed": ""
 			}
 		],
-		"tags": ["Branding", "Web", "Generative", "Interactive", "Motion", "Type"],
-		"active": true
+		"tags": ["Web", "Branding", "Computational art", "Motion", "Type"],
+		"active": true,
+		"direct-url": ""
 	},
 	"highlights-from-the-impermanent-collection": {
 		"name": "Highlights from the Impermanent Collection",
@@ -190,19 +318,38 @@
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "mfabiennial-intro.jpg",
+			"video": "mfabiennial-intro.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
-				"video": "",
+				"image": "mfabiennial-intro.jpg",
+				"video": "mfabiennial-intro.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "mfabiennial-movement.jpg",
+				"video": "mfabiennial-movement.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "mfabiennial-index.jpg",
+				"video": "mfabiennial-index.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "mfabiennial-floorplan.jpg",
+				"video": "mfabiennial-floorplan.mp4",
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Interactive"],
-		"active": true
+		"tags": ["Web", "Computational art"],
+		"active": true,
+		"direct-url": ""
 	},
 	"this-is-for-you": {
 		"name": "This Is For You",
@@ -212,52 +359,62 @@
 			[
 				"Visit site",
 				"https://thisisforyou.gabrieldrozdov.com/"
-			]
-		],
-		"thumbnail": {
-			"image": "",
-			"video": ""
-		},
-		"media": [
-			{
-				"desc": "",
-				"image": "",
-				"video": "",
-				"embed": ""
-			}
-		],
-		"tags": ["Web", "Generative", "Interactive", "Education"],
-		"active": true
-	},
-	"the-design-observer-twenty": {
-		"name": "The Design Observer Twenty",
-		"caption": "Fellowship and awards program celebrating twenty years of articles",
-		"desc": "<p>Case study coming soon!</p>",
-		"links": [
+			],
 			[
-				"Visit site",
-				"http://twenty.designobserver.com/"
+				"Book generator",
+				"https://thisisforyou.gabrieldrozdov.com/print/"
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "this-is-for-you-intro1.jpg",
+			"video": "this-is-for-you-intro1.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
-				"video": "",
+				"image": "this-is-for-you-intro1.jpg",
+				"video": "this-is-for-you-intro1.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "this-is-for-you-intro2.jpg",
+				"video": "this-is-for-you-intro2.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "this-is-for-you-toc.jpg",
+				"video": "this-is-for-you-toc.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "this-is-for-you-learning.jpg",
+				"video": "this-is-for-you-learning.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "this-is-for-you-making.jpg",
+				"video": "this-is-for-you-making.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "this-is-for-you-book.jpg",
+				"video": "this-is-for-you-book.mp4",
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Generative", "Interactive", "Data"],
-		"active": true
+		"tags": ["Web", "Computational art", "Education"],
+		"active": true,
+		"direct-url": ""
 	},
 	"fontbox": {
 		"name": "Fontbox",
 		"caption": "Typographic musical sequencer",
-		"desc": "<p>Case study coming soon!</p>",
+		"desc": "",
 		"links": [
 			[
 				"Visit site",
@@ -265,174 +422,543 @@
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "fontbox-random.jpg",
+			"video": "fontbox-random.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
+				"image": "fontbox-thumbnail.jpg",
+				"video": "fontbox-thumbnail.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "fontbox-input.jpg",
+				"video": "fontbox-input.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "fontbox-shuffle.jpg",
+				"video": "fontbox-shuffle.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "fontbox-presets.jpg",
+				"video": "fontbox-presets.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "fontbox-random.jpg",
+				"video": "fontbox-random.mp4",
+				"embed": ""
+			}
+		],
+		"tags": ["Web", "Computational art", "Motion", "Type", "Sound"],
+		"active": true,
+		"direct-url": ""
+	},
+	"discotheques": {
+		"name": "Discotheques 1+2",
+		"caption": "Pixel-blending collage of color",
+		"desc": "<p>Discotheques 1+2 are two generative art applications developed in Processing and p5.js. Inspired by pointillism, these projects focus on creating compound colors by juxtaposing thin bands of light. This initiative began with a 2D prototype (Discotheque 1), which was later adapted into a 3D environment (Discotheque 2).</p>",
+		"links": [],
+		"thumbnail": {
+			"image": "discotheques-thumbnail.jpg",
+			"video": "discotheques-thumbnail.mp4"
+		},
+		"media": [
+			{
+				"desc": "An overview of both projects and the design-development process.",
 				"image": "",
+				"video": "",
+				"embed": "<iframe src='https://player.vimeo.com/video/506619636?title=0&byline=0&portrait=0&color=f61d5d' frameborder='0' allow='fullscreen; picture-in-picture' style='aspect-ratio: 16/9;'></iframe>"
+			},
+			{
+				"desc": "",
+				"image": "discotheques-thumbnail.jpg",
+				"video": "discotheques-thumbnail.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "discotheques-disco1.jpg",
+				"video": "discotheques-disco1.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "discotheques-disco2.jpg",
+				"video": "discotheques-disco2.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "discotheques-disco2-menu.png",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "discotheques-disco2-default.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "discotheques-disco2-rainbow.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "discotheques-disco2-lookingin.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "discotheques-disco2-redblue.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "discotheques-disco2-bluediamond.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "discotheques-disco2-pinkdiamond.jpg",
 				"video": "",
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Generative", "Interactive", "Motion", "Type", "Sound"],
-		"active": true
+		"tags": ["Computational art", "Motion"],
+		"active": true,
+		"direct-url": ""
 	},
 	"the-24-hour-plays": {
 		"name": "The 24 Hour Plays",
 		"caption": "Loud and bold identity for a loud and bold theater company",
-		"desc": "<p>Case study coming soon!</p>",
-		"links": [
-			[
-				"Visit site",
-				"https://gabrieldrozdov.com/work/24-hour-plays/"
-			]
-		],
+		"desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+		"links": [],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "24-hour-plays-logo.jpg",
+			"video": "24-hour-plays-logo.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
-				"video": "",
+				"image": "24-hour-plays-logo.jpg",
+				"video": "24-hour-plays-logo.mp4",
 				"embed": ""
-			}
-		],
-		"tags": ["Branding", "Web", "Motion"],
-		"active": true
-	},
-	"williamstown-theatre-festival-2020-season": {
-		"name": "Williamstown Theatre Festival 2020 Season",
-		"caption": "Visual identity bringing together color, typography, motion, and sound",
-		"desc": "<p>Case study coming soon!</p>",
-		"links": [
-			[
-				"Visit site",
-				"https://gabrieldrozdov.com/work/williamstown-theatre-festival-2020/"
-			]
-		],
-		"thumbnail": {
-			"image": "",
-			"video": ""
-		},
-		"media": [
+			},
 			{
 				"desc": "",
-				"image": "",
+				"image": "24hr-website.jpg",
+				"video": "24hr-website.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "24hr-billboard.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "24hr-jakegyllenhaal.jpg",
+				"video": "24hr-jakegyllenhaal.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "24hr-elijahwood.jpg",
+				"video": "24hr-elijahwood.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "24hr-process.jpg",
+				"video": "24hr-process.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "24hr-colors.png",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "24hr-typography.png",
 				"video": "",
 				"embed": ""
 			}
 		],
-		"tags": ["Branding", "Web", "Motion", "Sound"],
-		"active": true
+		"tags": ["Web", "Branding", "Motion"],
+		"active": true,
+		"direct-url": ""
 	},
 	"williamstown-theatre-festival-2021-season": {
 		"name": "Williamstown Theatre Festival 2021 Season",
 		"caption": "Identity for the Festival’s first season back onstage",
-		"desc": "<p>Case study coming soon!</p>",
-		"links": [
-			[
-				"Visit site",
-				"https://gabrieldrozdov.com/work/williamstown-theatre-festival-2021/"
-			]
-		],
+		"desc": "",
+		"links": [],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "wtf2021-keyart-outside.jpg",
+			"video": "wtf2021-keyart-outside.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
+				"image": "wtf2021-thumbnail.jpg",
+				"video": "wtf2021-thumbnail.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "wtf2021-keyart-final.jpg",
+				"video": "wtf2021-keyart-final.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
 				"image": "",
 				"video": "",
+				"embed": "<iframe src='https://player.vimeo.com/video/638365489?title=0&byline=0&portrait=0&color=f61d5d' frameborder='0' allow='fullscreen; picture-in-picture' style='aspect-ratio: 4/3;'></iframe>"
+			},
+			{
+				"desc": "",
+				"image": "wtf2021-digitalprogram-desktop.jpg",
+				"video": "wtf2021-digitalprogram-desktop.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "wtf2021-digitalprogram-mobile.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "wtf2021-keyart-objects.jpg",
+				"video": "wtf2021-keyart-objects.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "wtf2021-keyart-outside.jpg",
+				"video": "wtf2021-keyart-outside.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "wtf2021-keyart-titles.jpg",
+				"video": "wtf2021-keyart-titles.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "wtf2021-keyart-marquee.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "wtf2021-keyart-billboard.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "wtf2021-gala-invite.jpg",
+				"video": "wtf2021-gala-invite.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "wtf2021-gala-eblast.jpg",
+				"video": "wtf2021-gala-eblast.mp4",
 				"embed": ""
 			}
 		],
-		"tags": ["Branding", "Web", "Motion"],
-		"active": true
+		"tags": ["Web", "Branding", "Motion"],
+		"active": true,
+		"direct-url": ""
 	},
-	"tag-team-calligraphers": {
-		"name": "Tag Team Calligraphers",
-		"caption": "Collaborative drawing game played between a human and a robot",
-		"desc": "<p>Case study coming soon!</p>",
-		"links": [
-			[
-				"Visit site",
-				"https://ttg.noreplica.com/"
-			]
-		],
+	"williamstown-theatre-festival-2020-season": {
+		"name": "Williamstown Theatre Festival 2020 Season",
+		"caption": "Visual identity bringing together color, typography, motion, and sound",
+		"desc": "",
+		"links": [],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "wtf2020-thumbnail.jpg",
+			"video": "wtf2020-thumbnail.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
 				"image": "",
 				"video": "",
+				"embed": "<iframe src='https://player.vimeo.com/video/506653536?title=0&byline=0&portrait=0&color=f61d5d' frameborder='0' allow='fullscreen; picture-in-picture' style='aspect-ratio: 16/9;'></iframe>"
+			},
+			{
+				"desc": "",
+				"image": "wtf2020-mainstage.jpg",
+				"video": "wtf2020-posters.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "wtf2020-titles.svg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "wtf2020-programs.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "wtf2020-animals.svg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "wtf2020-streetcar.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "wtf2020-digitalprogram.jpg",
+				"video": "wtf2020-digitalprogram.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "wtf2020-digitalprogram-mobile.jpg",
+				"video": "wtf2020-digitalprogram-mobile.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "wtf2020-gala.jpg",
+				"video": "wtf2020-gala.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "wtf2020-galainvite.gif",
+				"video": "",
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Generative", "Interactive", "Motion"],
-		"active": true
+		"tags": ["Web", "Branding", "Motion", "Sound"],
+		"active": true,
+		"direct-url": ""
 	},
 	"central-synagogue-5781-high-holy-days": {
 		"name": "Central Synagogue 5781 High Holy Days",
 		"caption": "Identity for the synagogue’s first-ever virtual services",
-		"desc": "<p>Case study coming soon!</p>",
-		"links": [
-			[
-				"Visit site",
-				"https://gabrieldrozdov.com/work/5781-high-holy-days/"
-			]
-		],
+		"desc": "",
+		"links": [],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "cs-hhd.jpg",
+			"video": "cs-hhd.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
+				"image": "cs-hhd.jpg",
+				"video": "cs-hhd.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "cs-hhd-lockup.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "cs-hhd-athome.jpg",
+				"video": "cs-hhd-athome.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "cs-hhd-colors.png",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "cs-hhd-typography.png",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "cs-hhd-templates.png",
 				"video": "",
 				"embed": ""
 			}
 		],
 		"tags": ["Branding", "Motion"],
-		"active": true
+		"active": true,
+		"direct-url": ""
 	},
 	"cleverlyco": {
 		"name": "CleverlyCo.",
 		"caption": "Stop motion visual identity for the playful polymer clay jewelry brand",
-		"desc": "<p>Case study coming soon!</p>",
-		"links": [
-			[
-				"Visit site",
-				"https://gabrieldrozdov.com/work/cleverlyco/"
-			]
-		],
+		"desc": "",
+		"links": [],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "cleverly-thumbnail.jpg",
+			"video": "cleverly-thumbnail.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
+				"image": "cleverly-thumbnail.jpg",
+				"video": "cleverly-thumbnail.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
 				"image": "",
+				"video": "",
+				"embed": "<iframe src='https://player.vimeo.com/video/912320868?title=0&byline=0&portrait=0&color=f61d5d' frameborder='0' allow='fullscreen; picture-in-picture' style='aspect-ratio: 16/9;'></iframe>"
+			},
+			{
+				"desc": "",
+				"image": "cleverly-branding-logo.jpg",
+				"video": "cleverly-branding-logo.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "cleverly-branding-earrings.jpg",
+				"video": "cleverly-branding-earrings.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "cleverly-branding-photos.jpg",
+				"video": "cleverly-branding-photos.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "cleverly-insta.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "cleverly-etsy.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "cleverly-collection-green.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "cleverly-collection-funky.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "cleverly-collection-stripe.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "cleverly-photogrid.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "cleverly-collection-cards.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "cleverly-colors.jpg",
 				"video": "",
 				"embed": ""
 			}
 		],
 		"tags": ["Branding", "Motion", "Sound"],
-		"active": true
+		"active": true,
+		"direct-url": ""
+	},
+	"the-design-observer-twenty": {
+		"name": "The Design Observer Twenty",
+		"caption": "Fellowship and awards program celebrating twenty years of articles",
+		"desc": "",
+		"links": [
+			[
+				"Visit site",
+				"http://twenty.designobserver.com/"
+			]
+		],
+		"thumbnail": {
+			"image": "doxx-thumbnail.jpg",
+			"video": "doxx-thumbnail.mp4"
+		},
+		"media": [
+			{
+				"desc": "",
+				"image": "doxx-thumbnail.jpg",
+				"video": "doxx-thumbnail.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "doxx-awards.jpg",
+				"video": "doxx-awards.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "doxx-home.jpg",
+				"video": "doxx-home.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "doxx-pages.jpg",
+				"video": "doxx-pages.mp4",
+				"embed": ""
+			}
+		],
+		"tags": ["Web", "Computational art", "Data"],
+		"active": true,
+		"direct-url": ""
 	},
 	"earworm": {
 		"name": "Earworm",
 		"caption": "Worm-like typographic musical toy",
-		"desc": "<p>Case study coming soon!</p>",
+		"desc": "",
 		"links": [
 			[
 				"Visit site",
@@ -440,24 +966,43 @@
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "earworm-demo2.jpg",
+			"video": "earworm-demo2.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
-				"video": "",
+				"image": "earworm-title.jpg",
+				"video": "earworm-title.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "earworm-demo1.jpg",
+				"video": "earworm-demo1.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "earworm-demo2.jpg",
+				"video": "earworm-demo2.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "earworm-demo3.jpg",
+				"video": "earworm-demo3.mp4",
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Generative", "Interactive", "Motion", "Type", "Sound"],
-		"active": true
+		"tags": ["Web", "Computational art", "Motion", "Type", "Sound"],
+		"active": true,
+		"direct-url": ""
 	},
 	"pixel-weaver-2": {
 		"name": "Pixel Weaver 2.0",
 		"caption": "Dynamic compositions generated from source images",
-		"desc": "<p>Case study coming soon!</p>",
+		"desc": "",
 		"links": [
 			[
 				"Visit site",
@@ -465,24 +1010,55 @@
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "pixel-weaver-thumbnail.jpg",
+			"video": "pixel-weaver-thumbnail.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
-				"video": "",
+				"image": "pixel-weaver-thumbnail.jpg",
+				"video": "pixel-weaver-thumbnail.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "pixel-weaver-source.jpg",
+				"video": "pixel-weaver-source.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "pixel-weaver-transformations.jpg",
+				"video": "pixel-weaver-transformations.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "pixel-weaver-filters.jpg",
+				"video": "pixel-weaver-filters.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "pixel-weaver-interface.jpg",
+				"video": "pixel-weaver-interface.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "pixel-weaver-random.jpg",
+				"video": "pixel-weaver-random.mp4",
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Generative", "Interactive"],
-		"active": true
+		"tags": ["Web", "Computational art"],
+		"active": true,
+		"direct-url": ""
 	},
 	"geocities-paradise-lost": {
 		"name": "GeoCities: Paradise Lost",
 		"caption": "Data visualizations and article on the rise and fall of GeoCities",
-		"desc": "<p>Case study coming soon!</p>",
+		"desc": "",
 		"links": [
 			[
 				"Visit site",
@@ -490,249 +1066,178 @@
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "geocities-gifs.jpg",
+			"video": "geocities-gifs.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
-				"video": "",
+				"image": "geocities-intro.jpg",
+				"video": "geocities-intro.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "geocities-scroll.jpg",
+				"video": "geocities-scroll.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "geocities-midi.jpg",
+				"video": "geocities-midi.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "geocities-dimensions.jpg",
+				"video": "geocities-dimensions.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "geocities-urls.jpg",
+				"video": "geocities-urls.mp4",
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Generative", "Interactive", "Data"],
-		"active": true
+		"tags": ["Web", "Computational art", "Data"],
+		"active": true,
+		"direct-url": ""
 	},
-	"a-thesis-compendium": {
-		"name": "A Thesis Compendium",
-		"caption": "Interactive essay masquerading as an online questionnaire",
-		"desc": "<p>Case study coming soon!</p>",
-		"links": [
-			[
-				"Visit site",
-				"https://compendium.noreplica.com/"
-			]
-		],
+	"new-york-neo-futurists": {
+		"name": "New York Neo-Futurists",
+		"caption": "A brand with a little polish and a little edge",
+		"desc": "",
+		"links": [],
 		"thumbnail": {
-			"image": "",
+			"image": "nynf.png",
 			"video": ""
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
+				"image": "nynf.png",
 				"video": "",
 				"embed": ""
-			}
-		],
-		"tags": ["Web", "Generative", "Interactive"],
-		"active": true
-	},
-	"small-sites-big-stories": {
-		"name": "Small Sites; Big Stories",
-		"caption": "Interactive narratives collected in a catalog of microsites written using as little code as possible",
-		"desc": "<p>Case study coming soon!</p>",
-		"links": [
-			[
-				"Visit site",
-				"https://smallsites.gdwithgd.com/"
-			]
-		],
-		"thumbnail": {
-			"image": "",
-			"video": ""
-		},
-		"media": [
+			},
 			{
 				"desc": "",
-				"image": "",
+				"image": "hit-play.png",
 				"video": "",
 				"embed": ""
-			}
-		],
-		"tags": ["Web", "Generative", "Interactive", "Education"],
-		"active": true
-	},
-	"variable-fonts-workshop": {
-		"name": "Variable Fonts Workshop",
-		"caption": "Variable font testing tool and student work showcase",
-		"desc": "<p>Case study coming soon!</p>",
-		"links": [
-			[
-				"Visit site",
-				"https://variablefonts.gdwithgd.com/"
-			]
-		],
-		"thumbnail": {
-			"image": "",
-			"video": ""
-		},
-		"media": [
+			},
 			{
 				"desc": "",
-				"image": "",
+				"image": "hit-play-concept1.png",
 				"video": "",
 				"embed": ""
-			}
-		],
-		"tags": ["Web", "Generative", "Interactive", "Motion", "Type", "Sound", "Education"],
-		"active": true
-	},
-	"notes-on-craft": {
-		"name": "Notes on Craft",
-		"caption": "Conversations, exercises, and readings on craft",
-		"desc": "<p>Case study coming soon!</p>",
-		"links": [
-			[
-				"Visit site",
-				"https://notesoncraft.org/"
-			]
-		],
-		"thumbnail": {
-			"image": "",
-			"video": ""
-		},
-		"media": [
+			},
 			{
 				"desc": "",
-				"image": "",
+				"image": "hit-play-concept2.png",
 				"video": "",
 				"embed": ""
-			}
-		],
-		"tags": ["Web"],
-		"active": true
-	},
-	"smile-through-it": {
-		"name": "Smile Through It",
-		"caption": "Triptych of arcade games played by smiling",
-		"desc": "<p>Case study coming soon!</p>",
-		"links": [
-			[
-				"Visit site",
-				"https://smilethroughit.noreplica.com/"
-			]
-		],
-		"thumbnail": {
-			"image": "",
-			"video": ""
-		},
-		"media": [
+			},
 			{
 				"desc": "",
-				"image": "",
+				"image": "nynf-colors.png",
 				"video": "",
 				"embed": ""
-			}
-		],
-		"tags": ["Web", "Generative", "Interactive", "Sound"],
-		"active": true
-	},
-	"notes-from-neither-here-nor-there": {
-		"name": "Notes from Neither Here nor There",
-		"caption": "Poetic microsites exploring space, place, and experience",
-		"desc": "<p>Case study coming soon!</p>",
-		"links": [
-			[
-				"Visit site",
-				"https://notes.noreplica.com/"
-			]
-		],
-		"thumbnail": {
-			"image": "",
-			"video": ""
-		},
-		"media": [
+			},
 			{
 				"desc": "",
-				"image": "",
+				"image": "nynf-concept1.png",
 				"video": "",
 				"embed": ""
-			}
-		],
-		"tags": ["Web", "Generative", "Interactive", "Type", "Sound"],
-		"active": true
-	},
-	"welcome": {
-		"name": "Welcome",
-		"caption": "An introduction to the Internet",
-		"desc": "<p>Case study coming soon!</p>",
-		"links": [
-			[
-				"Visit site",
-				"https://welcome.noreplica.com/"
-			]
-		],
-		"thumbnail": {
-			"image": "",
-			"video": ""
-		},
-		"media": [
+			},
 			{
 				"desc": "",
-				"image": "",
+				"image": "nynf-concept2.png",
 				"video": "",
 				"embed": ""
-			}
-		],
-		"tags": ["Web", "Sound"],
-		"active": true
-	},
-	"otf-ttf": {
-		"name": ".otf, .ttf",
-		"caption": "Technical article on the most common font file formats",
-		"desc": "<p>Case study coming soon!</p>",
-		"links": [
-			[
-				"Visit site",
-				"https://otf-ttf.noreplica.com/"
-			]
-		],
-		"thumbnail": {
-			"image": "",
-			"video": ""
-		},
-		"media": [
+			},
 			{
 				"desc": "",
-				"image": "",
+				"image": "nynf-concept3.png",
 				"video": "",
 				"embed": ""
-			}
-		],
-		"tags": ["Web", "Education"],
-		"active": true
-	},
-	"aurora": {
-		"name": "Aurora",
-		"caption": "Real-time soundtrack for everyday life",
-		"desc": "<p>Case study coming soon!</p>",
-		"links": [
-			[
-				"Visit site",
-				"https://aurora.barcoloudly.com/"
-			]
-		],
-		"thumbnail": {
-			"image": "",
-			"video": ""
-		},
-		"media": [
+			},
 			{
 				"desc": "",
-				"image": "",
+				"image": "nynf-concept4.png",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "nynf-concept5.png",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "nynf-concept6.png",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "nynf-concept7.png",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "nynf-concept8.png",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "nynf-concept9.png",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "nynf-concept10.png",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "nynf-concept11.png",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "nynf-concept12.png",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "nynf-concept13.png",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "nynf-final.png",
 				"video": "",
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Sound"],
-		"active": true
+		"tags": ["Branding"],
+		"active": true,
+		"direct-url": ""
 	},
 	"spore-site": {
 		"name": "Spore Site",
 		"caption": "Rhizomatic network of responses to a common question",
-		"desc": "<p>Case study coming soon!</p>",
+		"desc": "",
 		"links": [
 			[
 				"Visit site",
@@ -740,24 +1245,449 @@
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "spore-site-home.jpg",
+			"video": "spore-site-home.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
+				"image": "spore-site-home.jpg",
+				"video": "spore-site-home.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "spore-site-network.jpg",
+				"video": "spore-site-network.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "spore-site-entry.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "spore-site-about.jpg",
 				"video": "",
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Generative", "Interactive", "Sound", "Data"],
-		"active": true
+		"tags": ["Web", "Computational art", "Sound", "Data"],
+		"active": true,
+		"direct-url": ""
+	},
+	"a-thesis-compendium": {
+		"name": "A Thesis Compendium",
+		"caption": "Interactive essay masquerading as an online questionnaire",
+		"desc": "",
+		"links": [
+			[
+				"Visit site",
+				"https://compendium.noreplica.com/"
+			],
+			[
+				"Print generator",
+				"https://compendium.noreplica.com/generator/"
+			]
+		],
+		"thumbnail": {
+			"image": "compendium-intro.jpg",
+			"video": "compendium-intro.mp4"
+		},
+		"media": [
+			{
+				"desc": "",
+				"image": "compendium-intro.jpg",
+				"video": "compendium-intro.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "compendium-intro2.jpg",
+				"video": "compendium-intro2.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "compendium-intro3.jpg",
+				"video": "compendium-intro3.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "compendium-survey.jpg",
+				"video": "compendium-survey.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "compendium-output.png",
+				"video": "",
+				"embed": ""
+			}
+		],
+		"tags": ["Web", "Computational art"],
+		"active": true,
+		"direct-url": ""
+	},
+	"small-sites-big-stories": {
+		"name": "Small Sites; Big Stories",
+		"caption": "Interactive narratives collected in a catalog of microsites written using as little code as possible",
+		"desc": "",
+		"links": [
+			[
+				"Visit site",
+				"https://smallsites.gdwithgd.com/"
+			]
+		],
+		"thumbnail": {
+			"image": "smallsites-thumbnail.jpg",
+			"video": "smallsites-thumbnail.mp4"
+		},
+		"media": [
+			{
+				"desc": "",
+				"image": "smallsites-thumbnail.jpg",
+				"video": "smallsites-thumbnail.mp4",
+				"embed": ""
+			}
+		],
+		"tags": ["Web", "Computational art", "Education"],
+		"active": true,
+		"direct-url": ""
+	},
+	"variable-fonts-workshop": {
+		"name": "Variable Fonts Workshop",
+		"caption": "Variable font testing tool and student work showcase",
+		"desc": "",
+		"links": [
+			[
+				"Visit site",
+				"https://variablefonts.gdwithgd.com/"
+			]
+		],
+		"thumbnail": {
+			"image": "vfw-oscillator.jpg",
+			"video": "vfw-oscillator.mp4"
+		},
+		"media": [
+			{
+				"desc": "",
+				"image": "vfw-title.jpg",
+				"video": "vfw-title.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "vfw-oscillator.jpg",
+				"video": "vfw-oscillator.mp4",
+				"embed": ""
+			}
+		],
+		"tags": ["Web", "Computational art", "Motion", "Type", "Sound", "Education"],
+		"active": true,
+		"direct-url": ""
+	},
+	"notes-on-craft": {
+		"name": "Notes on Craft",
+		"caption": "Conversations, exercises, and readings on craft",
+		"desc": "",
+		"links": [
+			[
+				"Visit site",
+				"https://notesoncraft.org/"
+			]
+		],
+		"thumbnail": {
+			"image": "notesoncraft-thumbnail.jpg",
+			"video": "notesoncraft-thumbnail.mp4"
+		},
+		"media": [
+			{
+				"desc": "",
+				"image": "notesoncraft-thumbnail.jpg",
+				"video": "notesoncraft-thumbnail.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "notesoncraft-makers.jpg",
+				"video": "notesoncraft-makers.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "notesoncraft-library.jpg",
+				"video": "notesoncraft-library.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "notesoncraft-index.jpg",
+				"video": "notesoncraft-index.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "notesoncraft-articles.jpg",
+				"video": "notesoncraft-articles.mp4",
+				"embed": ""
+			}
+		],
+		"tags": ["Web"],
+		"active": true,
+		"direct-url": ""
+	},
+	"smile-through-it": {
+		"name": "Smile Through It",
+		"caption": "Triptych of arcade games played by smiling",
+		"desc": "",
+		"links": [
+			[
+				"Visit site",
+				"https://smilethroughit.noreplica.com/"
+			]
+		],
+		"thumbnail": {
+			"image": "smile-through-it-past.jpg",
+			"video": "smile-through-it-past.mp4"
+		},
+		"media": [
+			{
+				"desc": "",
+				"image": "smile-through-it-menu.jpg",
+				"video": "smile-through-it-menu.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "smile-through-it-about.jpg",
+				"video": "smile-through-it-about.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "smile-through-it-transition.jpg",
+				"video": "smile-through-it-transition.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "smile-through-it-past.jpg",
+				"video": "smile-through-it-past.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "smile-through-it-present.jpg",
+				"video": "smile-through-it-present.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "smile-through-it-future.jpg",
+				"video": "smile-through-it-future.mp4",
+				"embed": ""
+			}
+		],
+		"tags": ["Web", "Computational art", "Sound"],
+		"active": true,
+		"direct-url": ""
+	},
+	"notes-from-neither-here-nor-there": {
+		"name": "Notes from Neither Here nor There",
+		"caption": "Poetic microsites exploring space, place, and experience",
+		"desc": "",
+		"links": [
+			[
+				"Visit site",
+				"https://notes.noreplica.com/"
+			]
+		],
+		"thumbnail": {
+			"image": "nfnhnt-thumbnail.jpg",
+			"video": "nfnhnt-thumbnail.mp4"
+		},
+		"media": [
+			{
+				"desc": "",
+				"image": "nfnhnt-thumbnail.jpg",
+				"video": "nfnhnt-thumbnail.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "nfnhnt-intro.jpg",
+				"video": "nfnhnt-intro.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "nfnhnt-toc.jpg",
+				"video": "nfnhnt-toc.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "nfnhnt-trails.jpg",
+				"video": "nfnhnt-trails.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "nfnhnt-sidewalks.jpg",
+				"video": "nfnhnt-sidewalks.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "nfnhnt-johnst.jpg",
+				"video": "nfnhnt-johnst.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "nfnhnt-indiapointpark.jpg",
+				"video": "nfnhnt-indiapointpark.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "nfnhnt-dairyaisle.jpg",
+				"video": "nfnhnt-dairyaisle.mp4",
+				"embed": ""
+			}
+		],
+		"tags": ["Web", "Computational art", "Type", "Sound"],
+		"active": true,
+		"direct-url": ""
+	},
+	"welcome": {
+		"name": "Welcome",
+		"caption": "An introduction to the Internet",
+		"desc": "",
+		"links": [
+			[
+				"Visit site",
+				"https://welcome.noreplica.com/"
+			]
+		],
+		"thumbnail": {
+			"image": "welcome-thumbnail.jpg",
+			"video": "welcome-thumbnail.mp4"
+		},
+		"media": [
+			{
+				"desc": "",
+				"image": "welcome-intro.jpg",
+				"video": "welcome-intro.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "welcome-curtains.jpg",
+				"video": "welcome-curtains.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "welcome-text.jpg",
+				"video": "welcome-text.mp4",
+				"embed": ""
+			}
+		],
+		"tags": ["Web", "Sound"],
+		"active": true,
+		"direct-url": ""
+	},
+	"the-neighborhood-at-central-synagogue": {
+		"name": "The Neighborhood @ Central Synagogue",
+		"caption": "Digital home for an online community",
+		"desc": "<p>The Neighborhood is Central Synagogue’s digital initiative focusing on congregant-centered worship. No Replica created an identity and website using animated hand drawn elements to convey the community’s friendly, neighborhood-ly aura.</p>",
+		"links": [
+			[
+				"Visit site",
+				"https://neighborhood.centralsynagogue.org/"
+			]
+		],
+		"thumbnail": {
+			"image": "cs-neighborhood.jpg",
+			"video": "cs-neighborhood.mp4"
+		},
+		"media": [
+			{
+				"desc": "",
+				"image": "cs-neighborhood.jpg",
+				"video": "cs-neighborhood.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "cs-neighborhood-website.jpg",
+				"video": "cs-neighborhood-website.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "cs-neighborhood-icon.png",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "cs-neighborhood-concepts.png",
+				"video": "",
+				"embed": ""
+			}
+		],
+		"tags": ["Web", "Branding", "Motion"],
+		"active": true,
+		"direct-url": ""
+	},
+	"otf-ttf": {
+		"name": ".otf, .ttf",
+		"caption": "Technical article on the most common font file formats",
+		"desc": "",
+		"links": [
+			[
+				"Visit site",
+				"https://otf-ttf.noreplica.com/"
+			]
+		],
+		"thumbnail": {
+			"image": "otf-ttf-thumbnail.jpg",
+			"video": "otf-ttf-thumbnail.mp4"
+		},
+		"media": [
+			{
+				"desc": "",
+				"image": "otf-ttf-thumbnail.jpg",
+				"video": "otf-ttf-thumbnail.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "otf-ttf-scroll.jpg",
+				"video": "otf-ttf-scroll.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "otf-ttf-annotations.jpg",
+				"video": "otf-ttf-annotations.mp4",
+				"embed": ""
+			}
+		],
+		"tags": ["Web", "Education"],
+		"active": true,
+		"direct-url": ""
 	},
 	"zoooooooom": {
 		"name": "Zoooooooom",
 		"caption": "Time-based game testing your ability to count",
-		"desc": "<p>Case study coming soon!</p>",
+		"desc": "",
 		"links": [
 			[
 				"Visit site",
@@ -765,24 +1695,37 @@
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "zoooooooom-thumbnail.jpg",
+			"video": "zoooooooom-thumbnail.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
+				"image": "zoooooooom-thumbnail.jpg",
+				"video": "zoooooooom-thumbnail.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "zoooooooom-game.jpg",
+				"video": "zoooooooom-game.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "zoooooooom-end.jpg",
 				"video": "",
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Interactive"],
-		"active": true
+		"tags": ["Web", "Computational art"],
+		"active": true,
+		"direct-url": ""
 	},
 	"onomatopoeia": {
 		"name": "Onomatopoeia",
 		"caption": "Sonically-powered dynamic poster generator",
-		"desc": "<p>Case study coming soon!</p>",
+		"desc": "",
 		"links": [
 			[
 				"Visit site",
@@ -790,24 +1733,37 @@
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "onomatopoeia-thumbnail.jpg",
+			"video": "onomatopoeia-thumbnail.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
-				"video": "",
+				"image": "onomatopoeia-process.jpg",
+				"video": "onomatopoeia-process.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "onomatopoeia-controls.jpg",
+				"video": "onomatopoeia-controls.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "onomatopoeia-thumbnail.jpg",
+				"video": "onomatopoeia-thumbnail.mp4",
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Generative", "Interactive", "Motion"],
-		"active": true
+		"tags": ["Web", "Computational art", "Motion"],
+		"active": true,
+		"direct-url": ""
 	},
 	"does-not-exist": {
 		"name": "Does Not Exist",
 		"caption": "Survey of what does and does not exist on the Internet",
-		"desc": "<p>Case study coming soon!</p>",
+		"desc": "",
 		"links": [
 			[
 				"Visit site",
@@ -815,24 +1771,37 @@
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "doesnotexist-thumbnail.jpg",
+			"video": "doesnotexist-thumbnail.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
-				"video": "",
+				"image": "doesnotexist-surnames.jpg",
+				"video": "doesnotexist-surnames.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "doesnotexist-words.jpg",
+				"video": "doesnotexist-words.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "doesnotexist-urls.jpg",
+				"video": "doesnotexist-urls.mp4",
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Interactive", "Data"],
-		"active": true
+		"tags": ["Web", "Computational art", "Data"],
+		"active": true,
+		"direct-url": ""
 	},
 	"mini-mochi": {
 		"name": "Mini Mochi",
 		"caption": "Variable font and type specimen inspired by the squishy shapes of mochi",
-		"desc": "<p>Case study coming soon!</p>",
+		"desc": "",
 		"links": [
 			[
 				"Visit site",
@@ -840,24 +1809,55 @@
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "minimochi-thumbnail.jpg",
+			"video": "minimochi-thumbnail.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
-				"video": "",
+				"image": "minimochi-thumbnail.jpg",
+				"video": "minimochi-thumbnail.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "minimochi-home.jpg",
+				"video": "minimochi-home.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "minimochi-red.jpg",
+				"video": "minimochi-red.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "minimochi-green.jpg",
+				"video": "minimochi-green.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "minimochi-blue.jpg",
+				"video": "minimochi-blue.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "minimochi-purple.jpg",
+				"video": "minimochi-purple.mp4",
 				"embed": ""
 			}
 		],
 		"tags": ["Web", "Type"],
-		"active": true
+		"active": true,
+		"direct-url": ""
 	},
 	"colors-of-extinction": {
 		"name": "Colors of Extinction",
 		"caption": "Archive of color palettes for extinct animals",
-		"desc": "<p>Case study coming soon!</p>",
+		"desc": "",
 		"links": [
 			[
 				"Visit site",
@@ -865,49 +1865,31 @@
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "colorsofextinction-thumbnail.jpg",
+			"video": "colorsofextinction-thumbnail.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
-				"video": "",
+				"image": "colorsofextinction-thumbnail.jpg",
+				"video": "colorsofextinction-thumbnail.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "colorsofextinction-contribute.jpg",
+				"video": "colorsofextinction-contribute.mp4",
 				"embed": ""
 			}
 		],
 		"tags": ["Web", "Data"],
-		"active": true
-	},
-	"ghost": {
-		"name": "Ghost",
-		"caption": "Face-tracking mirror",
-		"desc": "<p>Case study coming soon!</p>",
-		"links": [
-			[
-				"Visit site",
-				"https://ghost.noreplica.com/"
-			]
-		],
-		"thumbnail": {
-			"image": "",
-			"video": ""
-		},
-		"media": [
-			{
-				"desc": "",
-				"image": "",
-				"video": "",
-				"embed": ""
-			}
-		],
-		"tags": ["Web", "Interactive"],
-		"active": true
+		"active": true,
+		"direct-url": ""
 	},
 	"untitled-digital-landscape": {
 		"name": "Untitled (Digital Landscape)",
 		"caption": "Abstract interactive composition made from fragments of satellite images",
-		"desc": "<p>Case study coming soon!</p>",
+		"desc": "",
 		"links": [
 			[
 				"Visit site",
@@ -915,124 +1897,43 @@
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "digitallandscape-thumbnail.jpg",
+			"video": "digitallandscape-thumbnail.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
-				"video": "",
+				"image": "digitallandscape-demo.jpg",
+				"video": "digitallandscape-demo.mp4",
 				"embed": ""
-			}
-		],
-		"tags": ["Web", "Generative", "Interactive"],
-		"active": true
-	},
-	"live-stream": {
-		"name": "Live Stream",
-		"caption": "Stream of streams",
-		"desc": "<p>Case study coming soon!</p>",
-		"links": [
-			[
-				"Visit site",
-				"https://kaasdaheen.com/"
-			]
-		],
-		"thumbnail": {
-			"image": "",
-			"video": ""
-		},
-		"media": [
+			},
 			{
 				"desc": "",
-				"image": "",
-				"video": "",
+				"image": "digitallandscape-trails.jpg",
+				"video": "digitallandscape-trails.mp4",
 				"embed": ""
-			}
-		],
-		"tags": ["Web"],
-		"active": true
-	},
-	"picket-fence": {
-		"name": "Picket Fence",
-		"caption": "Tool for visualizing picket fence optical illusions",
-		"desc": "<p>Case study coming soon!</p>",
-		"links": [
-			[
-				"Visit site",
-				"https://picketfence.noreplica.com/"
-			]
-		],
-		"thumbnail": {
-			"image": "",
-			"video": ""
-		},
-		"media": [
+			},
 			{
 				"desc": "",
-				"image": "",
-				"video": "",
+				"image": "digitallandscape-articles.jpg",
+				"video": "digitallandscape-articles.mp4",
 				"embed": ""
-			}
-		],
-		"tags": ["Web", "Interactive"],
-		"active": true
-	},
-	"nautical-maps": {
-		"name": "Nautical Maps",
-		"caption": "Digital recreation of a folded document",
-		"desc": "<p>Case study coming soon!</p>",
-		"links": [
-			[
-				"Visit site",
-				"https://nauticalmaps.noreplica.com/"
-			]
-		],
-		"thumbnail": {
-			"image": "",
-			"video": ""
-		},
-		"media": [
+			},
 			{
 				"desc": "",
-				"image": "",
-				"video": "",
+				"image": "digitallandscape-thumbnail.jpg",
+				"video": "digitallandscape-thumbnail.mp4",
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Interactive"],
-		"active": true
-	},
-	"classroom": {
-		"name": "Classroom",
-		"caption": "Open-source archive of teaching materials",
-		"desc": "<p>Case study coming soon!</p>",
-		"links": [
-			[
-				"Visit site",
-				"https://classroom.gdwithgd.com/"
-			]
-		],
-		"thumbnail": {
-			"image": "",
-			"video": ""
-		},
-		"media": [
-			{
-				"desc": "",
-				"image": "",
-				"video": "",
-				"embed": ""
-			}
-		],
-		"tags": ["Web", "Education"],
-		"active": true
+		"tags": ["Web", "Computational art"],
+		"active": true,
+		"direct-url": ""
 	},
 	"gd-with-gd": {
 		"name": "GD with GD",
 		"caption": "Teaching platform building fun, free resources for teaching and learning design",
-		"desc": "<p>Case study coming soon!</p>",
+		"desc": "",
 		"links": [
 			[
 				"Visit site",
@@ -1040,24 +1941,43 @@
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "gdwithgd-thumbnail.jpg",
+			"video": "gdwithgd-thumbnail.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
-				"video": "",
+				"image": "gdwithgd-home.jpg",
+				"video": "gdwithgd-home.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "gdwithgd-projects.jpg",
+				"video": "gdwithgd-projects.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "gdwithgd-generator.jpg",
+				"video": "gdwithgd-generator.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "gdwithgd-thumbnail.jpg",
+				"video": "gdwithgd-thumbnail.mp4",
 				"embed": ""
 			}
 		],
-		"tags": ["Branding", "Web", "Generative", "Motion", "Education"],
-		"active": true
+		"tags": ["Web", "Branding", "Computational art", "Motion", "Education"],
+		"active": true,
+		"direct-url": ""
 	},
 	"the-designers-guide-to-web-programming": {
 		"name": "The Designer’s Guide to Web Programming",
 		"caption": "Web development curriculum teaching designers creative ways to use code",
-		"desc": "<p>Case study coming soon!</p>",
+		"desc": "",
 		"links": [
 			[
 				"Visit site",
@@ -1065,24 +1985,25 @@
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "webprogramming-thumbnail.jpg",
+			"video": "webprogramming-thumbnail.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
-				"video": "",
+				"image": "webprogramming-thumbnail.jpg",
+				"video": "webprogramming-thumbnail.mp4",
 				"embed": ""
 			}
 		],
 		"tags": ["Web", "Education"],
-		"active": true
+		"active": true,
+		"direct-url": ""
 	},
 	"baby-steps": {
 		"name": "Baby Steps",
 		"caption": "Guides to get you started coding websites",
-		"desc": "<p>Case study coming soon!</p>",
+		"desc": "",
 		"links": [
 			[
 				"Visit site",
@@ -1090,24 +2011,75 @@
 			]
 		],
 		"thumbnail": {
-			"image": "",
+			"image": "baby-steps-thumbnail.jpg",
+			"video": "baby-steps-thumbnail.mp4"
+		},
+		"media": [
+			{
+				"desc": "",
+				"image": "baby-steps-thumbnail.jpg",
+				"video": "baby-steps-thumbnail.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "baby-steps-1.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "baby-steps-3.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "baby-steps-6.jpg",
+				"video": "",
+				"embed": ""
+			}
+		],
+		"tags": ["Web", "Education"],
+		"active": true,
+		"direct-url": ""
+	},
+	"classroom": {
+		"name": "Classroom",
+		"caption": "Open-source archive of teaching materials",
+		"desc": "",
+		"links": [
+			[
+				"Visit site",
+				"https://classroom.gdwithgd.com/"
+			]
+		],
+		"thumbnail": {
+			"image": "classroom-thumbnail.jpg",
 			"video": ""
 		},
 		"media": [
 			{
 				"desc": "",
 				"image": "",
-				"video": "",
+				"video": "classroom-sites.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "",
+				"video": "classroom-docs.mp4",
 				"embed": ""
 			}
 		],
 		"tags": ["Web", "Education"],
-		"active": true
+		"active": true,
+		"direct-url": ""
 	},
 	"demoland": {
 		"name": "DEMOLAND",
 		"caption": "Interactive coding demos presented entirely within your web browser",
-		"desc": "<p>Case study coming soon!</p>",
+		"desc": "",
 		"links": [
 			[
 				"Visit site",
@@ -1115,24 +2087,31 @@
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "demoland-interface.jpg",
+			"video": "demoland-interface.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
-				"video": "",
+				"image": "demoland-interface.jpg",
+				"video": "demoland-interface.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "demoland-interface.jpg",
+				"video": "demoland-editor.mp4",
 				"embed": ""
 			}
 		],
 		"tags": ["Web", "Education"],
-		"active": true
+		"active": true,
+		"direct-url": ""
 	},
 	"test-project-1": {
 		"name": "test-project-1.html",
 		"caption": "Creative coding projects for any skill level",
-		"desc": "<p>Case study coming soon!</p>",
+		"desc": "",
 		"links": [
 			[
 				"Visit site",
@@ -1140,24 +2119,25 @@
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "test-project-1-thumbnail.jpg",
+			"video": "test-project-1-thumbnail.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
-				"video": "",
+				"image": "test-project-1-thumbnail.jpg",
+				"video": "test-project-1-thumbnail.mp4",
 				"embed": ""
 			}
 		],
 		"tags": ["Web", "Motion", "Education"],
-		"active": true
+		"active": true,
+		"direct-url": ""
 	},
 	"terraspect": {
 		"name": "Terraspect",
 		"caption": "Website and digital white papers for the climate startup",
-		"desc": "<p>Case study coming soon!</p>",
+		"desc": "",
 		"links": [
 			[
 				"Visit site",
@@ -1177,12 +2157,13 @@
 			}
 		],
 		"tags": ["Web"],
-		"active": true
+		"active": false,
+		"direct-url": "https://www.terraspect.earth/"
 	},
 	"barco-loudly": {
 		"name": "Barco Loudly",
 		"caption": "Web-based musical instruments and original songs",
-		"desc": "<p>Case study coming soon!</p>",
+		"desc": "",
 		"links": [
 			[
 				"Visit site",
@@ -1190,49 +2171,155 @@
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "barcoloudly-homepage.jpg",
+			"video": "barcoloudly-homepage.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
-				"video": "",
+				"image": "barcoloudly-homepage.jpg",
+				"video": "barcoloudly-homepage.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "barcoloudly-customtext.jpg",
+				"video": "barcoloudly-customtext.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "barcoloudly-projects.jpg",
+				"video": "barcoloudly-projects.mp4",
 				"embed": ""
 			}
 		],
-		"tags": ["Branding", "Web", "Generative", "Interactive", "Motion", "Sound"],
-		"active": true
+		"tags": ["Web", "Branding", "Computational art", "Motion", "Sound"],
+		"active": true,
+		"direct-url": ""
+	},
+	"bgm": {
+		"name": "BGM",
+		"caption": "Royalty-free background music for creative projects",
+		"desc": "",
+		"links": [
+			[
+				"Visit site",
+				"https://bgm.barcoloudly.com/"
+			]
+		],
+		"thumbnail": {
+			"image": "bgm-thumbnail.jpg",
+			"video": "bgm-thumbnail.mp4"
+		},
+		"media": [
+			{
+				"desc": "",
+				"image": "bgm-thumbnail.jpg",
+				"video": "bgm-thumbnail.mp4",
+				"embed": ""
+			}
+		],
+		"tags": ["Web", "Sound"],
+		"active": true,
+		"direct-url": ""
 	},
 	"galapagos-islands": {
 		"name": "Galápagos Islands",
 		"caption": "Speculative identity and typeface revolving around the shape of a tortoise shell",
-		"desc": "<p>Case study coming soon!</p>",
+		"desc": "",
 		"links": [
 			[
 				"Visit site",
-				"https://gabrieldrozdov.com/work/galapagos-islands/"
+				"https://toomuchtype.com/fonts/work-sans-galapagos/"
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "galapagos-logo.png",
+			"video": "galapagos-logo.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
+				"image": "galapagos-logo.png",
+				"video": "galapagos-logo.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "galapagos-branding.png",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "galapagos-website.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "galapagos-home.jpg",
+				"video": "galapagos-home.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "galapagos-scroll.jpg",
+				"video": "galapagos-scroll.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "galapagos-hover.jpg",
+				"video": "galapagos-hover.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "galapagos-brochure.jpg",
+				"video": "galapagos-brochure.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "galapagos-business-card.gif",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "galapagos-envelope.gif",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "galapagos-letterhead.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "galapagos-van.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "galapagos-newyorker.jpg",
 				"video": "",
 				"embed": ""
 			}
 		],
-		"tags": ["Branding", "Web", "Type"],
-		"active": true
+		"tags": ["Web", "Branding", "Type"],
+		"active": true,
+		"direct-url": ""
 	},
 	"what-is-wikipedia": {
 		"name": "What Is Wikipedia?",
 		"caption": "Wikipedia pages recontextualized as spaces",
-		"desc": "<p>Case study coming soon!</p>",
+		"desc": "",
 		"links": [
 			[
 				"Visit site",
@@ -1240,49 +2327,170 @@
 			]
 		],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "what-is-wikipedia-thumbnail.jpg",
+			"video": "what-is-wikipedia-thumbnail.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
+				"image": "what-is-wikipedia-homepage.jpg",
 				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "what-is-wikipedia-library.jpg",
+				"video": "what-is-wikipedia-library.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "what-is-wikipedia-cafe.jpg",
+				"video": "what-is-wikipedia-cafe.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "what-is-wikipedia-gallery.jpg",
+				"video": "what-is-wikipedia-gallery.mp4",
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Generative", "Interactive", "Motion", "Sound", "Data"],
-		"active": true
+		"tags": ["Web", "Computational art", "Motion", "Sound", "Data"],
+		"active": true,
+		"direct-url": ""
+	},
+	"ghost": {
+		"name": "Ghost",
+		"caption": "Face-tracking mirror",
+		"desc": "",
+		"links": [
+			[
+				"Visit site",
+				"https://ghost.noreplica.com/"
+			]
+		],
+		"thumbnail": {
+			"image": "ghost-thumbnail.jpg",
+			"video": "ghost-thumbnail.mp4"
+		},
+		"media": [
+			{
+				"desc": "",
+				"image": "ghost-thumbnail.jpg",
+				"video": "ghost-thumbnail.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "ghost-blur.jpg",
+				"video": "ghost-blur.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "ghost-toggles.jpg",
+				"video": "ghost-toggles.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "ghost-eyes.jpg",
+				"video": "ghost-eyes.mp4",
+				"embed": ""
+			}
+		],
+		"tags": ["Web", "Computational art"],
+		"active": true,
+		"direct-url": ""
+	},
+	"qr-with-qr": {
+		"name": "QR with QR",
+		"caption": "Patterns composed of functional QR codes",
+		"desc": "",
+		"links": [
+			[
+				"Visit site",
+				"https://qrwithqr.com/"
+			]
+		],
+		"thumbnail": {
+			"image": "qr-with-qr-thumbnail.jpg",
+			"video": "qr-with-qr-thumbnail.mp4"
+		},
+		"media": [
+			{
+				"desc": "",
+				"image": "qr-with-qr-thumbnail.jpg",
+				"video": "qr-with-qr-thumbnail.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "qr-with-qr-menu.jpg",
+				"video": "qr-with-qr-menu.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "qr-with-qr-custom.jpg",
+				"video": "qr-with-qr-custom.mp4",
+				"embed": ""
+			}
+		],
+		"tags": ["Web", "Computational art"],
+		"active": true,
+		"direct-url": ""
 	},
 	"breaking-news-youll-never-hear-about": {
 		"name": "Breaking News (You’ll Never Hear About)",
 		"caption": "AI-generated articles you can’t read",
-		"desc": "<p>Case study coming soon!</p>",
-		"links": [
-			[
-				"Visit site",
-				"https://gabrieldrozdov.com/work/breaking-news/"
-			]
-		],
+		"desc": "",
+		"links": [],
 		"thumbnail": {
-			"image": "",
-			"video": ""
+			"image": "breakingnews-thumbnail.jpg",
+			"video": "breakingnews-thumbnail.mp4"
 		},
 		"media": [
 			{
 				"desc": "",
-				"image": "",
+				"image": "breakingnews-thumbnail.jpg",
+				"video": "breakingnews-thumbnail.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "breakingnews-sample.jpg",
+				"video": "breakingnews-sample.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "breakingnews-intro.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "breakingnews-hover.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "breakingnews-article.jpg",
 				"video": "",
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Generative", "Interactive"],
-		"active": true
+		"tags": ["Web", "Computational art"],
+		"active": true,
+		"direct-url": ""
 	},
 	"gems": {
 		"name": "Gems",
 		"caption": "Graphic forms emerging out of a noisy composition",
-		"desc": "<p>Case study coming soon!</p>",
+		"desc": "",
 		"links": [
 			[
 				"Visit site",
@@ -1290,6 +2498,273 @@
 			]
 		],
 		"thumbnail": {
+			"image": "gems-thumbnail.jpg",
+			"video": "gems-thumbnail.mp4"
+		},
+		"media": [
+			{
+				"desc": "",
+				"image": "gems-thumbnail.jpg",
+				"video": "gems-thumbnail.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "gems-screenshot.jpg",
+				"video": "",
+				"embed": ""
+			}
+		],
+		"tags": ["Web", "Computational art", "Motion"],
+		"active": true,
+		"direct-url": ""
+	},
+	"zag": {
+		"name": "Zag",
+		"caption": "A zag without a zig",
+		"desc": "",
+		"links": [
+			[
+				"Visit site",
+				"https://zag.noreplica.com/"
+			]
+		],
+		"thumbnail": {
+			"image": "zag-thumbnail.jpg",
+			"video": "zag-thumbnail.mp4"
+		},
+		"media": [
+			{
+				"desc": "",
+				"image": "zag-follow.jpg",
+				"video": "zag-follow.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "zag-directions.jpg",
+				"video": "zag-directions.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "zag-return.jpg",
+				"video": "zag-return.mp4",
+				"embed": ""
+			}
+		],
+		"tags": ["Web", "Computational art", "Motion"],
+		"active": true,
+		"direct-url": ""
+	},
+	"madgab4ever": {
+		"name": "madgab4ever",
+		"caption": "A wedding website and a wedding invite",
+		"desc": "",
+		"links": [
+			[
+				"Visit site",
+				"https://madgab4ever.com/"
+			]
+		],
+		"thumbnail": {
+			"image": "madgab4ever-thumbnail.jpg",
+			"video": "madgab4ever-thumbnail.mp4"
+		},
+		"media": [
+			{
+				"desc": "",
+				"image": "madgab4ever-invite.jpg",
+				"video": "madgab4ever-invite.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "madgab4ever-info.jpg",
+				"video": "madgab4ever-info.mp4",
+				"embed": ""
+			}
+		],
+		"tags": ["Web"],
+		"active": true,
+		"direct-url": ""
+	},
+	"tag-team-calligraphers": {
+		"name": "Tag Team Calligraphers",
+		"caption": "Collaborative drawing game played between a human and a robot",
+		"desc": "",
+		"links": [
+			[
+				"Visit site",
+				"https://ttg.noreplica.com/"
+			]
+		],
+		"thumbnail": {
+			"image": "ttg-thumbnail.jpg",
+			"video": "ttg-thumbnail.mp4"
+		},
+		"media": [
+			{
+				"desc": "",
+				"image": "ttg-overview.jpg",
+				"video": "ttg-overview.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "ttg-output1.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "ttg-output2.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "ttg-output3.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "ttg-output4.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "ttg-output5.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "ttg-output6.jpg",
+				"video": "",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "ttg-output7.jpg",
+				"video": "",
+				"embed": ""
+			}
+		],
+		"tags": ["Web", "Computational art", "Motion"],
+		"active": true,
+		"direct-url": ""
+	},
+	"nautical-maps": {
+		"name": "Nautical Maps",
+		"caption": "Digital recreation of a folded document",
+		"desc": "",
+		"links": [
+			[
+				"Visit site",
+				"https://nauticalmaps.noreplica.com/"
+			]
+		],
+		"thumbnail": {
+			"image": "nautical-maps-movement.jpg",
+			"video": "nautical-maps-movement.mp4"
+		},
+		"media": [
+			{
+				"desc": "",
+				"image": "nautical-maps-movement.jpg",
+				"video": "nautical-maps-movement.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "nautical-maps-rotation.jpg",
+				"video": "nautical-maps-rotation.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "nautical-maps-jump.jpg",
+				"video": "nautical-maps-jump.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "nautical-maps-return.jpg",
+				"video": "nautical-maps-return.mp4",
+				"embed": ""
+			}
+		],
+		"tags": ["Web", "Computational art"],
+		"active": true,
+		"direct-url": ""
+	},
+	"picket-fence": {
+		"name": "Picket Fence",
+		"caption": "Tool for visualizing picket fence optical illusions",
+		"desc": "",
+		"links": [
+			[
+				"Visit site",
+				"https://picketfence.noreplica.com/"
+			]
+		],
+		"thumbnail": {
+			"image": "picket-fence-thumbnail.jpg",
+			"video": "picket-fence-thumbnail.mp4"
+		},
+		"media": [
+			{
+				"desc": "",
+				"image": "picket-fence-thumbnail.jpg",
+				"video": "picket-fence-thumbnail.mp4",
+				"embed": ""
+			}
+		],
+		"tags": ["Web", "Computational art"],
+		"active": false,
+		"direct-url": ""
+	},
+	"live-stream": {
+		"name": "Live Stream",
+		"caption": "Stream of streams",
+		"desc": "",
+		"links": [],
+		"thumbnail": {
+			"image": "live-stream-thumbnail.jpg",
+			"video": "live-stream-thumbnail.mp4"
+		},
+		"media": [
+			{
+				"desc": "",
+				"image": "live-stream-thumbnail.jpg",
+				"video": "live-stream-thumbnail.mp4",
+				"embed": ""
+			},
+			{
+				"desc": "",
+				"image": "live-stream-about.jpg",
+				"video": "",
+				"embed": ""
+			}
+		],
+		"tags": ["Web"],
+		"active": true,
+		"direct-url": ""
+	},
+	"aurora": {
+		"name": "Aurora",
+		"caption": "Real-time soundtrack for everyday life",
+		"desc": "",
+		"links": [
+			[
+				"Visit site",
+				"https://aurora.barcoloudly.com/"
+			]
+		],
+		"thumbnail": {
 			"image": "",
 			"video": ""
 		},
@@ -1301,7 +2776,11 @@
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Generative", "Motion"],
-		"active": true
+		"tags": ["Web", "Sound"],
+		"active": false,
+		"direct-url": "https://aurora.barcoloudly.com/"
 	}
 }
+
+
+

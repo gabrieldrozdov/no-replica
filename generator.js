@@ -15,12 +15,70 @@ const meta = `
 	<link rel="icon" type="png" href="/assets/meta/favicon.png"></link>
 `;
 
+// Footer code
+let footerHTML = `
+	<footer class="footer">
+		<div class="footer-clock">
+			<div class="footer-clock-hand hour-hand"></div>
+			<div class="footer-clock-hand min-hand"></div>
+			<div class="footer-clock-hand second-hand"></div>
+		</div>
+		<p class="footer-info">
+			© 2024 No Replica
+			<br>
+			All rights reserved
+			<br><br>
+			Colophon
+			<br>
+			Limkin by <a href="https://toomuchtype.com/" target="_blank">Too Much Type ↗</a>
+			<br><br>
+			Follow us online
+			<br>
+			<a href="https://www.instagram.com/studionoreplica/" target="_blank">Instagram ↗&nbsp;</a> <a href="https://www.threads.net/@studionoreplica" target="_blank">Threads ↗&nbsp;</a> <a href="https://bsky.app/profile/studionoreplica.bsky.social" target="_blank">Bluesky ↗&nbsp;</a>
+			<br>
+			<a href="https://www.are.na/gabriel-drozdov/index" target="_blank">Are.na ↗&nbsp;</a> <a href="https://www.linkedin.com/company/no-replica/" target="_blank">LinkedIn ↗&nbsp;</a>
+			<br>
+			<a href="mailto:gabriel@noreplica.com">Email us ↗&nbsp;</a>
+		</p>
+	</footer>
+`;
+
 function generatePages() {
 	let workItems = '';
 
+	// First, create more projects section at the bottom of project pages
+	let moreProjects = '';
 	for (let key of Object.keys(data)) {
 		let entry = data[key];
 		let folder = "/work/" + key;
+
+		// Skip inactive items
+		if (!entry['active']) {
+			continue
+		}
+
+		// Detect if direct link
+		let itemURL = `href="${folder}"`;
+		if (entry['direct-url'] != "") {
+			itemURL = `href="${entry['direct-url']}" target="_blank"`;
+		}
+
+		moreProjects += `
+			<a ${itemURL} class="project-list-link">
+				<img src="${folder}/${entry['thumbnail']['image']}" alt="${entry['name']}">
+				<p><strong>${entry['name']}</strong> <span>${entry['caption']}</span></p>
+			</a>
+		`
+	}
+
+	// Create project pages and collect info
+	for (let key of Object.keys(data)) {
+		let entry = data[key];
+		let folder = "/work/" + key;
+
+		if (!entry['active']) {
+			continue
+		}
 
 		// ————————————————————————————————————
 		// HOMEPAGE WORK ITEMS
@@ -48,18 +106,30 @@ function generatePages() {
 			metaTags += `${tag},`;
 		}
 
+		// Detect if direct link
+		let workItemURL = `href="/work/${key}/"`;
+		let dataDirect = 0;
+		if (entry['direct-url'] != "") {
+			workItemURL = `href="${entry['direct-url']}" target="_blank" data-direct="true"`;
+			dataDirect = 1;
+		}
+
 		// Add to HTML string
 		workItems += `
-			<a href="/work/${key}/" class="work-item" data-project="${key}" data-tags="${metaTags}">
+			<a class="work-item" data-project="${key}" data-tags="${metaTags}" data-direct="${dataDirect}" ${workItemURL}>
 				<div class="work-item-media">
 					${thumbnail}
 				</div>
 				<div class="work-item-info">
-					<h2>${entry['name']}</h2>
-					<p>${entry['caption']}</p>
-					<ul>
-						${tags}
-					</ul>
+					<div>
+						<h2>${entry['name']}</h2>
+						<ul>
+							${tags}
+						</ul>
+					</div>
+					<div>
+						<p>${entry['caption']}</p>
+					</div>
 				</div>
 			</a>
 		`;
@@ -86,19 +156,32 @@ function generatePages() {
 		let projectMedia = "";
 		let projectMediaNumber = 1;
 		for (let mediaItem of entry['media']) {
+			let projectScrolled = true;
+			if (projectMediaNumber > 1) {
+				projectScrolled = false;
+			}
+
 			if (mediaItem["embed"] != "") {
-				// TODO
+				projectMedia += `
+					<figure class="project-media-item" data-scrolled="${projectScrolled}">
+						<div class="project-media-item-content">
+							${mediaItem["embed"]}
+						</div>
+						<figcaption class="project-media-item-caption">
+							<p>${mediaItem['desc']}</p>
+						</figcaption>
+					</figure>
+				`;
 
 			} else if (mediaItem['video'] != "") {
 				projectMedia += `
-					<figure class="project-media-item">
+					<figure class="project-media-item" data-scrolled="${projectScrolled}">
 						<div class="project-media-item-content">
 							<video autoplay muted loop playsinline disableRemotePlayback poster="${mediaItem['image']}" title="${mediaItem['desc']}">
-								<source data-src="${mediaItem['video']}">
+								<source src="${mediaItem['video']}">
 							</video>
 						</div>
 						<figcaption class="project-media-item-caption">
-							<div class="project-media-item-caption-number">${projectMediaNumber}</div>
 							<p>${mediaItem['desc']}</p>
 						</figcaption>
 					</figure>
@@ -106,12 +189,11 @@ function generatePages() {
 
 			} else {
 				projectMedia += `
-					<figure class="project-media-item">
+					<figure class="project-media-item" data-scrolled="${projectScrolled}">
 						<div class="project-media-item-content">
 							<img alt="${mediaItem['desc']}" src="${mediaItem['image']}">
 						</div>
 						<figcaption class="project-media-item-caption">
-							<div class="project-media-item-caption-number">${projectMediaNumber}</div>
 							<p>${mediaItem['desc']}</p>
 						</figcaption>
 					</figure>
@@ -119,6 +201,15 @@ function generatePages() {
 			}
 
 			projectMediaNumber++;
+		}
+
+		let projectDesc = "";
+		if (entry['desc'] != "") {
+			projectDesc = `
+				<div class="project-desc">
+					${entry['desc']}
+				</div>
+			`;
 		}
 
 		let projectHTML = `
@@ -134,28 +225,37 @@ function generatePages() {
 				<link rel="stylesheet" href="/style.css">
 			</head>
 			<body>
-				<div class="project" data-state="2">
-					<div class="project-info">
-						<div class="project-nav">
+				<div class="project">
+					<header class="project-info">
+						<nav class="project-nav">
 							<a class="project-nav-logo" href="/">No Replica</a>
 							<div class="project-nav-links">
 								<a href="/">Work</a>
 								<a href="/about/">About</a>
 								<a href="mailto:gabriel@noreplica.com">Contact</a>
 							</div>
-						</div>
+						</nav>
 						<h1 class="project-title">${entry['name']}</h1>
 						<p class="project-tagline">${entry['caption']}</p>
-						<div class="project-desc">
-							${entry['desc']}
-						</div>
+						${projectDesc}
 						${projectLinks}
-					</div>
+					</header>
 
-					<div class="project-media">
+					<main class="project-media">
 						${projectMedia}
-					</div>
+					</main>
 				</div>
+
+				<section class="project-list">
+					<div class="project-list-content">
+						${moreProjects}
+					</div>
+				</section>
+
+				${footerHTML}
+
+				<script src="/project.js"></script>
+				<script src="/clock.js"></script>
 			</body>
 			</html>
 		`;
@@ -188,22 +288,20 @@ function generatePages() {
 
 			<link rel="stylesheet" href="/style.css">
 		</head>
-		<body>
+		<body class="home">
 
 			<h1 class="logo">No Replica</h1>
 
 			<header class="home-header">
 				<div class="home-header-intro">
 					<p class="home-header-desc">
-						No Replica is a new design and development studio crafting visual identities, websites, and custom tools. We do that by bridging the gaps between multiple disciplines. We write our own code (and teach it to others).<sup>1</sup> We design our own fonts.<sup>2</sup> We compose our own music.<sup>3</sup> But most of all, we consider every possibility to find the right solution for each project.
+						No Replica is a new studio crafting brand identities and one-of-a-kind digital experiences. We write our own code (and teach it to others).<sup>1</sup> We design our own fonts.<sup>2</sup> We compose our own music.<sup>3</sup> Whatever the project, we find or develop the best tools to create something really special.
 					</p>
 					<div class="home-header-links">
 						<a href="/about/" class="home-header-cta home-header-cta-alt">
-							<div class="home-header-cta-bubble"></div>
 							<span class="home-header-cta-text">About the studio</span>
 						</a>
 						<a href="mailto:gabriel@noreplica.com" class="home-header-cta">
-							<div class="home-header-cta-bubble"></div>
 							<span class="home-header-cta-text">Get in touch</span>
 						</a>
 					</div>
@@ -212,22 +310,19 @@ function generatePages() {
 					<div class="home-header-reference">
 						<div class="home-header-reference-number">1</div>
 						<p class="home-header-reference-text">
-							<strong>GD with GD</strong> is our teaching hub, hosting playful tools and resources for teaching and learning design and code.<br>
-							<a href="https://gdwithgd.com/" target="_blank">Learn how to design!</a>
+							<a href="https://gdwithgd.com/" target="_blank">GD with GD ↗</a> is our teaching hub, hosting playful tools and resources for teaching and learning design and code.
 						</p>
 					</div>
 					<div class="home-header-reference">
 						<div class="home-header-reference-number">2</div>
 						<p class="home-header-reference-text">
-							<strong>Too Much Type</strong> is our experimental open-source type foundry, prototyping new font technologies through digital type specimens.<br>
-							<a href="https://toomuchtype.com/" target="_blank">Test out some fonts!</a>
+							<a href="https://toomuchtype.com/" target="_blank">Too Much Type ↗</a> is our experimental open-source type foundry, prototyping new font technologies through digital type specimens.
 						</p>
 					</div>
 					<div class="home-header-reference">
 						<div class="home-header-reference-number">3</div>
 						<p class="home-header-reference-text">
-							<strong>Barco Loudly</strong> is our musical alias, releasing custom instruments and original songs.<br>
-							<a href="https://barcoloudly.com/" target="_blank">Play some music!</a>
+							<a href="https://barcoloudly.com/" target="_blank">Barco Loudly ↗</a> is our musical alias, releasing custom instruments and original songs.
 						</p>
 					</div>
 				</div>
@@ -240,21 +335,17 @@ function generatePages() {
 							<div class="work-nav-toggle-bubble"></div>
 							<div class="work-nav-toggle-text">All</div>
 						</div>
-						<div class="work-nav-toggle" data-filter="Branding">
-							<div class="work-nav-toggle-bubble"></div>
-							<div class="work-nav-toggle-text">Branding</div>
-						</div>
 						<div class="work-nav-toggle" data-filter="Web">
 							<div class="work-nav-toggle-bubble"></div>
 							<div class="work-nav-toggle-text">Web</div>
 						</div>
-						<div class="work-nav-toggle" data-filter="Generative">
+						<div class="work-nav-toggle" data-filter="Branding">
 							<div class="work-nav-toggle-bubble"></div>
-							<div class="work-nav-toggle-text">Generative</div>
+							<div class="work-nav-toggle-text">Branding</div>
 						</div>
-						<div class="work-nav-toggle" data-filter="Interactive">
+						<div class="work-nav-toggle" data-filter="Computational art">
 							<div class="work-nav-toggle-bubble"></div>
-							<div class="work-nav-toggle-text">Interactive</div>
+							<div class="work-nav-toggle-text">Computational art</div>
 						</div>
 						<div class="work-nav-toggle" data-filter="Motion">
 							<div class="work-nav-toggle-bubble"></div>
@@ -277,11 +368,6 @@ function generatePages() {
 							<div class="work-nav-toggle-text">Education</div>
 						</div>
 					</div>
-		
-					<a href="" class="work-nav-cta">
-						<div class="work-nav-cta-bubble"></div>
-						<span class="work-nav-cta-text">Questions? Reach out!</span>
-					</a>
 				</div>
 		
 				<div class="work-items">
@@ -289,11 +375,10 @@ function generatePages() {
 				</div>
 			</main>
 
-			<div class="project" data-state="0">
-			</div>
+			${footerHTML}
 
 			<script src="/script.js"></script>
-			<script src="/lazy.js"></script>
+			<script src="/clock.js"></script>
 		</body>
 		</html>
 	`;
@@ -304,173 +389,15 @@ function generatePages() {
 			console.error(err);
 		}
 	});
-}
-// generatePages();
-
-function generatePagesAlt() {
-	let workItems = '';
-
-	for (let key of Object.keys(data)) {
-		let entry = data[key];
-		let folder = "/work/" + key;
-
-		// ————————————————————————————————————
-		// HOMEPAGE WORK ITEMS
-		// ————————————————————————————————————
-
-		// Tags
-		let tags = '';
-		let metaTags = '';
-		for (let tag of entry['tags']) {
-			tags += `<li>${tag}</li>`;
-			metaTags += `${tag},`;
+	fs.writeFile(`index.html`, homeContent, err => {
+		if (err) {
+			console.error(err);
 		}
-
-		// Add to HTML string
-		workItems += `
-			<a href="/work/${key}/" class="work-item" data-project="${key}" data-tags="${metaTags}">
-				<div class="work-item-media">
-					${thumbnail}
-				</div>
-				<div class="work-item-info">
-					<h2>${entry['name']}</h2>
-					<p>${entry['caption']}</p>
-					<ul>
-						${tags}
-					</ul>
-				</div>
-			</a>
-		`;
-	}
-
-	// Homepage portfolio grid
-	let homeContent = `
-		<!DOCTYPE html>
-		<html lang="en">
-		<head>
-			<meta charset="UTF-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<title>No Replica</title>
-
-			${meta}
-
-			<link rel="stylesheet" href="/style.css">
-		</head>
-		<body>
-
-			<h1 class="logo">No Replica</h1>
-
-			<header class="home-header">
-				<div class="home-header-intro">
-					<p class="home-header-desc">
-						No Replica is a new design and development studio with a mission to craft really, really special visual identities, websites, and custom tools. We do that by bridging the gaps between multiple disciplines. We write our own code (and teach it to others).<sup>1</sup> We design our own fonts.<sup>2</sup> We compose our own music.<sup>3</sup> But most of all, we love what we do, we have fun doing it, and we try not to take ourselves too seriously.
-					</p>
-					<div class="home-header-links">
-						<a href="/about/" class="home-header-cta home-header-cta-alt">
-							<div class="home-header-cta-bubble"></div>
-							<span class="home-header-cta-text">About the studio</span>
-						</a>
-						<a href="mailto:gabriel@noreplica.com" class="home-header-cta">
-							<div class="home-header-cta-bubble"></div>
-							<span class="home-header-cta-text">Get in touch</span>
-						</a>
-					</div>
-				</div>
-				<div class="home-header-references">
-					<div class="home-header-reference">
-						<div class="home-header-reference-number">1</div>
-						<p class="home-header-reference-text">
-							<strong>GD with GD</strong> is our teaching hub, hosting playful tools and resources for teaching and learning design and code.<br>
-							<a href="https://gdwithgd.com/" target="_blank">Learn how to design!</a>
-						</p>
-					</div>
-					<div class="home-header-reference">
-						<div class="home-header-reference-number">2</div>
-						<p class="home-header-reference-text">
-							<strong>Too Much Type</strong> is our experimental open-source type foundry, prototyping new font technologies through digital type specimens.<br>
-							<a href="https://toomuchtype.com/" target="_blank">Test out some fonts!</a>
-						</p>
-					</div>
-					<div class="home-header-reference">
-						<div class="home-header-reference-number">3</div>
-						<p class="home-header-reference-text">
-							<strong>Barco Loudly</strong> is our musical alias, releasing custom instruments and original songs.<br>
-							<a href="https://barcoloudly.com/" target="_blank">Play some music!</a>
-						</p>
-					</div>
-				</div>
-			</header>
-		
-			<main class="work">
-				<div class="work-nav" data-active="0">
-					<div class="work-nav-filters">
-						<div class="work-nav-toggle" data-active="1" data-filter="All">
-							<div class="work-nav-toggle-bubble"></div>
-							<div class="work-nav-toggle-text">All</div>
-						</div>
-						<div class="work-nav-toggle" data-filter="Branding">
-							<div class="work-nav-toggle-bubble"></div>
-							<div class="work-nav-toggle-text">Branding</div>
-						</div>
-						<div class="work-nav-toggle" data-filter="Web">
-							<div class="work-nav-toggle-bubble"></div>
-							<div class="work-nav-toggle-text">Web</div>
-						</div>
-						<div class="work-nav-toggle" data-filter="Generative">
-							<div class="work-nav-toggle-bubble"></div>
-							<div class="work-nav-toggle-text">Generative</div>
-						</div>
-						<div class="work-nav-toggle" data-filter="Interactive">
-							<div class="work-nav-toggle-bubble"></div>
-							<div class="work-nav-toggle-text">Interactive</div>
-						</div>
-						<div class="work-nav-toggle" data-filter="Motion">
-							<div class="work-nav-toggle-bubble"></div>
-							<div class="work-nav-toggle-text">Motion</div>
-						</div>
-						<div class="work-nav-toggle" data-filter="Type">
-							<div class="work-nav-toggle-bubble"></div>
-							<div class="work-nav-toggle-text">Type</div>
-						</div>
-						<div class="work-nav-toggle" data-filter="Sound">
-							<div class="work-nav-toggle-bubble"></div>
-							<div class="work-nav-toggle-text">Sound</div>
-						</div>
-						<div class="work-nav-toggle" data-filter="Data">
-							<div class="work-nav-toggle-bubble"></div>
-							<div class="work-nav-toggle-text">Data</div>
-						</div>
-						<div class="work-nav-toggle" data-filter="Education">
-							<div class="work-nav-toggle-bubble"></div>
-							<div class="work-nav-toggle-text">Education</div>
-						</div>
-					</div>
-		
-					<a href="mailto:gabriel@noreplica.com" class="work-nav-cta">
-						<div class="work-nav-cta-bubble"></div>
-						<span class="work-nav-cta-text">Questions? Reach out!</span>
-					</a>
-				</div>
-		
-				<div class="work-items">
-					${workItems}
-				</div>
-			</main>
-
-			<div class="project" data-state="0">
-			</div>
-
-			<script src="/script.js"></script>
-			<script src="/lazy.js"></script>
-		</body>
-		</html>
-	`;
-
-	// Create work file
-	fs.writeFile(`work/index.html`, homeContent, err => {
+	});
+	fs.writeFile(`404.html`, homeContent, err => {
 		if (err) {
 			console.error(err);
 		}
 	});
 }
-// generatePagesAlt();
+generatePages();

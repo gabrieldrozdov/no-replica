@@ -1,4 +1,5 @@
 // Logo animation
+const colors = ['pink', 'yellow', 'blue', 'green'];
 function initializeLogo() {
 	const logo = document.querySelector('.logo');
 
@@ -10,12 +11,18 @@ function initializeLogo() {
 			character = "&nbsp;";
 		}
 
+		// Fix kerning
+		let kerning = "";
+		if (character == "R") {
+			kerning = "letter-spacing: -.11em;";
+		}
+
 		// Determine origin and transition speed
 		let origin = [Math.random()*200-100, -100];
 		let trans = Math.random()*.5+.5;
 		
 		temp += `
-			<span class="logo-letter" style="transform: translate(${origin[0]}vw, ${origin[1]}vh); transition: transform ${trans}s cubic-bezier(0.25, 1, 0.5, 1);" data-trans="${trans}">
+			<span class="logo-letter" style="transform: translate(${origin[0]}vw, ${origin[1]}vh) scale(.8); transition: transform ${trans}s cubic-bezier(0.25, 1, 0.5, 1); ${kerning};" data-trans="${trans}" data-color="0">
 				${character}
 				<div class="logo-cursor" style="transition: transform ${trans*2}s cubic-bezier(0.76, 0, 0.24, 1); transform: translate(${Math.random()*50-25}%, ${Math.random()*50-25}%);">
 					<svg viewBox="0 0 100 100">
@@ -33,7 +40,7 @@ function initializeLogo() {
 			continue
 		}
 
-		let trans = parseFloat(span.dataset.trans)*1000; 
+		let newTrans = parseFloat(span.dataset.trans)*1000;
 		setTimeout(() => {
 			span.style.transform = "scale(.8)";
 
@@ -46,11 +53,70 @@ function initializeLogo() {
 				span.style.transform = "";
 				const cursor = span.querySelector('.logo-cursor');
 				cursor.style.transform = `translate(${destination[0]}vw, ${destination[1]}dvh)`;
-			}, trans+Math.random()*200)
-		}, Math.random()*400+250)
+
+				// Start next stage of loop
+				span.addEventListener('mousemove', () => {iterateLogoLetter(span)});
+			}, newTrans+Math.random()*200)
+		}, Math.random()*500+250)
 	}
 }
 initializeLogo();
+
+// Swap out logo letter with new colors
+function iterateLogoLetter(letter) {
+	// Prevent overlapping animations
+	if (letter.dataset.animating == "true") {
+		return
+	} else {
+		letter.dataset.animating = "true";
+	}
+
+	let trans = parseFloat(letter.dataset.trans);
+	const cursor = letter.querySelector('.logo-cursor');
+	cursor.style.transition = `transform .2s`;
+	cursor.style.transform = `translate(${Math.random()*50-25}%, ${Math.random()*50-25}%)`;
+	let newOrigin = [Math.random()*200-100, -100];
+
+	// Bring cursor back in
+	setTimeout(() => {
+		letter.style.transform = `scale(.8)`;
+		letter.dataset.out = 0;
+
+		// Move letter out
+		setTimeout(() => {
+			letter.style.transition = `transform ${trans*2}s cubic-bezier(0.76, 0, 0.24, 1)`;
+			letter.style.transform = `translate(${newOrigin[0]}vw, ${newOrigin[1]}vh)`;
+			cursor.style.transition = `transform .5s cubic-bezier(0.5, 0, 0.75, 0)`;
+
+			// Move letter in
+			setTimeout(() => {
+				// Iterate color
+				let currentColor = parseInt(letter.dataset.color);
+				currentColor++;
+				if (currentColor > colors.length) {
+					currentColor = 0;
+				}
+				letter.dataset.color = currentColor;
+
+				letter.style.transform = `scale(.8)`;
+
+				// Move cursor out
+				setTimeout(() => {
+					let destination = [Math.random()*200-100, -100];
+					letter.dataset.out = 1;
+					letter.style.transition = "transform .2s";
+					letter.style.transform = "";
+					cursor.style.transform = `translate(${destination[0]}vw, ${destination[1]}dvh)`;
+
+					// Enable interaction
+					setTimeout(() => {
+						letter.dataset.animating = "false";
+					}, 500)
+				}, trans*2000)
+			}, Math.random()*200+1000)
+		}, 250)
+	}, 200)
+}
 
 // Bring work nav in/out
 document.addEventListener('scroll', detectNavState);
@@ -111,7 +177,13 @@ function openProject(projectKey) {
 	}
 }
 function generateProjectInfo(projectKey) {
+	// Update URL
+	if (!userTraversal) {
+		window.history.pushState({project: projectKey}, "", `/work/${projectKey}/`);
+	}
+
 	const project = document.querySelector('.project');
+	project.scrollTop = 0;
 	const entry = workData[projectKey];
 
 	// Generate links
@@ -132,19 +204,32 @@ function generateProjectInfo(projectKey) {
 	let projectMedia = "";
 	let projectMediaNumber = 1;
 	for (let mediaItem of entry['media']) {
+		let projectScrolled = true;
+		if (projectMediaNumber > 1) {
+			projectScrolled = false;
+		}
+
 		if (mediaItem["embed"] != "") {
-			// TODO
+			projectMedia += `
+				<figure class="project-media-item" data-scrolled="${projectScrolled}">
+					<div class="project-media-item-content">
+						${mediaItem["embed"]}
+					</div>
+					<figcaption class="project-media-item-caption">
+						<p>${mediaItem['desc']}</p>
+					</figcaption>
+				</figure>
+			`;
 
 		} else if (mediaItem['video'] != "") {
 			projectMedia += `
-				<figure class="project-media-item">
+				<figure class="project-media-item" data-scrolled="${projectScrolled}">
 					<div class="project-media-item-content">
 						<video autoplay muted loop playsinline disableRemotePlayback poster="${mediaItem['image']}" title="${mediaItem['desc']}">
-							<source data-src="${mediaItem['video']}">
+							<source src="${mediaItem['video']}">
 						</video>
 					</div>
 					<figcaption class="project-media-item-caption">
-						<div class="project-media-item-caption-number">${projectMediaNumber}</div>
 						<p>${mediaItem['desc']}</p>
 					</figcaption>
 				</figure>
@@ -152,12 +237,11 @@ function generateProjectInfo(projectKey) {
 
 		} else {
 			projectMedia += `
-				<figure class="project-media-item">
+				<figure class="project-media-item" data-scrolled="${projectScrolled}">
 					<div class="project-media-item-content">
 						<img alt="${mediaItem['desc']}" src="${mediaItem['image']}">
 					</div>
 					<figcaption class="project-media-item-caption">
-						<div class="project-media-item-caption-number">${projectMediaNumber}</div>
 						<p>${mediaItem['desc']}</p>
 					</figcaption>
 				</figure>
@@ -165,6 +249,16 @@ function generateProjectInfo(projectKey) {
 		}
 
 		projectMediaNumber++;
+	}
+
+	// Format desc
+	let projectDesc = "";
+	if (entry['desc'] != "") {
+		projectDesc = `
+			<div class="project-desc">
+				${entry['desc']}
+			</div>
+		`;
 	}
 
 	// Put it all together
@@ -175,9 +269,7 @@ function generateProjectInfo(projectKey) {
 			</div>
 			<h3 class="project-title">${entry['name']}</h3>
 			<p class="project-tagline">${entry['caption']}</p>
-			<div class="project-desc">
-				${entry['desc']}
-			</div>
+			${projectDesc}
 			${projectLinks}
 		</div>
 
@@ -190,35 +282,92 @@ function generateProjectInfo(projectKey) {
 	// Show project
 	setTimeout(() => {
 		project.dataset.state = 1;
+
+		// Fix for showing first caption
+		project.querySelectorAll('figure')[0].dataset.scrolled = true;
 	}, 50)
 
-	// Update URL
-	window.history.pushState({}, "", `/work/${projectKey}/`);
+	// Opacity effects for project pages
+	function scrollProjectMediaItems() {
+		for (let mediaItem of document.querySelectorAll('.project-media-item')) {
+			if (mediaItem.getBoundingClientRect().top > window.innerHeight*.5) {
+				mediaItem.dataset.scrolled = false;
+			} else {
+				mediaItem.dataset.scrolled = true;
+			}
+		}
+	}
+	function initializeProjectScroll() {
+		const project = document.querySelector('.project');
+		project.addEventListener('scroll', scrollProjectMediaItems);
+	}
+	initializeProjectScroll();
 }
 function closeProject() {
 	const project = document.querySelector('.project');
 	project.dataset.state = 0;
 
 	// Update URL
-	window.history.pushState({}, "", `/`);
+	if (!userTraversal) {
+		window.history.pushState({project: ""}, "", `/`);
+	}
 }
 
-// Hijack URL clicks
+// Lazy videos observer
+const lazyObserver = new IntersectionObserver((entries, lazyObserver) => {
+	// Loop the entries
+	entries.forEach(entry => {
+		// Check if the element is intersecting with the viewport
+		if (entry.isIntersecting) {
+			// Lazy loading videos
+			let videoSource = entry.target.querySelector('source');
+			if (videoSource != undefined) {
+				videoSource.src = videoSource.dataset.src;
+				entry.target.querySelector('video').load();
+			}
+
+			// Stop observing element
+			lazyObserver.unobserve(entry.target);
+		} else {
+			// Unused else state
+		}
+	});
+});
+
+// Observe work items
+for (let workItem of document.querySelectorAll('.work-item')) {
+	lazyObserver.observe(workItem);
+}
+
+// Scrolling background image
+const body = document.querySelector('body');
+body.addEventListener('wheel', () => {
+	body.style.backgroundPosition = `0 ${window.scrollY/-20}px`;
+})
+
+// OLD CODE: one-page experience, scrapped due to not adding value
+
+// // Hijack URL clicks
 // for (let workItem of document.querySelectorAll('.work-item')) {
-// 	workItem.addEventListener('click', (e) => {
-// 		e.preventDefault();
-// 		openProject(workItem.dataset.project);
-// 	})
+// 	if (workItem.dataset.direct != "true") {
+// 		workItem.addEventListener('click', (e) => {
+// 			e.preventDefault();
+// 			openProject(workItem.dataset.project);
+// 		})
+// 	}
 // }
 
-// Handle when user navigates back/forward URL change
+// // Handle when user navigates back/forward URL change
+// let userTraversal = false;
 // window.addEventListener("popstate", (event) => {readURL();});
 // function readURL() {
 // 	const url = new URL(window.location.href);
 // 	const project = url.pathname.split('/')[2];
-// 	if (project != undefined) {
+// 	userTraversal = true;
+// 	if (project != undefined && project != "") {
 // 		openProject(project);
 // 	} else {
 // 		closeProject();
 // 	}
+// 	userTraversal = false;
 // }
