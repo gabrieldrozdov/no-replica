@@ -91,32 +91,34 @@ function initializeVideos() {
 }
 initializeVideos();
 
-// OLD CODE: from when project pages were contained in one div
-// // Opacity effects for project pages
-// function scrollProjectMediaItems() {
-// 	for (let mediaItem of document.querySelectorAll('.project-media-item')) {
-// 		if (mediaItem.getBoundingClientRect().top > window.innerHeight*.5) {
-// 			mediaItem.dataset.scrolled = false;
-// 		} else {
-// 			mediaItem.dataset.scrolled = true;
-// 		}
-// 	}
-// }
-// function initializeProjectScroll() {
-// 	const project = document.querySelector('.project');
-// 	project.addEventListener('scroll', scrollProjectMediaItems);
-// }
-// initializeProjectScroll();
+// Lazy videos observer
+const lazyObserver = new IntersectionObserver((entries, lazyObserver) => {
+	// Loop the entries
+	entries.forEach(entry => {
+		// Check if the element is intersecting with the viewport
+		if (entry.isIntersecting) {
+			// Lazy loading videos
+			let videoSource = entry.target.querySelector('source');
+			if (videoSource != undefined) {
+				videoSource.src = videoSource.dataset.src;
+				entry.target.querySelector('video').load();
+			}
 
-// // Fix to make sure work page is loaded properly if navigated to via previous page
-// window.addEventListener("popstate", (event) => {goBackHome();});
-// function goBackHome() {
-// 	location.reload(true);
-// }
+			// Stop observing element
+			lazyObserver.unobserve(entry.target);
+		} else {
+			// Unload video
+			// let videoSource = entry.target.querySelector('source');
+			// if (videoSource != undefined) {
+			// 	videoSource.removeAttribute('src');
+			// 	entry.target.querySelector('video').pause();
+			// 	entry.target.querySelector('video').load();
+			// }
+		}
+	});
+});
 
-// // Scrolling background image
-// const project = document.querySelector('.project');
-// const body = document.querySelector('body');
-// project.addEventListener('wheel', () => {
-// 	body.style.backgroundPosition = `0 ${project.scrollTop/-20}px`;
-// })
+// Observe project list items
+for (let projectListItem of document.querySelectorAll('.project-list-content a')) {
+	lazyObserver.observe(projectListItem);
+}

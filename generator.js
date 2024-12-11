@@ -24,9 +24,9 @@ let footerHTML = `
 			<div class="footer-clock-hand second-hand"></div>
 		</div>
 		<p class="footer-info">
-			© 2024 No Replica
+			© 2024 No Replica. All rights reserved.
 			<br>
-			All rights reserved
+			<a href="/">Projects ↗&nbsp;</a> <a href="/about/">About Us ↗&nbsp;</a>
 			<br><br>
 			Colophon
 			<br>
@@ -63,12 +63,24 @@ function generatePages() {
 			itemURL = `href="${entry['direct-url']}" target="_blank"`;
 		}
 
+		let newLinkContent = "";
+		if (entry['thumbnail']['micro-video'] != "") {
+			newLinkContent = `
+				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/${entry['thumbnail']['micro-image']}" title="${entry['name']}">
+					<source data-src="/assets/micro/${entry['thumbnail']['micro-video']}">
+				</video>
+			`;
+		} else {
+			newLinkContent = `
+				<img src="/assets/micro/${entry['thumbnail']['micro-image']}" alt="${entry['name']}">
+			`;
+		}
+
 		moreProjects += `
 			<a ${itemURL} class="project-list-link">
-				<img src="${folder}/${entry['thumbnail']['image']}" alt="${entry['name']}">
-				<p><strong>${entry['name']}</strong> <span>${entry['caption']}</span></p>
+				${newLinkContent}
 			</a>
-		`
+		`;
 	}
 
 	// Create project pages and collect info
@@ -295,7 +307,7 @@ function generatePages() {
 			<header class="home-header">
 				<div class="home-header-intro">
 					<p class="home-header-desc">
-						No Replica is a new studio crafting brand identities and one-of-a-kind digital experiences. We write our own code (and teach it to others).<sup>1</sup> We design our own fonts.<sup>2</sup> We compose our own music.<sup>3</sup> Whatever the project, we find or develop the best tools to create something really special.
+						No Replica is a new design and development studio working across multiples disciplines to create one-of-a-kind projects. We write our own code (and teach it to others).<sup>1</sup> We design our own typefaces.<sup>2</sup> We compose our own music.<sup>3</sup> Most of all, we are constantly experimenting with our techniques to craft the best work for you.
 					</p>
 					<div class="home-header-links">
 						<a href="/about/" class="home-header-cta home-header-cta-alt">

@@ -1,5 +1,5 @@
 // Logo animation
-const colors = ['pink', 'yellow', 'blue', 'green'];
+const colors = ['pink', 'yellow', 'blue'];
 function initializeLogo() {
 	const logo = document.querySelector('.logo');
 
@@ -327,9 +327,15 @@ const lazyObserver = new IntersectionObserver((entries, lazyObserver) => {
 			}
 
 			// Stop observing element
-			lazyObserver.unobserve(entry.target);
+			// lazyObserver.unobserve(entry.target);
 		} else {
-			// Unused else state
+			// Unload video
+			let videoSource = entry.target.querySelector('source');
+			if (videoSource != undefined) {
+				videoSource.removeAttribute('src');
+				entry.target.querySelector('video').pause();
+				entry.target.querySelector('video').load();
+			}
 		}
 	});
 });
@@ -340,34 +346,7 @@ for (let workItem of document.querySelectorAll('.work-item')) {
 }
 
 // Scrolling background image
-const body = document.querySelector('body');
-body.addEventListener('wheel', () => {
+window.addEventListener('scroll', () => {
+	const body = document.querySelector('body');
 	body.style.backgroundPosition = `0 ${window.scrollY/-20}px`;
 })
-
-// OLD CODE: one-page experience, scrapped due to not adding value
-
-// // Hijack URL clicks
-// for (let workItem of document.querySelectorAll('.work-item')) {
-// 	if (workItem.dataset.direct != "true") {
-// 		workItem.addEventListener('click', (e) => {
-// 			e.preventDefault();
-// 			openProject(workItem.dataset.project);
-// 		})
-// 	}
-// }
-
-// // Handle when user navigates back/forward URL change
-// let userTraversal = false;
-// window.addEventListener("popstate", (event) => {readURL();});
-// function readURL() {
-// 	const url = new URL(window.location.href);
-// 	const project = url.pathname.split('/')[2];
-// 	userTraversal = true;
-// 	if (project != undefined && project != "") {
-// 		openProject(project);
-// 	} else {
-// 		closeProject();
-// 	}
-// 	userTraversal = false;
-// }

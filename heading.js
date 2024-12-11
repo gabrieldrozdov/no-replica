@@ -1,5 +1,5 @@
 function initializeHeader() {
-	const colors = ["pink", "green", "blue", "yellow"];
+	const colors = ["pink", "blue", "yellow"];
 	const colorsCropped = [];
 	for (let i=0; i<3; i++) {
 		colorsCropped.push(colors[Math.floor(Math.random()*colors.length)]);
