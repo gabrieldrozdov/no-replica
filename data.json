@@ -17,25 +17,25 @@
 		},
 		"media": [
 			{
-				"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"desc": "",
 				"image": "sounds-good-thumbnail.jpg",
 				"video": "sounds-good-thumbnail.mp4",
 				"embed": ""
 			},
 			{
-				"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"desc": "",
 				"image": "sounds-good-about.jpg",
 				"video": "",
 				"embed": ""
 			},
 			{
-				"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"desc": "",
 				"image": "sounds-good-menu.jpg",
 				"video": "",
 				"embed": ""
 			},
 			{
-				"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"desc": "",
 				"image": "sounds-good-programming.jpg",
 				"video": "",
 				"embed": ""
@@ -284,7 +284,7 @@
 	"the-24-hour-plays": {
 		"name": "The 24 Hour Plays",
 		"caption": "Loud and bold identity for a loud and bold theater company",
-		"desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+		"desc": "",
 		"links": [],
 		"thumbnail": {
 			"image": "24-hour-plays-logo.jpg",
