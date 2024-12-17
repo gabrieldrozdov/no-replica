@@ -6,7 +6,7 @@
 }
 :root {
 	--black: black;
-	--gray: hsl(0deg, 0%, 80%);
+	--gray: #cccccc;
 	--border: .5px solid var(--gray);
 	--offwhite: #fafafa;
 	--white: white;
