@@ -190,7 +190,7 @@ function generatePages() {
 					<figure class="project-media-item" data-scrolled="${projectScrolled}">
 						<div class="project-media-item-content">
 							<video autoplay muted loop playsinline disableRemotePlayback poster="${mediaItem['image']}" title="${mediaItem['desc']}">
-								<source src="${mediaItem['video']}">
+								<source data-src="${mediaItem['video']}">
 							</video>
 						</div>
 						<figcaption class="project-media-item-caption">
@@ -307,7 +307,7 @@ function generatePages() {
 			<header class="home-header">
 				<div class="home-header-intro">
 					<p class="home-header-desc">
-						No Replica is a new design and development studio working across multiples disciplines to create one-of-a-kind projects. We write our own code (and teach it to others).<sup>1</sup> We design our own typefaces.<sup>2</sup> We compose our own music.<sup>3</sup> Most of all, we are constantly experimenting with our techniques to craft the best work for you.
+						No Replica merges design and development to craft bespoke digital experiences. We take a multi-disciplinary approach to create visual identities, websites, and custom tools. We write our own code (and teach it to others),<sup>1</sup> publish typefaces,<sup>2</sup> and compose music.<sup>3</sup>
 					</p>
 					<div class="home-header-links">
 						<a href="/about/" class="home-header-cta home-header-cta-alt">

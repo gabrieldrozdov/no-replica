@@ -105,18 +105,23 @@ const lazyObserver = new IntersectionObserver((entries, lazyObserver) => {
 			}
 
 			// Stop observing element
-			lazyObserver.unobserve(entry.target);
+			// lazyObserver.unobserve(entry.target);
 		} else {
 			// Unload video
-			// let videoSource = entry.target.querySelector('source');
-			// if (videoSource != undefined) {
-			// 	videoSource.removeAttribute('src');
-			// 	entry.target.querySelector('video').pause();
-			// 	entry.target.querySelector('video').load();
-			// }
+			let videoSource = entry.target.querySelector('source');
+			if (videoSource != undefined) {
+				videoSource.removeAttribute('src');
+				entry.target.querySelector('video').pause();
+				entry.target.querySelector('video').load();
+			}
 		}
 	});
 });
+
+// Observe project media
+for (let projectMediaItem of document.querySelectorAll('.project-media-item-content')) {
+	lazyObserver.observe(projectMediaItem);
+}
 
 // Observe project list items
 for (let projectListItem of document.querySelectorAll('.project-list-content a')) {
