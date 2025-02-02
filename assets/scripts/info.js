@@ -30,6 +30,7 @@ function logoAnimation() {
 		}
 	}
 	logo.innerHTML = temp;
+	logo.style.opacity = 1;
 
 	// Animate in
 	for (let letter of logo.querySelectorAll('.info-intro-logo-letter')) {
@@ -39,12 +40,12 @@ function logoAnimation() {
 			letter.style.transform = 'scale(0.8)';
 
 			setTimeout(() => {
+				letter.dataset.state = 1;
 				letter.style.transition = 'transform .3s';
 				letter.style.transform = 'unset';
 
 				// Animate out
 				setTimeout(() => {
-					letter.dataset.state = 1;
 					const cursor = letter.querySelector('.info-intro-logo-letter-cursor');
 					cursor.style.transform = `translate(${110 + Math.random()*50}vw, ${Math.random()*100-50}vh)`;
 				}, 250 + Math.random()*100)

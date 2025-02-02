@@ -78,4 +78,6 @@ function elasticScroll() {
 	}
 	requestAnimationFrame(elasticScroll)
 }
-elasticScroll()
+if (window.innerWidth >= 600) {
+	elasticScroll();
+}

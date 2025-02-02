@@ -1,5 +1,10 @@
 let transitionActive = false;
 function transitionOutPage(destination) {
+	if (window.innerWidth < 600) {
+		window.location.href = destination;
+		return
+	}
+
 	transitionActive = true;
 	const nav = document.querySelector('.nav');
 	nav.dataset.inactive = 1;

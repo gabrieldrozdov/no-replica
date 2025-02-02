@@ -88,8 +88,8 @@ body {
 	z-index: 9;
 }
 .home-item-cursor svg {
-	width: max(2.5vw, 40px);
-	height: max(2.5vw, 40px);
+	width: max(2.5vw, 24px);
+	height: max(2.5vw, 24px);
 	flex-shrink: 0;
 	fill: var(--black);
 	stroke-width: 5px;
@@ -175,6 +175,11 @@ body {
 	letter-spacing: -0.04em;
 	color: var(--black);
 }
+@media only screen and (max-width: 600px) {
+	.home-items {
+		pointer-events: none;
+	}
+}
 
 /* Nav */
 .nav-padding {
@@ -182,7 +187,7 @@ body {
 }
 .nav {
 	position: relative;
-	z-index: 999;
+	z-index: 999999;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -331,7 +336,7 @@ body {
 		-webkit-backdrop-filter: blur(10px);
 		padding: 20px;
 		display: none;
-		transition: opacity .25s;
+		transition: opacity .25s;;
 	}
 	.nav-links[data-transition="1"] {
 		opacity: 0;
@@ -1103,6 +1108,7 @@ body {
 	display: flex;
 	position: relative;
 	z-index: 1;
+	opacity: 0;
 }
 .info-intro-logo-letter {
 	position: relative;
@@ -1112,13 +1118,12 @@ body {
 .info-intro-logo-letter-text {
 	display: inline-block;
 	font-size: inherit;
-	transition: background .5s, box-shadow .5s, color .5s;
 }
 .info-intro-logo-letter[data-state="0"] {
-	color: transparent;
-	background: var(--background);
+	color: rgba(0,0,0,.1);
+	background: rgba(0,0,0,.1);
 	box-shadow: var(--box-shadow);
-	border-radius: 20px;
+	border-radius: 10px;
 }
 .info-intro-logo-letter-cursor {
 	position: absolute;
@@ -1189,7 +1194,7 @@ body {
 	transform: translateY(-.3em);
 }
 .info-intro-title sup span {
-	padding-top: .2em;
+	padding-top: 2px;
 	font-size: 8px;
 }
 .info-intro-title a {
@@ -1232,7 +1237,7 @@ body {
 	justify-content: center;
 }
 .info-intro-reference-number span {
-	padding-top: .2em;
+	padding-top: 2px;
 	font-size: 8px;
 }
 .info-intro-reference-content {

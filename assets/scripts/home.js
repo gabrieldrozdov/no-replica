@@ -31,7 +31,7 @@ if (window.innerWidth < 600) { // mobile styles
 	totalItems = 15;
 	maxPosX = 100;
 	maxPosY = 50;
-	posYOffset = 3;
+	posYOffset = 6;
 }
 let itemCounter = 0;
 let keyIndex = 0;
@@ -56,7 +56,7 @@ function initializeHomepage() {
 		elmnt.id = i;
 		elmnt.classList.add('home-item');
 		if (window.innerWidth < 600) {
-			const elmntWidth = Math.random()*8+6;
+			const elmntWidth = Math.random()*5+4;
 			elmnt.style.width = `max(${elmntWidth}vw, ${elmntWidth*20}px)`;
 		} else {
 			const elmntWidth = Math.random()*10+5;
