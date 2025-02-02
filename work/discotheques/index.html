@@ -19,588 +19,794 @@
 
 				<link rel="stylesheet" href="/style.css">
 			</head>
-			<body>
-				<div class="project">
-					<header class="project-info">
-						<nav class="project-nav">
-							<a class="project-nav-logo" href="/">No Replica</a>
-							<div class="project-nav-links">
-								<a href="/">Work</a>
-								<a href="/about/">About</a>
-								<a href="mailto:gabriel@noreplica.com">Contact</a>
-							</div>
-						</nav>
-						<h1 class="project-title">Discotheques 1+2</h1>
-						<p class="project-tagline">Pixel-blending collage of color</p>
-						
+			<body class="nav-padding">
+				
+	<nav class="nav">
+		<a class="nav-logo transition-link" href="/">No Replica</a>
+		<button class="nav-menu-open" onclick="openMenu();">Menu</button>
+		<div class="nav-links">
+			<button class="nav-menu-close" onclick="closeMenu();">&times;</button>
+			<a class="nav-link transition-link" href="/work/">Work</a>
+			<a class="nav-link transition-link" href="/info/">Info</a>
+			<a class="nav-link" href="mailto:gabriel@noreplica.com">Contact</a>
+		</div>
+	</nav>
+
+
+				<div class="page-content">
+
+					<div class="project">
+						<header class="project-info elastic" data-elastic-scaler="20" data-elastic-friction="5">
+							<h1 class="project-title">Discotheques 1+2</h1>
+							<p class="project-tagline">Pixel-blending collage of color</p>
+							
 				<div class="project-desc">
 					<p>Discotheques 1+2 are two generative art applications developed in Processing and p5.js. Inspired by pointillism, these projects focus on creating compound colors by juxtaposing thin bands of light. This initiative began with a 2D prototype (Discotheque 1), which was later adapted into a 3D environment (Discotheque 2).</p>
 				</div>
 			
-						
-					</header>
+							
+						</header>
 
-					<main class="project-media">
-						
-					<figure class="project-media-item" data-scrolled="true">
+						<main class="project-media">
+							
+					<figure class="project-media-item" data-scrolled="true" data-active="0">
 						<div class="project-media-item-content">
 							<iframe src='https://player.vimeo.com/video/506619636?title=0&byline=0&portrait=0&color=f61d5d' frameborder='0' allow='fullscreen; picture-in-picture' style='aspect-ratio: 16/9;'></iframe>
 						</div>
-						<figcaption class="project-media-item-caption">
-							<p>An overview of both projects and the design-development process.</p>
-						</figcaption>
+						
+					<figcaption class="project-media-item-caption">
+						<p class="project-media-item-caption-content">An overview of both projects and the design-development process.</p>
+					</figcaption>
+				
 					</figure>
 				
-					<figure class="project-media-item" data-scrolled="false">
+					<figure class="project-media-item" data-scrolled="false" data-active="0">
 						<div class="project-media-item-content">
-							<video autoplay muted loop playsinline disableRemotePlayback poster="discotheques-thumbnail.jpg" title="">
+							<video autoplay muted loop playsinline disableRemotePlayback poster="discotheques-thumbnail.jpg" title="" class="elastic">
 								<source data-src="discotheques-thumbnail.mp4">
 							</video>
 						</div>
-						<figcaption class="project-media-item-caption">
-							<p></p>
-						</figcaption>
+						
 					</figure>
 				
-					<figure class="project-media-item" data-scrolled="false">
+					<figure class="project-media-item" data-scrolled="false" data-active="0">
 						<div class="project-media-item-content">
-							<video autoplay muted loop playsinline disableRemotePlayback poster="discotheques-disco1.jpg" title="">
+							<video autoplay muted loop playsinline disableRemotePlayback poster="discotheques-disco1.jpg" title="" class="elastic">
 								<source data-src="discotheques-disco1.mp4">
 							</video>
 						</div>
-						<figcaption class="project-media-item-caption">
-							<p></p>
-						</figcaption>
+						
 					</figure>
 				
-					<figure class="project-media-item" data-scrolled="false">
+					<figure class="project-media-item" data-scrolled="false" data-active="0">
 						<div class="project-media-item-content">
-							<video autoplay muted loop playsinline disableRemotePlayback poster="discotheques-disco2.jpg" title="">
+							<video autoplay muted loop playsinline disableRemotePlayback poster="discotheques-disco2.jpg" title="" class="elastic">
 								<source data-src="discotheques-disco2.mp4">
 							</video>
 						</div>
-						<figcaption class="project-media-item-caption">
-							<p></p>
-						</figcaption>
-					</figure>
-				
-					<figure class="project-media-item" data-scrolled="false">
-						<div class="project-media-item-content">
-							<img alt="" src="discotheques-disco2-menu.png">
-						</div>
-						<figcaption class="project-media-item-caption">
-							<p></p>
-						</figcaption>
-					</figure>
-				
-					<figure class="project-media-item" data-scrolled="false">
-						<div class="project-media-item-content">
-							<img alt="" src="discotheques-disco2-default.jpg">
-						</div>
-						<figcaption class="project-media-item-caption">
-							<p></p>
-						</figcaption>
-					</figure>
-				
-					<figure class="project-media-item" data-scrolled="false">
-						<div class="project-media-item-content">
-							<img alt="" src="discotheques-disco2-rainbow.jpg">
-						</div>
-						<figcaption class="project-media-item-caption">
-							<p></p>
-						</figcaption>
-					</figure>
-				
-					<figure class="project-media-item" data-scrolled="false">
-						<div class="project-media-item-content">
-							<img alt="" src="discotheques-disco2-lookingin.jpg">
-						</div>
-						<figcaption class="project-media-item-caption">
-							<p></p>
-						</figcaption>
-					</figure>
-				
-					<figure class="project-media-item" data-scrolled="false">
-						<div class="project-media-item-content">
-							<img alt="" src="discotheques-disco2-redblue.jpg">
-						</div>
-						<figcaption class="project-media-item-caption">
-							<p></p>
-						</figcaption>
-					</figure>
-				
-					<figure class="project-media-item" data-scrolled="false">
-						<div class="project-media-item-content">
-							<img alt="" src="discotheques-disco2-bluediamond.jpg">
-						</div>
-						<figcaption class="project-media-item-caption">
-							<p></p>
-						</figcaption>
-					</figure>
-				
-					<figure class="project-media-item" data-scrolled="false">
-						<div class="project-media-item-content">
-							<img alt="" src="discotheques-disco2-pinkdiamond.jpg">
-						</div>
-						<figcaption class="project-media-item-caption">
-							<p></p>
-						</figcaption>
-					</figure>
-				
-					</main>
-				</div>
-
-				<section class="project-list">
-					<div class="project-list-content">
 						
-			<a href="/work/sounds-good" class="project-list-link">
+					</figure>
 				
+					<figure class="project-media-item" data-scrolled="false" data-active="0">
+						<div class="project-media-item-content">
+							<img alt="" src="discotheques-disco2-menu.png" class="elastic">
+						</div>
+						
+					</figure>
+				
+					<figure class="project-media-item" data-scrolled="false" data-active="0">
+						<div class="project-media-item-content">
+							<img alt="" src="discotheques-disco2-default.jpg" class="elastic">
+						</div>
+						
+					</figure>
+				
+					<figure class="project-media-item" data-scrolled="false" data-active="0">
+						<div class="project-media-item-content">
+							<img alt="" src="discotheques-disco2-rainbow.jpg" class="elastic">
+						</div>
+						
+					</figure>
+				
+					<figure class="project-media-item" data-scrolled="false" data-active="0">
+						<div class="project-media-item-content">
+							<img alt="" src="discotheques-disco2-lookingin.jpg" class="elastic">
+						</div>
+						
+					</figure>
+				
+					<figure class="project-media-item" data-scrolled="false" data-active="0">
+						<div class="project-media-item-content">
+							<img alt="" src="discotheques-disco2-redblue.jpg" class="elastic">
+						</div>
+						
+					</figure>
+				
+					<figure class="project-media-item" data-scrolled="false" data-active="0">
+						<div class="project-media-item-content">
+							<img alt="" src="discotheques-disco2-bluediamond.jpg" class="elastic">
+						</div>
+						
+					</figure>
+				
+					<figure class="project-media-item" data-scrolled="false" data-active="0">
+						<div class="project-media-item-content">
+							<img alt="" src="discotheques-disco2-pinkdiamond.jpg" class="elastic">
+						</div>
+						
+					</figure>
+				
+						</main>
+					</div>
+
+					<section class="project-list">
+						<h2 class="project-list-title elastic"><a href="/work/" class="transition-link"><span class="elastic">More Projects</span></a></h2>
+						<div class="project-list-content">
+							
+			<div class="project-list-link-container">
+				<a href="/work/sounds-good" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/sounds-good-thumbnail-micro.jpg" title="Sounds Good">
 					<source data-src="/assets/micro/sounds-good-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/highlights-from-the-impermanent-collection" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/highlights-from-the-impermanent-collection" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/mfabiennial-intro-micro.jpg" title="Highlights from the Impermanent Collection">
 					<source data-src="/assets/micro/mfabiennial-intro-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/common-dimensions" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/common-dimensions" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/common-dimensions-thumbnail-micro.jpg" title="Common Dimensions">
 					<source data-src="/assets/micro/common-dimensions-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/the-talent-house" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/the-talent-house" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/the-talent-house-thumbnail-micro.jpg" title="The Talent House">
 					<source data-src="/assets/micro/the-talent-house-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/risd-grad-show-2024" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/risd-grad-show-2024" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/risd-grad-show-2024-logo-micro.jpg" title="RISD Grad Show 2024">
 					<source data-src="/assets/micro/risd-grad-show-2024-logo-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/the-24-hour-plays" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/the-24-hour-plays" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/24-hour-plays-logo-micro.jpg" title="The 24 Hour Plays">
 					<source data-src="/assets/micro/24-hour-plays-logo-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/earworm" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/earworm" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/earworm-demo2-micro.jpg" title="Earworm">
 					<source data-src="/assets/micro/earworm-demo2-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/pixel-weaver-2" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/pixel-weaver-2" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/pixel-weaver-thumbnail-micro.jpg" title="Pixel Weaver 2.0">
 					<source data-src="/assets/micro/pixel-weaver-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/too-much-type" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/too-much-type" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/too-much-type-thumbnail-micro.jpg" title="Too Much Type">
 					<source data-src="/assets/micro/too-much-type-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/spore-site" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/spore-site" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/spore-site-home-micro.jpg" title="Spore Site">
 					<source data-src="/assets/micro/spore-site-home-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/this-is-for-you" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/this-is-for-you" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/this-is-for-you-intro1-micro.jpg" title="This Is For You">
 					<source data-src="/assets/micro/this-is-for-you-intro1-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/williamstown-theatre-festival-2021-season" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/williamstown-theatre-festival-2021-season" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/wtf2021-keyart-outside-micro.jpg" title="Williamstown Theatre Festival 2021 Season">
 					<source data-src="/assets/micro/wtf2021-keyart-outside-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/cleverlyco" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/cleverlyco" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/cleverly-thumbnail-micro.jpg" title="CleverlyCo.">
 					<source data-src="/assets/micro/cleverly-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/colors-of-extinction" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/colors-of-extinction" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/colorsofextinction-thumbnail-micro.jpg" title="Colors of Extinction">
 					<source data-src="/assets/micro/colorsofextinction-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/the-design-observer-twenty" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/the-design-observer-twenty" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/doxx-thumbnail-micro.jpg" title="The Design Observer Twenty">
 					<source data-src="/assets/micro/doxx-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/geocities-paradise-lost" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/geocities-paradise-lost" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/geocities-gifs-micro.jpg" title="GeoCities: Paradise Lost">
 					<source data-src="/assets/micro/geocities-gifs-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/notes-on-craft" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/notes-on-craft" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/notesoncraft-thumbnail-micro.jpg" title="Notes on Craft">
 					<source data-src="/assets/micro/notesoncraft-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/smile-through-it" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/smile-through-it" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/smile-through-it-past-micro.jpg" title="Smile Through It">
 					<source data-src="/assets/micro/smile-through-it-past-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/fontbox" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/fontbox" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/fontbox-random-micro.jpg" title="Fontbox">
 					<source data-src="/assets/micro/fontbox-random-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/williamstown-theatre-festival-2020-season" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/williamstown-theatre-festival-2020-season" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/wtf2020-thumbnail-micro.jpg" title="Williamstown Theatre Festival 2020 Season">
 					<source data-src="/assets/micro/wtf2020-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/central-synagogue-5781-high-holy-days" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/central-synagogue-5781-high-holy-days" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/cs-hhd-micro.jpg" title="Central Synagogue 5781 High Holy Days">
 					<source data-src="/assets/micro/cs-hhd-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/gd-with-gd" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/gd-with-gd" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/gdwithgd-thumbnail-micro.jpg" title="GD with GD">
 					<source data-src="/assets/micro/gdwithgd-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/notes-from-neither-here-nor-there" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/notes-from-neither-here-nor-there" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/nfnhnt-thumbnail-micro.jpg" title="Notes from Neither Here nor There">
 					<source data-src="/assets/micro/nfnhnt-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/a-thesis-compendium" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/a-thesis-compendium" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/compendium-intro-micro.jpg" title="A Thesis Compendium">
 					<source data-src="/assets/micro/compendium-intro-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/welcome" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/welcome" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/welcome-thumbnail-micro.jpg" title="Welcome">
 					<source data-src="/assets/micro/welcome-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/discotheques" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/discotheques" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/discotheques-thumbnail-micro.jpg" title="Discotheques 1+2">
 					<source data-src="/assets/micro/discotheques-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/qr-with-qr" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/qr-with-qr" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/qr-with-qr-thumbnail-micro.jpg" title="QR with QR">
 					<source data-src="/assets/micro/qr-with-qr-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/does-not-exist" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/does-not-exist" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/doesnotexist-thumbnail-micro.jpg" title="Does Not Exist">
 					<source data-src="/assets/micro/doesnotexist-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/new-york-neo-futurists" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/new-york-neo-futurists" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<img src="/assets/micro/nynf-micro.jpg" alt="New York Neo-Futurists">
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/variable-fonts-workshop" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/variable-fonts-workshop" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/vfw-oscillator-micro.jpg" title="Variable Fonts Workshop">
 					<source data-src="/assets/micro/vfw-oscillator-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/the-neighborhood-at-central-synagogue" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/the-neighborhood-at-central-synagogue" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/cs-neighborhood-micro.jpg" title="The Neighborhood @ Central Synagogue">
 					<source data-src="/assets/micro/cs-neighborhood-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/otf-ttf" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/otf-ttf" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/otf-ttf-thumbnail-micro.jpg" title=".otf, .ttf">
 					<source data-src="/assets/micro/otf-ttf-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/zoooooooom" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/zoooooooom" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/zoooooooom-thumbnail-micro.jpg" title="Zoooooooom">
 					<source data-src="/assets/micro/zoooooooom-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/mini-mochi" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/mini-mochi" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/minimochi-thumbnail-micro.jpg" title="Mini Mochi">
 					<source data-src="/assets/micro/minimochi-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/untitled-digital-landscape" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/untitled-digital-landscape" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/digitallandscape-thumbnail-micro.jpg" title="Untitled (Digital Landscape)">
 					<source data-src="/assets/micro/digitallandscape-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/the-designers-guide-to-web-programming" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/the-designers-guide-to-web-programming" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/webprogramming-thumbnail-micro.jpg" title="The Designer’s Guide to Web Programming">
 					<source data-src="/assets/micro/webprogramming-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/baby-steps" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/baby-steps" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/baby-steps-thumbnail-micro.jpg" title="Baby Steps">
 					<source data-src="/assets/micro/baby-steps-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/classroom" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/classroom" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<img src="/assets/micro/classroom-thumbnail-micro.jpg" alt="Classroom">
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/demoland" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/demoland" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/demoland-interface-micro.jpg" title="DEMOLAND">
 					<source data-src="/assets/micro/demoland-interface-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/test-project-1" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/test-project-1" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/test-project-1-thumbnail-micro.jpg" title="test-project-1.html">
 					<source data-src="/assets/micro/test-project-1-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/small-sites-big-stories" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/small-sites-big-stories" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/smallsites-thumbnail-micro.jpg" title="Small Sites; Big Stories">
 					<source data-src="/assets/micro/smallsites-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/barco-loudly" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/barco-loudly" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/barcoloudly-homepage-micro.jpg" title="Barco Loudly">
 					<source data-src="/assets/micro/barcoloudly-homepage-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/bgm" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/bgm" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/bgm-thumbnail-micro.jpg" title="BGM">
 					<source data-src="/assets/micro/bgm-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/galapagos-islands" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/galapagos-islands" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/galapagos-logo-micro.jpg" title="Galápagos Islands">
 					<source data-src="/assets/micro/galapagos-logo-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/what-is-wikipedia" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/what-is-wikipedia" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/what-is-wikipedia-thumbnail-micro.jpg" title="What Is Wikipedia?">
 					<source data-src="/assets/micro/what-is-wikipedia-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/ghost" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/ghost" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/ghost-thumbnail-micro.jpg" title="Ghost">
 					<source data-src="/assets/micro/ghost-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/onomatopoeia" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/onomatopoeia" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/onomatopoeia-thumbnail-micro.jpg" title="Onomatopoeia">
 					<source data-src="/assets/micro/onomatopoeia-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/breaking-news-youll-never-hear-about" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/breaking-news-youll-never-hear-about" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/breakingnews-thumbnail-micro.jpg" title="Breaking News (You’ll Never Hear About)">
 					<source data-src="/assets/micro/breakingnews-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/gems" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/gems" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/gems-thumbnail-micro.jpg" title="Gems">
 					<source data-src="/assets/micro/gems-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/zag" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/zag" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/zag-thumbnail-micro.jpg" title="Zag">
 					<source data-src="/assets/micro/zag-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/madgab4ever" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/madgab4ever" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/madgab4ever-thumbnail-micro.jpg" title="madgab4ever">
 					<source data-src="/assets/micro/madgab4ever-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/tag-team-calligraphers" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/tag-team-calligraphers" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/ttg-thumbnail-micro.jpg" title="Tag Team Calligraphers">
 					<source data-src="/assets/micro/ttg-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/nautical-maps" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/nautical-maps" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/nautical-maps-movement-micro.jpg" title="Nautical Maps">
 					<source data-src="/assets/micro/nautical-maps-movement-micro.mp4">
 				</video>
 			
-			</a>
+					</div>
+				</a>
+			</div>
 		
-			<a href="/work/live-stream" class="project-list-link">
-				
+			<div class="project-list-link-container">
+				<a href="/work/live-stream" class="project-list-link transition-link">
+					<div class="project-list-link-elastic">
+						
 				<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/live-stream-thumbnail-micro.jpg" title="Live Stream">
 					<source data-src="/assets/micro/live-stream-thumbnail-micro.mp4">
 				</video>
 			
-			</a>
-		
 					</div>
-				</section>
+				</a>
+			</div>
+		
+						</div>
+					</section>
 
-				
-	<footer class="footer">
-		<div class="footer-clock">
+					
+	<footer class="footer elastic">
+		<div class="footer-clock elastic">
 			<div class="footer-clock-hand hour-hand"></div>
 			<div class="footer-clock-hand min-hand"></div>
 			<div class="footer-clock-hand second-hand"></div>
 		</div>
 		<p class="footer-info">
-			© 2024 No Replica. All rights reserved.
+			<strong>© 2025 No Replica. All rights reserved.</strong>
 			<br>
-			<a href="/">Projects ↗&nbsp;</a> <a href="/about/">About Us ↗&nbsp;</a>
+			<a href="/work/" class="transition-link">Projects ↗&nbsp;</a> <a href="/info/" class="transition-link">Info ↗&nbsp;</a>
 			<br><br>
-			Colophon
+			<strong>Colophon</strong>
 			<br>
 			Limkin by <a href="https://toomuchtype.com/" target="_blank">Too Much Type ↗</a>
 			<br><br>
-			Follow us online
+			<strong>Follow us online</strong>
 			<br>
 			<a href="https://www.instagram.com/studionoreplica/" target="_blank">Instagram ↗&nbsp;</a> <a href="https://www.threads.net/@studionoreplica" target="_blank">Threads ↗&nbsp;</a> <a href="https://bsky.app/profile/studionoreplica.bsky.social" target="_blank">Bluesky ↗&nbsp;</a>
 			<br>
@@ -610,9 +816,14 @@
 		</p>
 	</footer>
 
+				</div>
 
-				<script src="/project.js"></script>
-				<script src="/clock.js"></script>
+				<script src="/assets/scripts/transition.js"></script>
+				<script src="/assets/scripts/project.js"></script>
+				<script src="/assets/scripts/background.js"></script>
+				<script src="/assets/scripts/menu.js"></script>
+				<script src="/assets/scripts/elastic.js"></script>
+				<script src="/assets/scripts/clock.js"></script>
 			</body>
 			</html>
 		
