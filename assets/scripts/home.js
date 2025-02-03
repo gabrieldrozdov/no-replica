@@ -173,7 +173,7 @@ function animateHomeItem(elmnt) {
 	const elmntCursor = elmnt.querySelector('.home-item-cursor');
 	setTimeout(() => {
 		elmnt.style.transition = `transform ${transitionLength}s`;
-	}, 100)
+	}, 50)
 	setTimeout(() => {
 		elmnt.style.transform = `translateX(calc(${destination[0]}vw - 50%)) translateY(calc(${destination[1]-posYOffset}vh - 50%)) scale(0.8)`;
 
@@ -192,10 +192,10 @@ function animateHomeItem(elmnt) {
 
 		// Move cursor out
 		setTimeout(() => {
-			elmntMediaContent.style.animation = `fade-in .5s .5s forwards`;
+			elmntMediaContent.style.animation = `fade-in .25s .25s forwards`;
 			elmntCursor.style.transform = `translate(${110 + Math.random()*50}vw, ${Math.random()*100-50}vh)`;
-		}, transitionLength*1000+400)
-	}, Math.random()*250+100)
+		}, transitionLength*1000+100)
+	}, Math.random()*200+100)
 
 	// Transition out (inactive)
 	return
