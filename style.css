@@ -151,7 +151,7 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	padding: 0 20px .25em 20px;
+	padding: 0 20px 14px 20px;
 	font-variation-settings: "wght" 600, "SRFF" 0;
 	font-weight: 600;
 	display: flex;
@@ -457,7 +457,8 @@ body {
 	grid-auto-rows: 1fr;
 	padding: max(5vw, 20px);
 	padding-top: calc(var(--nav-height) + max(5vw, 20px));
-	gap: max(5vw, 20px);
+	padding-bottom: max(5vw, 40px);
+	gap: max(5vw, 40px);
 	overflow: hidden;
 	align-items: start;
 }
@@ -1120,10 +1121,10 @@ body {
 	font-size: inherit;
 }
 .info-intro-logo-letter[data-state="0"] {
-	color: rgba(0,0,0,.1);
-	background: rgba(0,0,0,.1);
-	box-shadow: var(--box-shadow);
-	border-radius: 10px;
+	color: rgba(0,0,0,.05);
+	background: rgba(0,0,0,.05);
+	/* box-shadow: var(--box-shadow); */
+	/* border-radius: 10px; */
 }
 .info-intro-logo-letter-cursor {
 	position: absolute;
@@ -1375,7 +1376,7 @@ body {
 .info-services {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	gap: max(5vw, 20px);
+	gap: max(5vw, 40px);
 }
 .info-service {
 }
@@ -1445,7 +1446,6 @@ body {
 @media only screen and (max-width: 700px) {
 	.info-services {
 		grid-template-columns: 1fr;
-		gap: max(5vw, 20px);
 	}
 }
 
@@ -1509,7 +1509,6 @@ body {
 @media only screen and (max-width: 600px) {
 	.info-bio {
 		grid-template-columns: 1fr;
-		gap: 40px;
 	}
 	.info-bio-title {
 		font-size: 24px;

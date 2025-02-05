@@ -1,6 +1,6 @@
 // Attempted fix for empty page on Safari
-const AudioContext = window.AudioContext || window.webkitAudioContext;
-    this.ambience = new AudioContext();
+// const AudioContext = window.AudioContext || window.webkitAudioContext;
+//     this.ambience = new AudioContext();
 
 // Shuffle array helper function
 function shuffleArray(array) {
