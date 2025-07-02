@@ -52,16 +52,19 @@ function scrollFriction() {
 scrollFriction();
 
 // Initialize elastic scroll elements
-for (let elasticElement of document.querySelectorAll('.elastic')) {
-	elasticElement.dataset.elasticTarget = 0;
-	elasticElement.dataset.elasticPos = 0;
-	if (!elasticElement.hasAttribute('data-elastic-scaler')) {
-		elasticElement.dataset.elasticScaler = 10+Math.random()*5;
-	}
-	if (!elasticElement.hasAttribute('data-elastic-friction')) {
-		elasticElement.dataset.elasticFriction = 10+Math.random()*5;
+function initElastic() {
+	for (let elasticElement of document.querySelectorAll('.elastic')) {
+		elasticElement.dataset.elasticTarget = 0;
+		elasticElement.dataset.elasticPos = 0;
+		if (!elasticElement.hasAttribute('data-elastic-scaler')) {
+			elasticElement.dataset.elasticScaler = 10+Math.random()*5;
+		}
+		if (!elasticElement.hasAttribute('data-elastic-friction')) {
+			elasticElement.dataset.elasticFriction = 10+Math.random()*5;
+		}
 	}
 }
+initElastic();
 
 // Animate elastic scroll elements
 function elasticScroll() {
@@ -74,7 +77,7 @@ function elasticScroll() {
 		if (Math.abs(elasticElement.dataset.elasticPos) < 0.5) {
 			elasticElement.dataset.elasticPos = 0;
 		}
-		elasticElement.style.transform = `translateY(${elasticElement.dataset.elasticPos}px)`;
+		elasticElement.style.transform = `translateY(${elasticElement.dataset.elasticPos}px) translateZ(0)`;
 	}
 	requestAnimationFrame(elasticScroll)
 }

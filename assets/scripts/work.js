@@ -65,8 +65,8 @@ function toggleWorkFilter(filter) {
 
 			// Reposition in preparation for transition in
 			setTimeout(() => {
-				workItemContent.style.transform = `translate(${Math.random() < .5 ? -200 : 200}vw, ${Math.random()*200-100}vh)`;
-				workItemCursor.style.transform = `translate(${Math.random()*50-25}%, ${Math.random()*50-25}%)`;
+				workItemContent.style.transform = `translate(${Math.random() < .5 ? -200 : 200}vw, ${Math.random()*200-100}vh) translateZ(0)`;
+				workItemCursor.style.transform = `translate(${Math.random()*50-25}%, ${Math.random()*50-25}%) translateZ(0)`;
 				workItem.dataset.transition = 0;
 			}, 25)
 		}, 200)
@@ -130,17 +130,12 @@ const callback = new IntersectionObserver((entries, observer) => {
 	});
 }, {
 	root: null, // Use the viewport as the root
-	rootMargin: '200px 0px', // Add offset to the top and bottom
-	threshold: 0, // Trigger when % of the element is visible
 });
 
 // Observe work items
-const colors = ['pink', 'blue', 'yellow', 'green'];
 for (let workItem of document.querySelectorAll('.work-item')) {
 	const workItemContent = workItem.querySelector('.work-item-content');
-	const workItemMedia = workItem.querySelector('.work-item-media');
-	// workItemMedia.style.setProperty('--primary', `var(--${colors[Math.floor(Math.random()*colors.length)]})`);
-	workItemContent.style.transform = `translate(${Math.random() < .5 ? -200 : 200}vw, ${Math.random()*200-100}vh)`;
+	workItemContent.style.transform = `translate(${Math.random() < .5 ? -200 : 200}vw, ${Math.random()*200-100}vh) translateZ(0)`;
 	workItemContent.dataset.transition = 0;
 	callback.observe(workItem);
 }
@@ -158,7 +153,7 @@ function transitionIn(elmnt) {
 		let transitionLength = Math.random()*.5+.5;
 		animationQueue.push(setTimeout(() => {
 			workItemContent.style.transition = `transform ${transitionLength}s`;
-			workItemContent.style.transform = 'scale(0.8)';
+			workItemContent.style.transform = 'scale(0.5)';
 			animationQueue.push(setTimeout(() => {
 				workItemContent.style.transition = `transform .3s`;
 				workItemContent.style.transform = 'scale(1)';
@@ -170,10 +165,10 @@ function transitionIn(elmnt) {
 				}
 			}, transitionLength*1000))
 			animationQueue.push(setTimeout(() => {
-				workItemCursor.style.transform = `translate(${Math.random() < .5 ? -200 : 200}vw, ${Math.random()*200-100}vh)`;
+				workItemCursor.style.transform = `translate(${Math.random() < .5 ? -150 : 150}vw, ${Math.random()*200-100}vh) translateZ(0)`;
 				workItemInfo.dataset.active = 1;
 			}, transitionLength*1000+200))
-		}, Math.random()*100+50))
+		}, Math.random()*200+50))
 	} else {
 		if (videoSource != undefined) {
 			videoSource.src = videoSource.dataset.src;

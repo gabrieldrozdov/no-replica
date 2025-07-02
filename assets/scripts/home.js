@@ -28,8 +28,8 @@ let maxPosX = 80; // range of x coordinates
 let maxPosY = 60; // range of y coordinates
 let posYOffset = 2;
 if (window.innerWidth < 600) { // mobile styles
-	totalItems = 15;
-	maxPosX = 100;
+	totalItems = 20;
+	maxPosX = 90;
 	maxPosY = 50;
 	posYOffset = 6;
 }
@@ -56,10 +56,10 @@ function initializeHomepage() {
 		elmnt.id = i;
 		elmnt.classList.add('home-item');
 		if (window.innerWidth < 600) {
-			const elmntWidth = Math.random()*5+4;
+			const elmntWidth = Math.random()*4+4;
 			elmnt.style.width = `max(${elmntWidth}vw, ${elmntWidth*20}px)`;
 		} else {
-			const elmntWidth = Math.random()*10+5;
+			const elmntWidth = Math.random()*10+7;
 			elmnt.style.width = `max(${elmntWidth}vw, ${elmntWidth*20}px)`;
 		}
 		elmnt.style.setProperty('--color', `var(--${colors[Math.floor(Math.random()*colors.length)]})`);
@@ -74,7 +74,7 @@ function initializeHomepage() {
 			elmnt.innerHTML = `
 				<div class="home-item-media">
 					<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/${currentProject['thumbnail']['micro-image']}" title="${currentProject['name']}" class="home-item-media-content">
-						<source src="/assets/micro/${currentProject['thumbnail']['micro-video']}">
+						<source data-src="/assets/micro/${currentProject['thumbnail']['micro-video']}">
 					</video>
 				</div>
 			`;
@@ -87,19 +87,17 @@ function initializeHomepage() {
 		}
 
 		// Set initial position
-		const initialPos = [-110 - Math.random()*50, Math.random()*100-50];
-		elmnt.style.transform = `translate(calc(${initialPos[0]}vw - 50%), calc(${initialPos[1]}vh - 50%))`;
-
-		// Create overlay
-		// let elmntOverlay = document.createElement('div');
-		// elmntOverlay.classList.add('home-item-overlay');
-		// elmntOverlay.style.backgroundColor = `var(--${colors[Math.floor(Math.random()*colors.length)]})`;
-		// elmnt.appendChild(elmntOverlay);
+		let side = -1;
+		if (Math.random() < .5) {
+			side = 1;
+		}
+		const initialPos = [110*side - Math.random()*50*side, Math.random()*100-50];
+		elmnt.style.transform = `translate(calc(${initialPos[0]}vw - 50%), calc(${initialPos[1]}vh - 50%)) translateZ(0) scale(0.8)`;
 
 		// Create cursor
 		let elmntCursor = document.createElement('div');
 		elmntCursor.classList.add('home-item-cursor');
-		elmntCursor.style.transform = `translate(${Math.random()*50-25}%, ${Math.random()*50-25}%)`;
+		elmntCursor.style.transform = `translate(${Math.random()*50-25}%, ${Math.random()*50-25}%) translateZ(0)`;
 		elmntCursor.innerHTML = `
 			<svg viewBox="0 0 100 100">
 				<polygon points="26.379 10 26.379 90 49.236 63.326 84.316 65.166 26.379 10"/>
@@ -114,7 +112,7 @@ function initializeHomepage() {
 		// Transition in
 		setTimeout(() => {
 			animateHomeItem(elmnt);
-		}, i*Math.random()*10)
+		}, i*Math.random()*20)
 
 		// Iterate key index
 		keyIndex++;
@@ -122,6 +120,24 @@ function initializeHomepage() {
 			keyIndex = 0;
 		}
 	}
+
+	// Load in all videos
+	setTimeout(() => {
+		let videos = document.querySelectorAll('.home-item-media video');
+		let videoIndex = 0;
+		let loadVideos = setInterval(() => {
+			let currentVideo = videos[videoIndex];
+			let source = currentVideo.querySelector('source');
+			source.src = source.dataset.src;
+			setTimeout(() => {
+				currentVideo.load();
+			}, 50)
+			videoIndex++;
+			if (videoIndex >= videos.length) {
+				clearInterval(loadVideos);
+			}
+		}, 100)
+	}, 500)
 }
 
 // Helper function to determine landing positions
@@ -168,102 +184,47 @@ function animateHomeItem(elmnt) {
 	// Move element in
 	const transitionLength = Math.random()*.25+.5;
 	const destination = calculateDestination(elmnt.id);
-	// const elmntOverlay = elmnt.querySelector('.home-item-overlay');
 	const elmntMediaContent = elmnt.querySelector('.home-item-media-content');
 	const elmntCursor = elmnt.querySelector('.home-item-cursor');
+	elmnt.style.pointerEvents = 'none';
 	setTimeout(() => {
 		elmnt.style.transition = `transform ${transitionLength}s`;
 	}, 50)
 	setTimeout(() => {
-		elmnt.style.transform = `translateX(calc(${destination[0]}vw - 50%)) translateY(calc(${destination[1]-posYOffset}vh - 50%)) scale(0.8)`;
-
-		setTimeout(() => {
-			if (elmnt.querySelector('source') != undefined) {
-				elmnt.querySelector('video').play();
-			}
-		}, transitionLength*1000+50)
+		elmnt.style.transform = `translateX(calc(${destination[0]}vw - 50%)) translateY(calc(${destination[1]-posYOffset}vh - 50%)) translateZ(0) scale(0.8)`;
 
 		setTimeout(() => {
 			elmnt.style.transition = `transform .2s`;
-			// elmntOverlay.style.opacity = 0;
-			elmnt.style.transform = `translateX(calc(${destination[0]}vw - 50%)) translateY(calc(${destination[1]-posYOffset}vh - 50%)) scale(1)`;
-			elmntCursor.style.transition = `transform ${transitionLength*.8}s cubic-bezier(0.64, 0, 0.78, 0)`;
-		}, transitionLength*1000+150)
+		}, transitionLength*1000+50)
+
+		setTimeout(() => {
+			elmnt.style.transition = `transform .5s`;
+			elmnt.style.transform = `translateX(calc(${destination[0]}vw - 50%)) translateY(calc(${destination[1]-posYOffset}vh - 50%)) translateZ(0) scale(1)`;
+			elmntCursor.style.transition = `transform ${transitionLength}s cubic-bezier(0.32, 0, 0.67, 0)`;
+		}, transitionLength*1000+100)
+
+		// Animate media content in
+		setTimeout(() => {
+			elmntMediaContent.style.transform = `scale(1)`;
+			elmnt.style.pointerEvents = 'unset';
+		}, transitionLength*1000+400 + Math.random()*250)
 
 		// Move cursor out
 		setTimeout(() => {
-			elmntMediaContent.style.animation = `fade-in .25s .25s forwards`;
-			elmntCursor.style.transform = `translate(${110 + Math.random()*50}vw, ${Math.random()*100-50}vh)`;
-		}, transitionLength*1000+100)
+			let side = -1;
+			if (Math.random() < .5) {
+				side = 1;
+			}
+			elmntCursor.style.transform = `translate(${110*side + Math.random()*50*side}vw, ${Math.random()*200-100}vh) translateZ(0)`;
+		}, transitionLength*1000+300)
 	}, Math.random()*200+100)
-
-	// Transition out (inactive)
-	return
-	setTimeout(() => {
-		// Move cursor in
-		elmntCursor.style.transition = `transform ${transitionLength+.25}s`;
-		elmntCursor.style.transform = `translate(${Math.random()*50-25}%, ${Math.random()*50-25}%)`;
-		elmnt.style.transition = `transform ${transitionLength}s`;
-
-		// Press element effect
-		setTimeout(() => {
-			// elmntOverlay.style.opacity = 1;
-			elmnt.style.transform = `translateX(calc(${destination[0]}vw - 50%)) translateY(calc(${destination[1]-posYOffset}vh - 50%)) scale(0.9)`;
-
-			// Move out
-			setTimeout(() => {
-				elmnt.style.transition = `transform ${transitionLength}s`;
-				const outPos = [-110 - Math.random()*50, Math.random()*100-50];
-				elmnt.style.transform = `translate(calc(${outPos[0]}vw - 50%), calc(${outPos[1]}vh - 50%))`;
-
-				// Iterate content
-				setTimeout(() => {
-					iterateHomeItem(elmnt);
-				}, transitionLength*2000)
-			}, 400)
-		}, (transitionLength+.25)*1000 + 100)
-
-	}, totalItems*1500)
 }
 
-function iterateHomeItem(elmnt) {
-	// Move to top of stack
-	elmnt.style.zIndex = itemCounter;
-	itemCounter++;
-
-	// Grab media item key and project (avoid inactive projects)
-	let currentKey = keys[keyIndex];
-	let currentProject = projects[currentKey];
-	while (currentProject['active'] == false) {
-		keyIndex++;
-		currentKey = keys[keyIndex];
-		currentProject = projects[currentKey];
+document.addEventListener('visibilitychange', () => {
+	if (document.visibilityState === 'visible') {
+		const videos = document.querySelectorAll('video');
+		videos.forEach((video, i) => {
+			setTimeout(() => video.play(), i * 50); // 50ms apart
+		});
 	}
-	const path = `/work/${currentKey}/`;
-	elmnt.href = path;
-
-	// Rebuild media
-	const elmntMedia = elmnt.querySelector('.home-item-media');
-	if (currentProject['thumbnail']['video'] != "") {
-		elmntMedia.innerHTML = `
-			<video autoplay muted loop playsinline disableRemotePlayback poster="/assets/micro/${currentProject['thumbnail']['micro-image']}" title="${currentProject['name']}" class="home-item-media-content">
-				<source src="/assets/micro/${currentProject['thumbnail']['micro-video']}">
-			</video>
-		`;
-	} else {
-		elmntMedia.innerHTML = `<img src="/assets/micro/${currentProject['thumbnail']['micro-image']}" class="home-item-media-content">`;
-	}
-
-	// Get new color for overlay
-	// const elmntOverlay = elmnt.querySelector('.home-item-overlay');
-	// elmntOverlay.style.backgroundColor = `var(--${colors[Math.floor(Math.random()*colors.length)]})`;
-
-	// Transition back in
-	animateHomeItem(elmnt);
-
-	// Iterate key index
-	keyIndex++;
-	if (keyIndex >= keys.length) {
-		keyIndex = 0;
-	}
-}
+});

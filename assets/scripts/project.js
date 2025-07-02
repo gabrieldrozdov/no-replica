@@ -70,6 +70,8 @@ function initializeVideos() {
 			videoControlsProgress.addEventListener('input', () => {
 				mediaVideo.currentTime = videoControlsProgress.value/1000;
 			})
+			videoControlsProgress.addEventListener('mousedown', () => { mediaVideo.pause(); });
+			videoControlsProgress.addEventListener('mouseup', () => { mediaVideo.play(); });
 
 			// Audio controls
 			const videoControlsVolume = mediaItem.querySelector('.video-controls-volume');
@@ -237,12 +239,12 @@ for (let elasticElement of document.querySelectorAll('.project-media-item-captio
 
 // Add elastic to all elements in project list
 for (let projectListLinkContainer of document.querySelectorAll('.project-list-link-container')) {
-	projectListLinkContainer.dataset.elasticScaler = Math.round(Math.random()*10+10);
-	projectListLinkContainer.dataset.elasticFriction = Math.round(Math.random()*5+10);
+	projectListLinkContainer.dataset.elasticScaler = Math.round(Math.random()*3+10);
+	projectListLinkContainer.dataset.elasticFriction = Math.round(Math.random()*3+10);
 	projectListLinkContainer.classList.add('elastic');
 }
-for (let proejctListLinkElastic of document.querySelectorAll('.project-list-link-elastic')) {
-	proejctListLinkElastic.dataset.elasticScaler = Math.round(Math.random()*5+5);
-	proejctListLinkElastic.dataset.elasticFriction = Math.round(Math.random()*5+5);
-	proejctListLinkElastic.classList.add('elastic');
-}
+// for (let proejctListLinkElastic of document.querySelectorAll('.project-list-link-elastic')) {
+// 	proejctListLinkElastic.dataset.elasticScaler = Math.round(Math.random()*5+5);
+// 	proejctListLinkElastic.dataset.elasticFriction = Math.round(Math.random()*5+5);
+// 	proejctListLinkElastic.classList.add('elastic');
+// }

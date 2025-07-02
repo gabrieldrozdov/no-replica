@@ -2,7 +2,7 @@
 	"sounds-good": {
 		"name": "Sounds Good",
 		"caption": "Generative eye candy and website for the new Toronto listening bar",
-		"desc": "<p>Sounds Good is a restaurant and listening bar in Toronto's Little Portugal neighborhood. No Replica collaborated with designer <a href='https://rebeccawilkinson.me/' target='_blank'>Rebecca Wilkinson</a> to create the bar’s website, which features a hypnotic generative animation of shifting geometric shapes.</p>",
+		"desc": "<p>Sounds Good is a new restaurant and listening bar in Toronto’s Little Portugal neighborhood.</p><p>No Replica collaborated with designer <a href='https://rebeccawilkinson.me/' target='_blank'>Rebecca Wilkinson</a> to create the bar’s website, which features a hypnotic generative animation of shifting geometric shapes. The animation never repeats itself and is different every time someone visits the page.</p>",
 		"links": [
 			[
 				"Visit site",
@@ -52,7 +52,7 @@
 	"highlights-from-the-impermanent-collection": {
 		"name": "Highlights from the Impermanent Collection",
 		"caption": "Digital exhibition in the form of a video game",
-		"desc": "<p>The RISD 2023 Graphic Design MFA Biennial, titled Highlights from the Impermanent Collection, featured an identity with the aesthetic of green jello. For the exhibition’s website, No Replica expanded on this identity and created a one-to-one digital recreation of the exhibition’s floor plan. The website places student artworks to match their real-world arrangement, including documentary photography from the live event. Visiting every tile of the digital exhibition reveals a secret prize!</p>",
+		"desc": "<p>The RISD 2023 Graphic Design MFA Biennial, Highlights from the Impermanent Collection, featured an identity with the aesthetic of green jello. For the exhibition’s website, No Replica expanded on this identity and created a one-to-one digital recreation of the exhibition’s floor plan in the style of a video game. The website places student artworks to match their real-world arrangement, including documentary photography from the live event. Visiting every tile of the digital exhibition reveals a secret prize!</p>",
 		"links": [
 			[
 				"Visit site",
@@ -98,7 +98,7 @@
 	"common-dimensions": {
 		"name": "Common Dimensions",
 		"caption": "Research platform collecting, documenting, and discussing chairs",
-		"desc": "<p>Common Dimensions is a research platform and print publication that approaches the subject of the chair by asking deceptively obtuse questions, like “What makes a chair a chair?” No Replica collaborated with founder <a href='https://rebeccawilkinson.me/' target='_blank'>Rebecca Wilkinson</a> to develop the project’s website, which features several unique user experiences.</p>",
+		"desc": "<p>Common Dimensions is a research platform and print publication that approaches the subject of the chair by asking deceptively obtuse questions, like “What makes a chair a chair?” No Replica collaborated with founder <a href='https://rebeccawilkinson.me/' target='_blank'>Rebecca Wilkinson</a> to develop the project’s website, which features several unique user experiences. These include a catalog of chair-related subjects, a series of interviews with furniture designers, and a curated archive of readings.</p>",
 		"links": [
 			[
 				"Visit site",
@@ -146,7 +146,7 @@
 	"the-talent-house": {
 		"name": "The Talent House",
 		"caption": "Hiding a musical instrument in plain sight",
-		"desc": "<p>The Talent House is a music school in Cypress, TX that offers lessons for a wide range of instruments. No Replica collaborated with designer Clinton Van Arnam to create the organization’s identity and website. The site employs a heavy black-and-white aesthetic that is brought to life through a series of animations. In addition to the traditional user experience, which spans several pages including instructor bios and a blog, the site features a playable piano embedded within the sidebar navigation.</p>",
+		"desc": "<p>The Talent House is a music school in Cypress, TX that offers lessons for a wide range of instruments. No Replica collaborated with designer <a href='https://www.clintonvanarnam.net/' target='_blank'>Clinton Van Arnam</a> to create the organization’s identity and website. The site employs a heavy black-and-white aesthetic that is brought to life through a series of animations. In addition to the traditional user experience, which spans several pages including instructor bios and a blog, the site features a playable piano embedded within the sidebar navigation. Visitors can activate the piano by clicking the bottom key, triggering an animation that rotates the navigation and reveals the full keyboard.</p>",
 		"links": [
 			[
 				"Visit site",
@@ -198,7 +198,7 @@
 	"risd-grad-show-2024": {
 		"name": "RISD Grad Show 2024",
 		"caption": "Identity and website highlighting spectrums of color used in student work",
-		"desc": "<p>RISD’s annual Grad Show is the school’s public showcase of graduate work and theses. Each year, two students are selected to create an identity for the event and an archival website featuring everyone’s work. No Replica worked with designer Emily Bluedorn on the 2024 identity, which featured strips of dynamic gradients generated directly from student artworks. We achieved this by zooming in and panning across images to reveal small fragments of color. Then, we assembled these fragments in a composition of vertical slices, combined with an original variable font based on the typeface FT88. No Replica’s work on the project included a poster generator with an interactive interface for saving PDFs at a variety of print sizes.</p>",
+		"desc": "<p>RISD’s annual Grad Show is the school’s public showcase of graduate work and theses. No Replica worked with designer Emily Bluedorn on the 2024 identity, which featured strips of dynamic gradients pulled directly from student artworks. We achieved this by zooming in and panning across images to reveal small fragments of color. Then, we assembled these fragments in compositions of vertical slices, combined with an original variable font based on the open-source typeface FT88. No Replica’s work on the project included a poster generator with an interactive interface for saving PDFs at a variety of print sizes.</p>",
 		"links": [
 			[
 				"Visit site",
@@ -284,7 +284,7 @@
 	"the-24-hour-plays": {
 		"name": "The 24 Hour Plays",
 		"caption": "Loud and bold identity for a loud and bold theater company",
-		"desc": "",
+		"desc": "<p>The 24 Hour Plays brings together creative communities to produce plays and musicals written, rehearsed, and performed all within the span of 24 hours. Past participants in The 24 Hour Plays include TV, film, and theater stars like Jennifer Aniston, Elijah Wood, and Daveed Diggs. No Replica led a refresh of the company’s visual identity and developed a website that brought action-packed production photography to the forefront of the company’s marketing. This process culminated in a sizzle reel showcasing the organization’s new look and feel.</p>",
 		"links": [],
 		"thumbnail": {
 			"image": "24-hour-plays-logo.jpg",
@@ -453,7 +453,7 @@
 	"too-much-type": {
 		"name": "Too Much Type",
 		"caption": "Type foundry pioneering experimental techniques and technologies",
-		"desc": "<p>Too Much Type is No Replica’s in-house type foundry. With Too Much Type, we design and develop open-source experimental typefaces and type specimens that explore new ideas for digital typography.</p>",
+		"desc": "<p>Too Much Type is No Replica’s in-house type foundry. With Too Much Type, we design and develop open-source experimental typefaces and type specimens that explore new ideas for digital typography. These experiments push the limits of variable fonts, exploring fringe use cases on websites that we often end up incorporating into our professional projects.</p><p>One of our typefaces is Limkin, which is a hybrid serif/sans-serif variable font that you can find in-use on this website and across many of our projects!</p>",
 		"links": [
 			[
 				"Visit site",
@@ -535,7 +535,7 @@
 	"spore-site": {
 		"name": "Spore Site",
 		"caption": "Rhizomatic network of responses to a common question",
-		"desc": "",
+		"desc": "<p>Spore Site is a project curating audio recordings and transcripts responding to a common prompt. No Replica collaborated with designer <a href='' target='_blank'>Lydia Chodosh</a> to create the project’s digital component, which features an interactive network diagram that lets visitors listen to each recording and shows connections between people’s responses. Clicking a node in this network brings up more details about that particular response, including a transcript, relevant references, geographic origin, and more.</p>",
 		"links": [
 			[
 				"Visit site",
@@ -581,7 +581,7 @@
 	"this-is-for-you": {
 		"name": "This Is For You",
 		"caption": "A handbook for design students",
-		"desc": "<p>RISD’s Graphic Design MFA program culminates in the creation of a physical book that represents each student’s body of work and creative practice. This Is For You took a slightly different approach. Instead of centering the student creating the book, the thesis centered the book’s likely audience — prospective students looking for more insight into RISD’s program, and into a design career as a whole. To that end, This Is For You is an ongoing digital document chronicling Gabriel Drozdov’s life and career, with the intent of providing useful information to aspiring designers.</p>",
+		"desc": "<p>RISD’s Graphic Design MFA program culminates in the creation of a physical book that represents each student’s body of work and creative practice. This Is For You, which is No Replica founder Gabriel Drozdov’s graduate thesis, took a slightly different approach. Instead of centering the student creating the book, the thesis centered the book’s likely audience — prospective students looking for more insight into RISD’s program, and into a design career as a whole. To that end, This Is For You is an ongoing digital document chronicling Gabriel Drozdov’s life and career, with the intent of providing useful information to aspiring designers.</p>",
 		"links": [
 			[
 				"Visit site",
@@ -643,7 +643,7 @@
 	"williamstown-theatre-festival-2021-season": {
 		"name": "Williamstown Theatre Festival 2021 Season",
 		"caption": "Identity for the Festival’s first season back onstage",
-		"desc": "",
+		"desc": "<p><a href='https://www.wtfestival.org/' target='_blank'>Williamstown Theatre Festival’s</a> 2021 summer season was the company’s first return to in-person theater since COVID started. No Replica was entering our third year of collaboration with the organization, and we were looking for ways to adapt the classic show-centric key art into something more flexible. We didn’t know what the summer was going to consist of, but we knew it was going to be unlike past seasons and take place completely outdoors.</p><p>Our identity for the season embraced this uncertainty. Since the shows were still in development, we placed an emphasis on the locations they would use as their makeshift stages, united with a cohesive typographic language and vibrant color palette. Lastly, we developed a one-of-a-kind digital program that featured each show’s credits as well as incorporated advertising from local businesses.</p>",
 		"links": [],
 		"thumbnail": {
 			"image": "wtf2021-keyart-outside.jpg",
@@ -732,7 +732,7 @@
 	"cleverlyco": {
 		"name": "CleverlyCo.",
 		"caption": "Stop motion visual identity for the playful polymer clay jewelry brand",
-		"desc": "",
+		"desc": "<p><a href='https://www.instagram.com/shopcleverlyco/' target='_blank'>CleverlyCo.</a> is an independent jeweler making handmade earrings and necklaces. The company’s offerings are made of lightweight polymer clay and feature a retro-inspired style.</p><p>No Replica collaborated with Cleverly from the brand's inception to help shape its voice, visual identity, and overall aesthetic. We settled on an aesthetic inspired by geometric-centric art movements (like De Stijl and Art Deco), and a stop motion animation style inspired by claymation and the jewelry’s clay materiality.</p><p>No Replica also helped Cleverly extend their offerings beyond jewelry. We developed a parametric 3D modeling script using Rhino/Grasshopper for fabricating clay cutters that other polymer clay artists could purchase.</p>",
 		"links": [],
 		"thumbnail": {
 			"image": "cleverly-thumbnail.jpg",
@@ -2247,7 +2247,7 @@
 	"barco-loudly": {
 		"name": "Barco Loudly",
 		"caption": "Web-based musical instruments and original songs",
-		"desc": "",
+		"desc": "<p>Barco Loudly is No Replica’s musical alter ego, creating original music and digital musical instruments. The offshoot’s homepage features an audiovisual generative art tool that explodes a user-inputted word and bounces the letters around the screen. Each time a letter hits the edge of the screen, it switches direction and produces a sound.</p>",
 		"links": [
 			[
 				"Visit site",
@@ -2287,7 +2287,7 @@
 	"bgm": {
 		"name": "BGM",
 		"caption": "Royalty-free background music for creative projects",
-		"desc": "",
+		"desc": "<p>No Replica releases music and digital musical instruments under the name <a href='https://barcoloudly.com/' target='_blank'>Barco Loudly</a>. BGM (short for “background music”) is our offering of royalty-free music for creators to use in their projects. The site features a wide catalog of tracks with functionality for listening, searching, and filtering songs.</p>",
 		"links": [
 			[
 				"Visit site",
@@ -2315,7 +2315,7 @@
 	"galapagos-islands": {
 		"name": "Galápagos Islands",
 		"caption": "Speculative identity and typeface revolving around the shape of a tortoise shell",
-		"desc": "",
+		"desc": "<p>As a study in type design, No Replica created a speculative identity for the Galápagos Islands that features a reworked version of the open-source typeface Work Sans. Our identity modifies the counterforms within certain letters, like the lowercase “a” glyphs, to evoke the shape of the Galápagos tortoise shell. This visual motif is carried across all designs, culminating in a website that features an animated and interactive version of the typeface.</p>",
 		"links": [
 			[
 				"Visit site",
@@ -2409,7 +2409,7 @@
 	"what-is-wikipedia": {
 		"name": "What Is Wikipedia?",
 		"caption": "Wikipedia pages recontextualized as spaces",
-		"desc": "",
+		"desc": "<p>What Is Wikipedia? fetches random pages from Wikipedia based on specific criteria (i.e. articles, users, media) and presents these links as visual metaphors appropriating Wikipedia’s brand aesthetic. In the “Library,” articles are depicted as books. In the “Café,” users are depicted as people congregating in a common space. And, in the “Gallery,” media files are depicted as artworks on a wall. With this project, No Replica aimed to grant deeper meaning to Wikipedia’s vast archives and give visitors more entryways into the site’s offerings.</p>",
 		"links": [
 			[
 				"Visit site",
@@ -2455,7 +2455,7 @@
 	"ghost": {
 		"name": "Ghost",
 		"caption": "Face-tracking mirror",
-		"desc": "",
+		"desc": "<p>While testing face-tracking technology, No Replica discovered a tool with the ability to track and visualize a person’s facial features independently of each other. We used this tool to create a haunting mirror that begins by only tracking the visitor’s eyes with an almost indiscernable visual representation. Visitors can then adjust the tool’s settings to reveal other parts of their face or adjust the legibility of the visualization.</p>",
 		"links": [
 			[
 				"Visit site",
@@ -2501,7 +2501,7 @@
 	"onomatopoeia": {
 		"name": "Onomatopoeia",
 		"caption": "Sonically-powered dynamic poster generator",
-		"desc": "",
+		"desc": "<p>Audio is commonly visualized as waveforms with varying heights, representing changes in amplitude. No Replica created a poster generator that lets visitors record audio and turn their recording into a motion poster, with the audio’s waveforms scrolling past the screen. Visitors can then adjust the specific settings of their poster, or generate a print file of the resulting graphic.</p>",
 		"links": [
 			[
 				"Visit site",
@@ -2541,7 +2541,7 @@
 	"breaking-news-youll-never-hear-about": {
 		"name": "Breaking News (You’ll Never Hear About)",
 		"caption": "AI-generated articles you can’t read",
-		"desc": "",
+		"desc": "<p>No Replica was curious about two subjects: 1) AI-generated media slop; and, 2) news paywalls. To explore these topics, we created a site that lets visitors generate content using an AI algorithm. The catch is that visitors can only read a short portion of these articles before they hit a paywall preventing them from proceeding.</p>",
 		"links": [],
 		"thumbnail": {
 			"image": "breakingnews-thumbnail.jpg",
@@ -2588,7 +2588,7 @@
 	"gems": {
 		"name": "Gems",
 		"caption": "Graphic forms emerging out of a noisy composition",
-		"desc": "",
+		"desc": "<p>Gems is a hypnotic work of generative art composed of numerous intersecting shapes. When two shapes overlap, their colors are inverted, created geometric bisections. As a still image, each of the original shapes are indiscernable, but when in motion the user can tell the larger forms apart.</p>",
 		"links": [
 			[
 				"Visit site",
@@ -2622,7 +2622,7 @@
 	"zag": {
 		"name": "Zag",
 		"caption": "A zag without a zig",
-		"desc": "",
+		"desc": "<p>Zag is an exploration of the phrase “zag, not zig.” The site features a series of missing image files scattered across the page. Once the user interacts with the page, the errors emerge as animated figures following either the mouse or the direction of the arrow keys. After the user stops interacting with the page, the figures return to their unloaded state.</p>",
 		"links": [
 			[
 				"Visit site",
@@ -2662,7 +2662,7 @@
 	"madgab4ever": {
 		"name": "madgab4ever",
 		"caption": "A wedding website and a wedding invite",
-		"desc": "",
+		"desc": "<p>No Replica created the digital invitation for founder Gabriel Drozdov’s wedding with Maddie Ulevich. The site features embarassing selfies, a resident cat, and lots of confetti.</p>",
 		"links": [
 			[
 				"Visit site",
@@ -2696,7 +2696,7 @@
 	"tag-team-calligraphers": {
 		"name": "Tag Team Calligraphers",
 		"caption": "Collaborative drawing game played between a human and a robot",
-		"desc": "",
+		"desc": "<p>Tag Team Calligraphers is a game that results in a piece of conditional art. Players have a time limit to create a drawing, which the site then sloppily traces over. The two then take turns with decreasing time limits until the original artwork is no longer recognizeable. After five rounds, the game outputs the drawings as a single image.</p>",
 		"links": [
 			[
 				"Visit site",
@@ -2766,7 +2766,7 @@
 	"nautical-maps": {
 		"name": "Nautical Maps",
 		"caption": "Digital recreation of a folded document",
-		"desc": "",
+		"desc": "<p>No Replica collaborated with designer <a href='https://kaelamkennedy.com/' target='_blank'>Kaela Kennedy</a> to adapt one of Kaela’s physical mapping projects into a digital interface. The resulting website explored the question, “How can a website fold like a map?”</p>",
 		"links": [
 			[
 				"Visit site",
@@ -2812,7 +2812,7 @@
 	"live-stream": {
 		"name": "Live Stream",
 		"caption": "Stream of streams",
-		"desc": "",
+		"desc": "<p>No Replica collaborated with designer <a href='https://www.berettwilber.com/' target='_blank'>Berett Wilber</a> to develop a site that captures videos of streams in Sitka, Alaska. The site features an infinite scroll of looping videos, exploring our perceptions of inifinite vs. finite resources.</p>",
 		"links": [],
 		"thumbnail": {
 			"image": "live-stream-thumbnail.jpg",
@@ -2841,7 +2841,7 @@
 	"aurora": {
 		"name": "Aurora",
 		"caption": "Real-time soundtrack for everyday life",
-		"desc": "",
+		"desc": "<p>At No Replica, we’re enormous fans of Nintendo’s video game series Animal Crossing. Each game is played in real-time and features a unique soundtrack for every hour of the day.</p><p>We created a website that lets users live out this experience outside of the game. Aurora, named after one of the “villagers” in Animal Crossing, plays the game’s soundtrack for the current hour. Users can manually set the current hour, or let the soundtrack transition by itself as the day progresses.</p>",
 		"links": [
 			[
 				"Visit site",
@@ -2869,7 +2869,7 @@
 	"picket-fence": {
 		"name": "Picket Fence",
 		"caption": "Tool for visualizing picket fence optical illusions",
-		"desc": "",
+		"desc": "<p><a href='https://en.wikipedia.org/wiki/Barrier-grid_animation_and_stereography' blank='_blank'>Picket-fence (a.k.a. barrier-grid) animations</a> are optical illusions that give the appearance of motion. They work by sliding an translucent series of stripes on top of another image, selectively blocking out parts of the underlying image and giving the impression that the image is changing.</p><p>While experimenting with picket-fence animations, we had difficulty finding digital tools to help us visualize our designs. No Replica developed a website to fill this gap, which lets visitors use their device’s camera to digitally test if a picket-fence animation works or not.</p>",
 		"links": [
 			[
 				"Visit site",
