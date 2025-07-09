@@ -1,17 +1,17 @@
+// Queue to stop in-progress animations when toggling a filter
+let animationQueue = [];
+
 // Work nav filters
 let filterTransition = false;
 function toggleWorkFilter(filter) {
+
+	// Don’t animate over another filter being activated
 	if (filterTransition == true) {
 		return
 	}
 	filterTransition = true;
-	
 	const workFilters = document.querySelector('.work-filters');
 	workFilters.dataset.transition = 1;
-
-	// Scroll to top
-	const work = document.querySelector('.work');
-	work.scrollIntoView();
 
 	// Deselect all filters visually
 	for (let navFilter of document.querySelectorAll('.work-filters-toggle')) {
@@ -45,74 +45,62 @@ function toggleWorkFilter(filter) {
 	}
 	animationQueue = [];
 
+	// Bring in transition screen
+	body.dataset.transition = 2;
+
+	// Scroll to top
+	setTimeout(() => {
+		window.scrollTo({ top: 0, behavior: 'instant' });
+	}, 500)
+
 	for (let workItem of document.querySelectorAll('.work-item')) {
 
-		// Transition out
-		workItem.dataset.transition = 1;
+		// Unload all videos
+		const videoSource = workItem.querySelector('source');
+		if (videoSource != undefined) {
+			videoSource.src = "";
+		}
 
+		// Filter out elements
 		setTimeout(() => {
-			const workItemContent = workItem.querySelector('.work-item-content');
-			const workItemMedia = workItem.querySelector('.work-item-media');
-			const workItemInfo = workItem.querySelector('.work-item-info');
-			const workItemCursor = workItem.querySelector('.work-item-cursor');
-
-			// Reset all states
-			workItemContent.dataset.transition = 0;
-			workItemMedia.dataset.active = 0;
-			workItemInfo.dataset.active = 0;
-			workItemContent.style.transition = 'unset';
-			workItemCursor.style.transition = 'unset';
-
-			// Reposition in preparation for transition in
-			setTimeout(() => {
-				workItemContent.style.transform = `translate(${Math.random() < .5 ? -200 : 200}vw, ${Math.random()*200-100}vh) translateZ(0)`;
-				workItemCursor.style.transform = `translate(${Math.random()*50-25}%, ${Math.random()*50-25}%) translateZ(0)`;
-				workItem.dataset.transition = 0;
-			}, 25)
-		}, 200)
+			if (parseInt(workItem.dataset.filtered) == 1) {
+				workItem.dataset.hidden = 0;
+			} else {
+				workItem.dataset.hidden = 1;
+			}
+		}, 550)
 
 		// Transition in visible elements
 		setTimeout(() => {
+			workItem.dataset.transition = 0
 			if (workItem.getBoundingClientRect().top < window.innerHeight) {
 				transitionIn(workItem);
 			}
-
-			// Filter out elements
-			if (parseInt(workItem.dataset.filtered) == 1) {
-				workItem.dataset.active = 1;
-			} else {
-				workItem.dataset.active = 0;
-			}
-		}, 300)
+		}, 600)
 	}
 	
 	setTimeout(() => {
 		workFilters.dataset.transition = 0;
+		body.dataset.transition = 0;
 		filterTransition = false;
-	}, 500)
+	}, 575)
 }
 for (let navFilter of document.querySelectorAll('.work-filters-toggle')) {
 	navFilter.addEventListener('click', () => {toggleWorkFilter(navFilter.dataset.filter)});
 }
 
-let animationQueue = [];
-
 // Lazy videos observer
 const callback = new IntersectionObserver((entries, observer) => {
-
-	// Deactivate lazy loading during transitions (from transition.js)
-	if (transitionActive) {
-		return
-	}
 	
 	// Loop the entries
+	let delay = 0;
 	entries.forEach(entry => {
 
 		// Check if the element is intersecting with the viewport
 		if (entry.isIntersecting) {
 
 			if (!filterTransition) {
-				transitionIn(entry.target);
+				transitionIn(entry.target, delay);
 			}
 
 			// Stop observing element (unused)
@@ -127,64 +115,41 @@ const callback = new IntersectionObserver((entries, observer) => {
 				entry.target.querySelector('video').load();
 			}
 		}
+
+		delay++;
 	});
 }, {
 	root: null, // Use the viewport as the root
 });
 
-// Observe work items
-for (let workItem of document.querySelectorAll('.work-item')) {
-	const workItemContent = workItem.querySelector('.work-item-content');
-	workItemContent.style.transform = `translate(${Math.random() < .5 ? -200 : 200}vw, ${Math.random()*200-100}vh) translateZ(0)`;
-	workItemContent.dataset.transition = 0;
-	callback.observe(workItem);
-}
-
 // Transition and lazy load videos
-function transitionIn(elmnt) {
-	elmnt.dataset.initialized = 1; // prevents cursor flash
-	const workItemContent = elmnt.querySelector('.work-item-content');
-	const workItemMedia = elmnt.querySelector('.work-item-media');
-	const workItemInfo = elmnt.querySelector('.work-item-info');
-	const workItemCursor = elmnt.querySelector('.work-item-cursor');
-	const videoSource = elmnt.querySelector('source');
-	if (parseInt(workItemContent.dataset.transition) == 0) {
-		workItemContent.dataset.transition = 1;
-		let transitionLength = Math.random()*.5+.5;
+let colors = ['pink', 'blue', 'yellow', 'green'];
+function transitionIn(workItem, delay) {
+	workItem.dataset.initialized = 1;
+	// Target elements
+	const workItemMedia = workItem.querySelector('.work-item-media');
+	const workItemInfo = workItem.querySelector('.work-item-info');
+
+	// Animate in
+	if (parseInt(workItem.dataset.transition) == 0) {
 		animationQueue.push(setTimeout(() => {
-			workItemContent.style.transition = `transform ${transitionLength}s`;
-			workItemContent.style.transform = 'scale(0.5)';
-			animationQueue.push(setTimeout(() => {
-				workItemContent.style.transition = `transform .3s`;
-				workItemContent.style.transform = 'scale(1)';
-				workItemCursor.style.transition = `transform ${transitionLength+.25}s cubic-bezier(0.76, 0, 0.24, 1)`;
-				workItemMedia.dataset.active = 1;
-				if (videoSource != undefined) {
-					videoSource.src = videoSource.dataset.src;
-					elmnt.querySelector('video').load();
-				}
-			}, transitionLength*1000))
-			animationQueue.push(setTimeout(() => {
-				workItemCursor.style.transform = `translate(${Math.random() < .5 ? -150 : 150}vw, ${Math.random()*200-100}vh) translateZ(0)`;
-				workItemInfo.dataset.active = 1;
-			}, transitionLength*1000+200))
-		}, Math.random()*200+50))
-	} else {
+			workItemMedia.dataset.active = 1;
+		}, 200+delay*100))
+		animationQueue.push(setTimeout(() => {
+			workItemInfo.dataset.active = 1;
+		}, 500+delay*100))
+
+		// Play video
+		const videoSource = workItem.querySelector('source');
 		if (videoSource != undefined) {
 			videoSource.src = videoSource.dataset.src;
-			elmnt.querySelector('video').load();
+			workItem.querySelector('video').load();
 		}
 	}
 }
 
-// Add elastic parameters
-for (let elasticElement of document.querySelectorAll('.work-item-elastic')) {
-	elasticElement.dataset.elasticScaler = Math.round(Math.random()*30+20);
-	elasticElement.dataset.elasticFriction = Math.round(Math.random()*5+10);
-	elasticElement.classList.add('elastic');
-}
-for (let elasticElement of document.querySelectorAll('.work-item-media-elastic')) {
-	elasticElement.dataset.elasticScaler = Math.round(Math.random()*5+5);
-	elasticElement.dataset.elasticFriction = Math.round(Math.random()*5+10);
-	elasticElement.classList.add('elastic');
+// Observe work items
+for (let workItem of document.querySelectorAll('.work-item')) {
+	workItem.dataset.transition = 0;
+	callback.observe(workItem);
 }

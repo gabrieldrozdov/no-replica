@@ -9,7 +9,7 @@ function initializeVideos() {
 			// Detect if video has audio
 			let videoAudio = '';
 			let videoHasAudio = mediaVideo.mozHasAudio || Boolean(mediaVideo.webkitAudioDecodedByteCount) || Boolean(mediaVideo.audioTracks && mediaVideo.audioTracks.length);
-			// let videoHasAudio = true; // for testing purposes
+			// videoHasAudio = true; // for testing purposes
 			if (videoHasAudio) {
 				videoAudio = `
 					<button class="video-controls-volume" data-muted="true">
@@ -35,7 +35,6 @@ function initializeVideos() {
 				</button>
 				<input type="range" min="0" max="${mediaVideo.duration*1000}" value="0" class="video-controls-progress">
 				${videoAudio}
-				<div class="video-controls-background"></div>
 			`;
 			mediaItem.appendChild(videoControls);
 			
@@ -90,12 +89,6 @@ initializeVideos();
 
 // Lazy videos observer
 const lazyObserver = new IntersectionObserver((entries, lazyObserver) => {
-
-	// Deactivate lazy loading during transitions (from transition.js)
-	if (transitionActive) {
-		return
-	}
-
 	// Loop the entries
 	entries.forEach(entry => {
 
@@ -139,112 +132,14 @@ for (let projectListItem of document.querySelectorAll('.project-list-link')) {
 	lazyObserver.observe(projectListItem);
 }
 
-// Project media observer
-const mediaObserver = new IntersectionObserver((entries, mediaObserver) => {
-
-	// Deactivate lazy loading during transitions (from transition.js)
-	if (transitionActive) {
-		return
+// Random order for project list items
+for (let projectListBlocks of document.querySelectorAll('.project-list-blocks')) {
+	let children = projectListBlocks.querySelectorAll('.project-list-block');
+	let links1 = children[0].querySelectorAll('.project-list-link-container');
+	let links2 = children[1].querySelectorAll('.project-list-link-container');
+	for (let i=0; i<links1.length; i++) {
+		let ord = Math.round(Math.random()*10000);
+		links1[i].style.order = ord;
+		links2[i].style.order = ord;
 	}
-
-	let delay = 1;
-
-	// Loop the entries
-	entries.forEach(entry => {
-
-		// Check if the element is intersecting with the viewport
-		const elmnt = entry.target;
-
-		if (entry.isIntersecting) {
-			elmnt.dataset.active = 1;
-		} else {
-			elmnt.dataset.active = 0;
-		}
-
-		delay++;
-	});
-});
-
-// Animate in project media
-for (let projectMediaItem of document.querySelectorAll('.project-media-item')) {
-	mediaObserver.observe(projectMediaItem);
 }
-
-// List item observer
-const listItemObserver = new IntersectionObserver((entries, listItemObserver) => {
-
-	// Deactivate lazy loading during transitions (from transition.js)
-	if (transitionActive) {
-		return
-	}
-	
-	// Loop the entries
-	entries.forEach(entry => {
-
-		// Check if the element is intersecting with the viewport
-		const elmnt = entry.target;
-		const elmntTransition = elmnt.querySelector('.project-list-link-transition');
-
-		if (entry.isIntersecting) {
-			setTimeout(() => {
-				let directions = ['up', 'down', 'left', 'right'];
-				let direction = directions[Math.floor(Math.random()*directions.length)];
-				if (direction =='up') {
-					elmntTransition.style.transform = `translateY(-110%)`;
-				} else if (direction == 'down') {
-					elmntTransition.style.transform = `translateY(110%)`;
-				} else if (direction == 'left') {
-					elmntTransition.style.transform = `translateX(-110%)`;
-				} else if (direction == 'right') {
-					elmntTransition.style.transform = `translateX(110%)`;
-				}
-			}, Math.random()*400)
-
-			// Stop observing element
-			listItemObserver.unobserve(entry.target);
-		} else {
-
-		}
-	});
-});
-
-// Animate in project list items
-const colors = ['pink', 'blue', 'yellow', 'green'];
-// for (let projectListItem of document.querySelectorAll('.project-list-link')) {
-// 	let transitionDiv = document.createElement('div');
-// 	transitionDiv.classList.add('project-list-link-transition');
-// 	transitionDiv.style.setProperty('--primary', `var(--${colors[Math.floor(Math.random()*colors.length)]})`);
-// 	projectListItem.appendChild(transitionDiv);
-// 	listItemObserver.observe(projectListItem);
-// }
-
-// Add elastic to all elements in project media
-for (let elasticElement of document.querySelectorAll('.project-media-item')) {
-	elasticElement.dataset.elasticScaler = Math.round(Math.random()*10+10);
-	elasticElement.dataset.elasticFriction = Math.round(Math.random()*5+10);
-	elasticElement.classList.add('elastic');
-}
-for (let elasticElement of document.querySelectorAll('.project-media-item-content > *')) {
-	elasticElement.dataset.elasticScaler = Math.round(Math.random()*10+10);
-	elasticElement.dataset.elasticFriction = Math.round(Math.random()*5+10);
-	elasticElement.classList.add('elastic');
-}
-
-// Add elastic to all elements in project media captions
-for (let elasticElement of document.querySelectorAll('.project-media-item-caption-content')) {
-	elasticElement.dataset.elasticScaler = Math.round(Math.random()*10+10);
-	elasticElement.dataset.elasticFriction = Math.round(Math.random()*5+10);
-	elasticElement.classList.add('elastic');
-}
-
-// Add elastic to all elements in project list
-for (let projectListLinkContainer of document.querySelectorAll('.project-list-link-container')) {
-	projectListLinkContainer.dataset.elasticScaler = Math.round(Math.random()*3+10);
-	projectListLinkContainer.dataset.elasticFriction = Math.round(Math.random()*3+10);
-	projectListLinkContainer.classList.add('elastic');
-}
-// for (let proejctListLinkElastic of document.querySelectorAll('.project-list-link-elastic')) {
-// 	proejctListLinkElastic.dataset.elasticScaler = Math.round(Math.random()*5+5);
-// 	proejctListLinkElastic.dataset.elasticFriction = Math.round(Math.random()*5+5);
-// 	proejctListLinkElastic.classList.add('elastic');
-// }

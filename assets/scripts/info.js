@@ -16,14 +16,12 @@ function logoAnimation() {
 				rFix = ' style="margin-right: -.05em;"';
 			}
 
-			const initialPos = [-110 - Math.random()*50, Math.random()*100-50];
+			const initialPos = [Math.random()*200-100, -100];
 			temp += `
 				<div class="info-intro-logo-letter" style="transform: translate(${initialPos[0]}vw, ${initialPos[1]}vh)" data-state="0">
 					<div class="info-intro-logo-letter-text"${rFix}>${letter}</div>
 					<div class="info-intro-logo-letter-cursor" style="transform: translate(${Math.random()*50-25}%, ${Math.random()*50-25}%)">
-						<svg viewBox="0 0 100 100">
-							<polygon points="26.379 10 26.379 90 49.236 63.326 84.316 65.166 26.379 10"/>
-						</svg>
+						<svg viewBox="-10 -10 110 110"><path d="M100,39.52c-.05,2-1.32,3.69-3.22,4.3l-39.94,13.02-13.02,39.95c-.62,1.9-2.3,3.16-4.29,3.21h-.11c-1.96,0-3.66-1.17-4.36-2.99L.32,6.33C-.35,4.58.06,2.67,1.38,1.36,2.69.06,4.58-.35,6.31.31l90.7,34.74c1.87.72,3.04,2.47,2.99,4.46h0Z"/></svg>
 					</div>
 				</div>
 			`;
@@ -47,44 +45,10 @@ function logoAnimation() {
 				// Animate out
 				setTimeout(() => {
 					const cursor = letter.querySelector('.info-intro-logo-letter-cursor');
-					cursor.style.transform = `translate(${110 + Math.random()*50}vw, ${Math.random()*100-50}vh)`;
+					cursor.style.transform = `translate(${Math.random()*200-100}vw, ${-100}vh)`;
 				}, 250 + Math.random()*100)
-			}, transitionLength*1000 + Math.random()*100)
-		}, Math.random()*100+250)
+			}, transitionLength*1000 + 200)
+		}, Math.random()*500+250)
 	}
 }
 logoAnimation();
-
-// Services elastic
-for (let infoService of document.querySelectorAll('.info-service')) {
-	infoService.dataset.elasticScaler = Math.round(Math.random()*5+20);
-	infoService.dataset.elasticFriction = Math.round(Math.random()*5+10);
-	infoService.classList.add('elastic');
-
-	const infoServiceMedia = infoService.querySelector('.info-service-media');
-	infoServiceMedia.dataset.elasticScaler = Math.round(Math.random()*5+5);
-	infoServiceMedia.dataset.elasticFriction = Math.round(Math.random()*5+10);
-	infoServiceMedia.classList.add('elastic');
-
-	const infoServiceMediaContent = infoService.querySelector('.info-service-media-content');
-	infoServiceMediaContent.dataset.elasticScaler = Math.round(Math.random()*5+5);
-	infoServiceMediaContent.dataset.elasticFriction = Math.round(Math.random()*5+10);
-	infoServiceMediaContent.classList.add('elastic');
-}
-
-// Bios elastic
-for (let infoBio of document.querySelectorAll('.info-bio')) {
-	infoBio.dataset.elasticScaler = Math.round(Math.random()*5+20);
-	infoBio.dataset.elasticFriction = Math.round(Math.random()*5+10);
-	infoBio.classList.add('elastic');
-
-	const infoBioImage = infoBio.querySelector('.info-bio-image');
-	infoBioImage.dataset.elasticScaler = Math.round(Math.random()*5+5);
-	infoBioImage.dataset.elasticFriction = Math.round(Math.random()*5+10);
-	infoBioImage.classList.add('elastic');
-
-	const infoBioImageContent = infoBioImage.querySelector('.info-bio-image-content');
-	infoBioImageContent.dataset.elasticScaler = Math.round(Math.random()*5+5);
-	infoBioImageContent.dataset.elasticFriction = Math.round(Math.random()*5+10);
-	infoBioImageContent.classList.add('elastic');
-}

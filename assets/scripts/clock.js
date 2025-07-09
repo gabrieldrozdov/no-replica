@@ -21,3 +21,13 @@ function setTime() {
 
 setTime();
 setInterval(setTime, 1000);
+
+// Toggle box shadows (for fun!)
+function toggleShadow() {
+	let body = document.querySelector('body');
+	if (parseInt(body.dataset.shadow) == 1) {
+		body.dataset.shadow = 0;
+	} else {
+		body.dataset.shadow = 1;
+	}
+}

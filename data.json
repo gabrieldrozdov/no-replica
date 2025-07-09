@@ -277,7 +277,7 @@
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Branding", "Computational art", "Motion", "Type"],
+		"tags": ["Web", "Identity", "Computational art", "Motion", "Type"],
 		"active": true,
 		"direct-url": ""
 	},
@@ -342,7 +342,7 @@
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Branding", "Motion"],
+		"tags": ["Web", "Identity", "Motion"],
 		"active": true,
 		"direct-url": ""
 	},
@@ -528,7 +528,7 @@
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Branding", "Computational art", "Motion", "Type"],
+		"tags": ["Web", "Identity", "Computational art", "Motion", "Type"],
 		"active": true,
 		"direct-url": ""
 	},
@@ -725,7 +725,7 @@
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Branding", "Motion"],
+		"tags": ["Web", "Identity", "Motion"],
 		"active": true,
 		"direct-url": ""
 	},
@@ -820,7 +820,7 @@
 				"embed": ""
 			}
 		],
-		"tags": ["Branding", "Motion", "Sound"],
+		"tags": ["Identity", "Motion", "Sound"],
 		"active": true,
 		"direct-url": ""
 	},
@@ -1191,7 +1191,7 @@
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Branding", "Motion", "Sound"],
+		"tags": ["Web", "Identity", "Motion", "Sound"],
 		"active": true,
 		"direct-url": ""
 	},
@@ -1244,7 +1244,7 @@
 				"embed": ""
 			}
 		],
-		"tags": ["Branding", "Motion"],
+		"tags": ["Identity", "Motion"],
 		"active": true,
 		"direct-url": ""
 	},
@@ -1290,7 +1290,7 @@
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Branding", "Computational art", "Motion", "Education"],
+		"tags": ["Web", "Identity", "Computational art", "Motion", "Education"],
 		"active": true,
 		"direct-url": ""
 	},
@@ -1750,7 +1750,7 @@
 				"embed": ""
 			}
 		],
-		"tags": ["Branding"],
+		"tags": ["Identity"],
 		"active": true,
 		"direct-url": ""
 	},
@@ -1830,7 +1830,7 @@
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Branding", "Motion"],
+		"tags": ["Web", "Identity", "Motion"],
 		"active": true,
 		"direct-url": ""
 	},
@@ -2280,7 +2280,7 @@
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Branding", "Computational art", "Motion", "Sound"],
+		"tags": ["Web", "Identity", "Computational art", "Motion", "Sound"],
 		"active": true,
 		"direct-url": ""
 	},
@@ -2402,7 +2402,7 @@
 				"embed": ""
 			}
 		],
-		"tags": ["Web", "Branding", "Type"],
+		"tags": ["Web", "Identity", "Type"],
 		"active": true,
 		"direct-url": ""
 	},
