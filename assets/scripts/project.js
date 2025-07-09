@@ -97,15 +97,11 @@ const lazyObserver = new IntersectionObserver((entries, lazyObserver) => {
 
 		if (entry.isIntersecting) {
 
-			if (elmnt.classList.contains('project-list-link') && window.innerWidth < 600) {
-				// Dont load quicklinks on mobile
-			} else {
-				// Lazy load video
-				let videoSource = elmnt.querySelector('source');
-				if (videoSource != undefined) {
-					videoSource.src = videoSource.dataset.src;
-					elmnt.querySelector('video').load();
-				}
+			// Lazy load video
+			let videoSource = elmnt.querySelector('source');
+			if (videoSource != undefined) {
+				videoSource.src = videoSource.dataset.src;
+				elmnt.querySelector('video').load();
 			}
 
 			// Stop observing element
@@ -115,8 +111,8 @@ const lazyObserver = new IntersectionObserver((entries, lazyObserver) => {
 			let videoSource = entry.target.querySelector('source');
 			if (videoSource != undefined) {
 				videoSource.removeAttribute('src');
-				entry.target.querySelector('video').pause();
-				entry.target.querySelector('video').load();
+				// entry.target.querySelector('video').pause();
+				// entry.target.querySelector('video').load();
 			}
 		}
 	});

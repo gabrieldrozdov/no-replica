@@ -25,13 +25,6 @@ for (let transitionLink of document.querySelectorAll('.transition-link')) {
 window.addEventListener('pageshow', (event) => {
 	// `event.persisted` is true if the page is loaded from the bfcache (back/forward cache)
 	if (event.persisted || performance.navigation.type === performance.navigation.TYPE_BACK_FORWARD) {
-		const nav = document.querySelector('.nav');
-		nav.dataset.inactive = 0;
-		transitionActive = false;
-		for (let elmnt of document.querySelectorAll('.page-content > *')) {
-			elmnt.style.animation = "";
-			elmnt.style.transition = "";
-			elmnt.style.opacity = "";
-		}
+		body.dataset.transition = 0;
 	}
 });
