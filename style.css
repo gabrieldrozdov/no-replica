@@ -2211,10 +2211,10 @@ body[data-transition="1"] .work-filters {
 	transition: transform .3s cubic-bezier(0.65, 0, 0.35, 1);
 }
 body[data-transition="0"] .transition-block-top {
-	transform: translateY(-100%);
+	transform: translateY(-101%);
 }
 body[data-transition="0"] .transition-block-bottom {
-	transform: translateY(100%);
+	transform: translateY(101%);
 }
 body[data-transition="1"] .transition-block,
 body[data-transition="2"] .transition-block {
@@ -2252,10 +2252,10 @@ body[data-transition="2"] .transition-block {
 		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 	}
 	body[data-transition="0"] .transition-block-top {
-		transform: translateX(-100%);
+		transform: translateX(-101%);
 	}
 	body[data-transition="0"] .transition-block-bottom {
-		transform: translateX(100%);
+		transform: translateX(101%);
 	}
 	body[data-transition="1"] .transition-block,
 	body[data-transition="2"] .transition-block {
