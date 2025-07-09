@@ -10,16 +10,21 @@ function shuffleArray(array) {
 let projectIndex = 0;
 let keyIndex = 0;
 let positions = [];
-let totalItems = 20;
-let maxPosX = 130; // range of x coordinates
-let maxPosY = 30; // range of y coordinates
-let posYOffset = 10;
-if (window.innerWidth < 600) { // mobile
-	totalItems = 15;
-	maxPosX = 100; // range of x coordinates
-	maxPosY = 45; // range of y coordinates
-	posYOffset = 13;
+let totalItems, maxPosX, maxPosY, posYOffset;
+function setParameters() {
+	if (window.innerWidth < 600) { // mobile
+		totalItems = 12;
+		maxPosX = 120;
+		maxPosY = 50;
+		posYOffset = 25;
+	} else { // desktop
+		totalItems = 20;
+		maxPosX = 130;
+		maxPosY = 30;
+		posYOffset = 10;
+	}
 }
+setParameters();
 
 // Fetch data and build page
 let projects;
@@ -34,17 +39,7 @@ fetch('/data.json')
 })
 async function generateMultipleItems() {
 	await waitForFocus();
-	if (window.innerWidth < 600) { // mobile
-		totalItems = 15;
-		maxPosX = 100; // range of x coordinates
-		maxPosY = 45; // range of y coordinates
-		posYOffset = 13;
-	} else { // desktop
-		totalItems = 20;
-		maxPosX = 130; // range of x coordinates
-		maxPosY = 30; // range of y coordinates
-		posYOffset = 10;
-	}
+	setParameters();
 	positions = [];
 	for (let i=0; i<totalItems; i++) {
 		setTimeout(generateHeaderItem, i*50);
